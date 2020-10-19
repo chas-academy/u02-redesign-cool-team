@@ -1,0 +1,103 @@
+footer {
+  .footer-main {
+    background: linear-gradient(90deg, $primary-color 60%, $secondary-color 40%);
+  }
+
+  .container {
+    display: flex;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    &::before {
+      content: "";
+      width: 10px;
+      height: 24px;
+      background-color: $secondary-color;
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+
+  .footer-left {
+    background-color: $primary-color;
+    flex: 2;
+    padding: 4rem 0 4rem 1rem;
+    color: $white;
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+
+    .footer-contact {
+      padding: 1rem 0;
+      font-size: 1.2rem;
+
+      .contact-title {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .footer-right {
+    background-color: $secondary-color;
+    flex: 1;
+    padding: 4rem 0 4rem 1rem;
+    color: $primary-color;
+
+    h2 {
+      margin-bottom: 2rem;
+
+      &::before {
+        background-color: $primary-color;
+      }
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        padding: 0.5rem 1rem;
+      }
+
+      a {
+        color: $primary-color;
+        font-size: 1rem;
+      }
+    }
+
+    .internal-links {
+      margin-top: 3rem;
+    }
+
+  }
+
+  // Footer bar
+  .footer-bar {
+    background: linear-gradient(90deg, $secondary-color 60%, $primary-color 40%);
+
+    .footer-left {
+      background-color: $secondary-color;
+      padding: 1rem 0 1rem 1rem;
+      color: $primary-color;
+    }
+
+    .footer-right {
+      background-color: $primary-color;
+      padding: 1rem 0 1rem 1rem;
+      color: $white;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+}

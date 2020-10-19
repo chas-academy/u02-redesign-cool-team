@@ -8,4 +8,124 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
+  color: #191E27;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+footer .footer-main {
+  background: -webkit-gradient(linear, left top, right top, color-stop(60%, #191E27), color-stop(40%, #FBEA26));
+  background: linear-gradient(90deg, #191E27 60%, #FBEA26 40%);
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+footer h2::before {
+  content: "";
+  width: 10px;
+  height: 24px;
+  background-color: #FBEA26;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer .footer-left {
+  background-color: #191E27;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding: 4rem 0 4rem 1rem;
+  color: #ffffff;
+}
+
+footer .footer-left h2 {
+  margin-bottom: 2rem;
+}
+
+footer .footer-left .footer-contact {
+  padding: 1rem 0;
+  font-size: 1.2rem;
+}
+
+footer .footer-left .footer-contact .contact-title {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+footer .footer-right {
+  background-color: #FBEA26;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 4rem 0 4rem 1rem;
+  color: #191E27;
+}
+
+footer .footer-right h2 {
+  margin-bottom: 2rem;
+}
+
+footer .footer-right h2::before {
+  background-color: #191E27;
+}
+
+footer .footer-right ul {
+  list-style: none;
+}
+
+footer .footer-right ul li {
+  padding: 0.5rem 1rem;
+}
+
+footer .footer-right ul a {
+  color: #191E27;
+  font-size: 1rem;
+}
+
+footer .footer-right .internal-links {
+  margin-top: 3rem;
+}
+
+footer .footer-bar {
+  background: -webkit-gradient(linear, left top, right top, color-stop(60%, #FBEA26), color-stop(40%, #191E27));
+  background: linear-gradient(90deg, #FBEA26 60%, #191E27 40%);
+}
+
+footer .footer-bar .footer-left {
+  background-color: #FBEA26;
+  padding: 1rem 0 1rem 1rem;
+  color: #191E27;
+}
+
+footer .footer-bar .footer-right {
+  background-color: #191E27;
+  padding: 1rem 0 1rem 1rem;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-bar .footer-right a {
+  color: #ffffff;
 }
