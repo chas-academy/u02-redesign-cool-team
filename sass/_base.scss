@@ -1,10 +1,17 @@
+// Variables
+$primary-color: #191E27;
+$secondary-color: #FBEA26;
+
+// Reseting margin and padding for everything and setting box sizing to border box
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+// Body styling
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
+  color: $primary-color;
 }
