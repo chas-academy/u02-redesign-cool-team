@@ -3,6 +3,9 @@ Welcome to this project, everyone in the team is most welcome to make changes an
 Some info about the project can be found in this link:
 https://docs.google.com/document/d/1I1TW_L17G_Y2DLta_CGHMu09VWdVtpZSSfHJNw4v-cY/edit?usp=sharing
 
+# Our design
+https://www.figma.com/file/DkGcQFgOjt2tFF8GaQ6nkY/MUH
+
 # VSCode Settings
 We use SASS in this project and use Live Sass Compiler by Ritwick Dey to compile SASS code into normal CSS for browsers to undrestand.
  - Settings I use and I recommend you guys to use it. Otherwise your compiled files are stored in another folder.
