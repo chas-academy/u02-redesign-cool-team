@@ -6,6 +6,9 @@ https://docs.google.com/document/d/1I1TW_L17G_Y2DLta_CGHMu09VWdVtpZSSfHJNw4v-cY/
 # Our design
 https://www.figma.com/file/DkGcQFgOjt2tFF8GaQ6nkY/MUH
 
+# Meeting room
+https://meet.google.com/cop-rxma-zub
+
 # VSCode Settings
 We use SASS in this project and use Live Sass Compiler by Ritwick Dey to compile SASS code into normal CSS for browsers to undrestand.
  - Settings I use and I recommend you guys to use it. Otherwise your compiled files are stored in another folder.
