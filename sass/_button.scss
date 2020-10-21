@@ -1,24 +1,16 @@
-
 // color
-
 $anmal: rgb(4, 4, 31);
 $hitta: rgb(11, 36, 21);
 $ledare:rgb(27, 29, 92);
 $myh:rgb(238, 232, 232);
 
 //mixin for button type
-
 @mixin btn-type ($type, $color:white) {
     background-color: $type;
     color:$color;
-   // padding-top: 40px;
-   // padding-bottom: 40px;
     &:active {
         position: relative;
         top:8px;
-
-
-    
     }
 }
 
@@ -29,9 +21,7 @@ $myh:rgb(238, 232, 232);
     background-color:$myh;
 }
 
-
 //button
-
 .btn-anmal,.btn-hitta,.btn-ledare {
     font-size: medium;
     font-weight: bold;
