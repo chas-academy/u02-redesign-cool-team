@@ -16,9 +16,38 @@ body {
   margin: 0 auto;
 }
 
-.services {
-  background-color: blue;
-  padding: 2rem;
+.list {
+  background-color: #FBEA26;
+  width: 50rem;
+  height: 22rem;
+  position: relative;
+  font-size: 20px;
+}
+
+h2, p, hr {
+  margin: 10px;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+hr {
+  margin-right: 45%;
+}
+
+.information {
+  background-color: #191E27;
+  width: 20rem;
+  height: 100%;
+  position: relative;
+  float: right;
+}
+
+.infotext {
+  text-align: center;
+  padding: 25% 0;
+  color: white;
 }
 
 .btn-myh {
