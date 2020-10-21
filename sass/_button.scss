@@ -22,26 +22,24 @@ $myh:rgb(238, 232, 232);
 //button section
 .btn-myh{
     box-sizing: border-box;
-    padding: 3rem;
+    padding: 4rem;
     background-color:$myh;
 }
 
 //button
 .btn-anmal,.btn-hitta,.btn-ledare {
-    width: 40px;
-    height: 40px;
+    height:5rem ;
+    width: 3rem ;
     font-size: medium;
     font-weight: bold;
     font-size: 1em;
     text-align: center;
-    padding-top:2rem;
-    padding-bottom: 3rem;
+    padding:2rem;
     border: none;
     border-radius: 1rem;
     text-decoration: none;
     display: inline-block;
     min-width:350px;
-    overflow: hidden;
 }
 
 .btn-anmal{
