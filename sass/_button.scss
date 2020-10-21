@@ -5,36 +5,44 @@ $ledare:rgb(27, 29, 92);
 $myh:rgb(238, 232, 232);
 
 //mixin for button type
-@mixin btn-type ($type, $color:white) {
+@mixin btn-type ($type) {
     background-color: $type;
-    color:$color;
-    &:active {
+    color:$white;
+    &:hover{
+        background-color:$secondary-color;
+        color:$primary-color;
+    }
+    &:active{
         position: relative;
         top:8px;
     }
 }
 
+
 //button section
 .btn-myh{
     box-sizing: border-box;
-    padding: 50px;
+    padding: 3rem;
     background-color:$myh;
 }
 
 //button
 .btn-anmal,.btn-hitta,.btn-ledare {
+    width: 40px;
+    height: 40px;
     font-size: medium;
     font-weight: bold;
     font-size: 1em;
     text-align: center;
-    padding: 40px;
+    padding-top:2rem;
+    padding-bottom: 3rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 1rem;
     text-decoration: none;
+    //text-transform: uppercase;
     display: inline-block;
     min-width:350px;
-    margin-bottom: 50px;
-    margin-right: 9px;
+    overflow: hidden;
 }
 
 .btn-anmal{
