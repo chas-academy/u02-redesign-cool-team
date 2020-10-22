@@ -1,118 +1,165 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Välkommen till MYH</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Välkommen till MYH</title>
 
-  <!-- Style -->
-  <link rel="stylesheet" href="./assests/css/style.css">
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    Your code for navigation goes here!
-  </header>
+    <!-- Style -->
+    <link rel="stylesheet" href="./assests/css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>Your code for navigation goes here!</header>
 
-  <!-- Main -->
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      Your code for slider goes here!
-    </section>
+    <!-- Main -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="slidershow middle">
+          <div class="slides">
+            <input type="radio" name="r" id="r1" checked />
+            <input type="radio" name="r" id="r2" />
+            <input type="radio" name="r" id="r3" />
+            <input type="radio" name="r" id="r4" />
+            <input type="radio" name="r" id="r5" />
+            <div class="slide s1">
+              <img
+                src="https://i.picsum.photos/id/942/700/400.jpg?hmac=euTzYuVkdWSgD6ZDyK-EkvsPKvg09mEcIQHZcn4JtbQ"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://i.picsum.photos/id/117/700/400.jpg?hmac=kk6enwUFJohcf4UphFy3rh8h1vcCj-H6r0gyRjuCZhE"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://i.picsum.photos/id/942/700/400.jpg?hmac=euTzYuVkdWSgD6ZDyK-EkvsPKvg09mEcIQHZcn4JtbQ"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://i.picsum.photos/id/615/700/400.jpg?hmac=4TkTy4oz1LWxYVm-HIgn0XLsGpnKr0eA__a0oa5ylbw"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://i.picsum.photos/id/507/700/400.jpg?hmac=Qb3DH4IEx4E8T82NwcrYwUUddyKNfuQ0VdodmD0EHbw"
+                alt=""
+              />
+            </div>
+          </div>
 
-    <!-- Services Section -->
-    <section class="services">
-      Your code for "verksamheter" goes here!
-    </section>
+          <div class="navigation">
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+            <label for="r3" class="bar"></label>
+            <label for="r4" class="bar"></label>
+            <label for="r5" class="bar"></label>
+          </div>
+        </div>
+      </section>
 
-    <!-- News Section -->
-    <section class="news">
-      Your code for "nyheter" goes here!
-    </section>
+      <!-- Services Section -->
+      <section class="services">
+        Your code for "verksamheter" goes here!
+      </section>
 
-    <!--Button Section-->
-    <section class="btn-myh">
-      <div class="container">
-        <a href="#" class="btn-anmal">ANMÄL BRISTER I EN UTBILDNING</a>
-        <a href="#" class="btn-hitta">HITTA UTBILDNINGAR</a>
-        <a href="#" class="btn-ledare">VÄGLEDARE</a>
+      <!-- News Section -->
+      <section class="news">Your code for "nyheter" goes here!</section>
+
+      <!--Button Section-->
+      <section class="btn-myh">
+        <div class="container">
+          <a href="#" class="btn-anmal">ANMÄL BRISTER I EN UTBILDNING</a>
+          <a href="#" class="btn-hitta">HITTA UTBILDNINGAR</a>
+          <a href="#" class="btn-ledare">VÄGLEDARE</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Main footer -->
+      <div class="footer-main">
+        <!-- Footer Container -->
+        <div class="container">
+          <!-- Left side -->
+          <div class="footer-left">
+            <h2>Kontakt</h2>
+            <!-- Contact Item -->
+            <div class="footer-contact">
+              <p class="contact-title">Digitalt kundforum</p>
+              <p>Har du en fråga? Besök vårt kundforum, forum.myh.se</p>
+            </div>
+            <!-- Contact Item -->
+            <div class="footer-contact">
+              <p class="contact-title">Press</p>
+              <p>Presskontakter och pressmeddelanden finns i vårt nyhetsrum</p>
+            </div>
+            <!-- Contact Item -->
+            <div class="footer-contact">
+              <p class="contact-title">E-post</p>
+              <p>
+                Allmänna frågor/synpunkter: info@myh.se<br />
+                Registrator: registrator@myh.se
+              </p>
+            </div>
+            <!-- Contact Item -->
+            <div class="footer-contact">
+              <p class="contact-title">Adress</p>
+              <p>
+                Myndigheten för yrkeshögskolan<br />
+                Box 145<br />
+                721 05 Västerås
+              </p>
+            </div>
+          </div>
+          <!-- Right side -->
+          <div class="footer-right">
+            <!-- Other external websites -->
+            <div class="external-websites">
+              <h2>Våra webbplatser</h2>
+              <ul>
+                <li><a href="#">yrkeshogskolan.se</a></li>
+                <li><a href="#">konstkulturutbildning.se</a></li>
+                <li><a href="#">blitolk.nu</a></li>
+                <li><a href="#">seqf.se</a></li>
+              </ul>
+            </div>
+            <!-- Internal Links -->
+            <div class="internal-links">
+              <h2>Om webbplatsen</h2>
+              <ul>
+                <li><a href="#">Använda webbplatsen</a></li>
+                <li><a href="#">Om webbkakor (cookies)</a></li>
+                <li><a href="#">Webbkarta</a></li>
+                <li><a href="#">Tillgänglighetsredogörelse</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <!-- Main footer -->
-    <div class="footer-main">
-      <!-- Footer Container -->
-      <div class="container">
-        <!-- Left side -->
-        <div class="footer-left">
-          <h2>Kontakt</h2>
-          <!-- Contact Item -->
-          <div class="footer-contact">
-            <p class="contact-title">Digitalt kundforum</p>
-            <p>Har du en fråga? Besök vårt kundforum, forum.myh.se</p>
+      <!-- Footer bar -->
+      <div class="footer-bar">
+        <div class="container">
+          <div class="footer-left">
+            <p>© Myndigheten för yrkeshögskolan</p>
+            <p>
+              <strong>Ansvarig utgivare:</strong> Thomas Persson,
+              generaldirektör MYH.
+            </p>
           </div>
-          <!-- Contact Item -->
-          <div class="footer-contact">
-            <p class="contact-title">Press</p>
-            <p>Presskontakter och pressmeddelanden finns i vårt nyhetsrum</p>
-          </div>
-          <!-- Contact Item -->
-          <div class="footer-contact">
-            <p class="contact-title">E-post</p>
-            <p>Allmänna frågor/synpunkter: info@myh.se<br>
-              Registrator: registrator@myh.se</p>
-          </div>
-          <!-- Contact Item -->
-          <div class="footer-contact">
-            <p class="contact-title">Adress</p>
-            <p>Myndigheten för yrkeshögskolan<br>
-              Box 145<br>
-              721 05 Västerås</p>
-          </div>
-        </div>
-        <!-- Right side -->
-        <div class="footer-right">
-          <!-- Other external websites -->
-          <div class="external-websites">
-            <h2>Våra webbplatser</h2>
-            <ul>
-              <li><a href="#">yrkeshogskolan.se</a></li>
-              <li><a href="#">konstkulturutbildning.se</a></li>
-              <li><a href="#">blitolk.nu</a></li>
-              <li><a href="#">seqf.se</a></li>
-            </ul>
-          </div>
-          <!-- Internal Links -->
-          <div class="internal-links">
-            <h2>Om webbplatsen</h2>
-            <ul>
-              <li><a href="#">Använda webbplatsen</a></li>
-              <li><a href="#">Om webbkakor (cookies)</a></li>
-              <li><a href="#">Webbkarta</a></li>
-              <li><a href="#">Tillgänglighetsredogörelse</a></li>
-            </ul>
+          <div class="footer-right">
+            <a href="#">YouTube</a>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Footer bar -->
-    <div class="footer-bar">
-      <div class="container">
-        <div class="footer-left">
-          <p>© Myndigheten för yrkeshögskolan</p>
-          <p><strong>Ansvarig utgivare:</strong> Thomas Persson, generaldirektör MYH.</p>
-        </div>
-        <div class="footer-right">
-          <a href="#">YouTube</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>
