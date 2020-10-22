@@ -1,47 +1,45 @@
-
 // color
-
 $anmal: rgb(4, 4, 31);
 $hitta: rgb(11, 36, 21);
 $ledare:rgb(27, 29, 92);
-$myh:rgb(185, 177, 177);
+$myh:rgb(238, 232, 232);
 
 //mixin for button type
-
-@mixin btn-type ($type, $color:white) {
+@mixin btn-type ($type) {
     background-color: $type;
-    color:$color;
-    &:active {
+    color:$white;
+    &:hover{
+        background-color:$secondary-color;
+        color:$primary-color;
+    }
+    &:active{
         position: relative;
-        top:5px;
-
-    
+        top:8px;
     }
 }
+
 
 //button section
 .btn-myh{
     box-sizing: border-box;
-    padding: 50px;
+    padding: 4rem;
     background-color:$myh;
 }
 
-
 //button
-
 .btn-anmal,.btn-hitta,.btn-ledare {
+    height:5rem ;
+    width: 3rem ;
     font-size: medium;
     font-weight: bold;
     font-size: 1em;
     text-align: center;
-    padding: .9em .8em;
+    padding:2rem;
     border: none;
-    border-radius: 50px;
+    border-radius: 1rem;
     text-decoration: none;
     display: inline-block;
     min-width:350px;
-    margin-bottom: 10px;
-    margin-right: 9px;
 }
 
 .btn-anmal{
