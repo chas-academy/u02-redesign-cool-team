@@ -1,0 +1,125 @@
+// body {
+//   background-color: #ccc;
+// }
+
+// header {
+//   background-color: blue;
+//   height: 66px;
+// }
+
+// header * {
+//   color: $primary-color;
+// }
+
+// header .logo {
+//   float: left;
+//   margin: 1em 0 0 1em;
+//   width: 25vh;
+//   border: 1px solid green;
+// }
+
+// header ul {
+//   float: right;
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+//   border: 1px solid red;
+// }
+
+// header ul li {
+//   float: left;
+//   position: relative;
+// }
+
+// header ul li ul {
+//   position: absolute;
+//   top: 66px;
+//   right: 0px;
+//   width: 180px;
+//   display: none;
+// }
+
+// header ul li:hover ul {
+//   display: block;
+// }
+
+// header ul li ul li {
+//   width: 100%;
+// }
+
+// header ul li ul li a {
+//   height: 100%;
+//   padding: 10px;
+//   color: $primary-color;
+// }
+
+// header ul li ul li a:hover {
+//   background-color: lightseagreen;
+//   // color: white;
+// }
+
+// header ul li a {
+//   display: block;
+//   padding: 21px;
+//   font-size: 1.1em;
+//   text-decoration: none;
+// }
+
+// header ul li a:hover {
+//   background-color: darkgrey;
+//   transition: 0.5s;
+// }
+
+// header .mobile-toggle {
+//   display: none;
+// }
+
+.menu {
+  font-family: sans-serif;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu ul li {
+  width: 25%;
+}
+@media (max-width: 40em) {
+  .menu ul li {
+    width: 100%;
+  }
+}
+.menu ul li > ul {
+  display: none;
+  flex-direction: column;
+}
+.menu ul li > ul li {
+  width: 100%;
+}
+.menu ul li:hover > ul {
+  display: flex;
+}
+.menu a {
+  text-transform: uppercase;
+  display: block;
+  background: blue;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+.menu a:hover {
+  background: lightBlue;
+  color: blue;
+}
+.menu .sub-menu li > a {
+  background: lightBlue;
+  color: blue;
+}
+.menu .sub-menu > a:after {
+  content: '+';
+  padding-left: 5px;
+}
