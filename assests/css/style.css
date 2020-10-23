@@ -16,6 +16,33 @@ body {
   margin: 0 auto;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.topnav {
+  padding: 2rem 0 2rem 2rem;
+  margin: 0rem;
+  background-color: #191E27;
+  color: #dddddd;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  color: #dddddd;
+}
+
+/* this is the right bag*/
 .btn-myh {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
