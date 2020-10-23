@@ -16,72 +16,96 @@ body {
   margin: 0 auto;
 }
 
-.menu {
-  font-family: sans-serif;
+header {
+  height: 70px;
+  background-color: #ccc;
+  padding: 10px 0;
 }
 
-.menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.menu-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px;
 }
 
-.menu ul li {
-  width: 25%;
+.logo-img {
+  height: 50px;
 }
 
-@media (max-width: 40em) {
-  .menu ul li {
-    width: 100%;
-  }
+.menu-icon {
+  font-size: 2.4em;
+  color: #191E27;
+  line-height: 50px;
 }
 
-.menu ul li > ul {
-  display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.menu ul li > ul li {
+nav {
+  position: absolute;
+  background-color: white;
+  top: 70px;
+  left: 0;
   width: 100%;
 }
 
-.menu ul li:hover > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+nav ul {
+  list-style-type: none;
+  max-height: 0px;
+  overflow: hidden;
+  width: 100%;
 }
 
-.menu a {
-  text-transform: uppercase;
-  display: block;
-  background: blue;
-  padding: 15px;
-  color: white;
+nav ul li {
+  padding: 0 15px;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 12px;
+  /* Add your custom styles below to change appearance of links */
+  color: #191E27;
   text-decoration: none;
-  text-align: center;
+  letter-spacing: 0.05em;
 }
 
-.menu a:hover {
-  background: lightBlue;
-  color: blue;
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #FBEA26;
 }
 
-.menu .sub-menu li > a {
-  background: lightBlue;
-  color: blue;
+#checkbox {
+  display: none;
 }
 
-.menu .sub-menu > a:after {
-  content: '+';
-  padding-left: 5px;
+#checkbox:checked ~ nav ul {
+  max-height: 200px;
+  padding: 15px 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@media (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+  nav {
+    position: relative;
+    top: -10px;
+    background-color: transparent;
+  }
+  nav ul {
+    max-height: 70px;
+    padding: 15px 0;
+    text-align: right;
+  }
+  nav ul li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding-left: 20px;
+  }
 }
 
 .btn-myh {

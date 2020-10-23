@@ -74,52 +74,223 @@
 //   display: none;
 // }
 
-.menu {
-  font-family: sans-serif;
+// https://www.barkins.com/2015/10/15/flexbox-responsive-dropdown-menu-no-javascript/
+// .menu ul {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+// .menu ul li {
+//   width: 25%;
+// }
+// @media (max-width: 40em) {
+//   .menu ul li {
+//     width: 100%;
+//   }
+// }
+// .menu ul li > ul {
+//   display: none;
+//   flex-direction: column;
+// }
+// .menu ul li > ul li {
+//   width: 100%;
+// }
+// .menu ul li:hover > ul {
+//   display: flex;
+// }
+// .menu a {
+//   text-transform: uppercase;
+//   display: block;
+//   background: white;
+//   padding: 15px;
+//   color: $primary-color;
+//   text-decoration: none;
+//   text-align: center;
+// }
+// .menu a:hover {
+//   background: $secondary-color;
+//   color: blue;
+// }
+// .menu .sub-menu li > a {
+//   background: lightBlue;
+//   color: blue;
+// }
+// .menu .sub-menu > a:after {
+//   content: '+';
+//   padding-left: 5px;
+// }
+
+// 3. https://github.com/Godsont/Flexbox-Dropdown-Menu/blob/master/index.html
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+// h1 {
+//   font-family: lato;
+//   font-size: 72px;
+// }
+// section {
+//   background: #f2f4f3;
+//   height: calc(100vh - 64px);
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// #main-nav a {
+//   color: #f6f7f8;
+//   background: #254441;
+//   height: 64px;
+//   font-family: lato;
+//   font-weight: bold;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   text-decoration: none;
+//   transition: background 0.4s;
+// }
+// #main-nav a:hover {
+//   background: #305753;
+// }
+
+// #main-nav {
+// }
+
+// #main-nav ul {
+//   list-style: none;
+//   display: flex;
+// }
+
+// #main-nav li {
+//   width: 100%;
+//   text-align: center;
+//   position: relative;
+// }
+
+// #main-nav li:hover .submenu > li {
+//   display: block;
+//   flex-direction: column;
+//   top: 0px;
+// }
+
+// .submenu li {
+//   display: none;
+//   position: absolute;
+//   top: 0px;
+// }
+
+// .submenu {
+//   display: flex;
+//   flex-direction: column;
+//   position: absolute;
+//   width: 100%;
+// }
+
+// .submenu li {
+//   position: relative;
+// }
+
+// .submenu li:hover .submenu-2 li {
+//   display: block;
+// }
+
+// .submenu-2 li {
+//   display: none;
+// }
+// .submenu-2 {
+//   display: flex;
+//   flex-direction: column;
+//   position: absolute;
+//   top: 0px;
+//   left: 100%;
+//   width: 120px;
+// }
+
+// .arrow {
+//   margin-left: 8px;
+//   color: #eee;
+//   font-size: 12px;
+// }
+
+// mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+header {
+  height: 70px;
+  background-color: #ccc;
+  padding: 10px 0;
 }
-.menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.menu-wrap {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 15px;
 }
-.menu ul li {
-  width: 25%;
+.logo-img {
+  height: 50px;
 }
-@media (max-width: 40em) {
-  .menu ul li {
-    width: 100%;
-  }
+.menu-icon {
+  font-size: 2.4em;
+  color: $primary-color;
+  line-height: 50px;
 }
-.menu ul li > ul {
-  display: none;
-  flex-direction: column;
-}
-.menu ul li > ul li {
+nav {
+  position: absolute;
+  background-color: white;
+  top: 70px;
+  left: 0;
   width: 100%;
 }
-.menu ul li:hover > ul {
-  display: flex;
+nav ul {
+  list-style-type: none;
+  max-height: 0px;
+  overflow: hidden;
+  width: 100%;
 }
-.menu a {
-  text-transform: uppercase;
-  display: block;
-  background: blue;
-  padding: 15px;
-  color: white;
+nav ul li {
+  padding: 0 15px;
+}
+nav ul li a {
+  display: inline-block;
+  padding: 12px;
+  /* Add your custom styles below to change appearance of links */
+  color: $primary-color;
   text-decoration: none;
-  text-align: center;
+  letter-spacing: 0.05em;
 }
-.menu a:hover {
-  background: lightBlue;
-  color: blue;
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: $secondary-color;
 }
-.menu .sub-menu li > a {
-  background: lightBlue;
-  color: blue;
+
+#checkbox {
+  display: none;
 }
-.menu .sub-menu > a:after {
-  content: '+';
-  padding-left: 5px;
+#checkbox:checked ~ nav ul {
+  max-height: 200px;
+  padding: 15px 0;
+  transition: all 0.5s;
+}
+
+// TABLETS
+@media (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+  nav {
+    position: relative;
+    top: -10px;
+    background-color: transparent;
+  }
+  nav ul {
+    max-height: 70px;
+    padding: 15px 0;
+    text-align: right;
+  }
+  nav ul li {
+    display: inline-flex;
+    padding-left: 20px;
+  }
 }
