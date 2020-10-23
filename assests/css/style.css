@@ -24,7 +24,7 @@ ul {
 }
 
 .topnav {
-  padding: 2rem 0 2rem 2rem;
+  padding: 1rem 0 1rem 1rem;
   margin: 0rem;
   background-color: #191E27;
   color: #dddddd;
@@ -39,7 +39,14 @@ li a {
   padding: 8px;
   text-align: center;
   text-decoration: none;
-  color: #dddddd;
+  color: #191E27;
+  background-color: #FBEA26;
+  margin-right: 1rem;
+}
+
+li a:hover {
+  background-color: #191E27;
+  color: #FBEA26;
 }
 
 /* this is the right bag*/

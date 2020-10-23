@@ -5,7 +5,7 @@ ul {
   overflow: hidden;
 }
 .topnav {
-  padding: 2rem 0 2rem 2rem;
+  padding: 1rem 0 1rem 1rem;
   margin: 0rem;
   background-color: $primary-color;
   color: #dddddd;
@@ -20,6 +20,12 @@ li a {
   padding: 8px;
   text-align: center;
   text-decoration: none;
-  color: #dddddd;
+  color: $primary-color;
+  background-color: $secondary-color;
+  margin-right: 1rem;
+  &:hover {
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
 }
-/* this is the right bag*/ 
+/* this is the right bag*/
