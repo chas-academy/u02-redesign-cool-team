@@ -6,8 +6,8 @@
     font-size: 20px;
 }
 
-h2, p, hr {
-    margin: 10px;
+h2, p, hr { 
+    margin: 10px; // When i put margin on the h2 tag, it puts the margin on the entire div instead, moving the div
 }
 
 h2 {
