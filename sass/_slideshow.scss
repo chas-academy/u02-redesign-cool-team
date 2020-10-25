@@ -19,7 +19,16 @@
   padding: 125px 113px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  &-active {
+    z-index: 1;
+  }
 }
+
 .slide-image {
   top: 0;
   left: 0;
@@ -33,6 +42,12 @@
 
   &-1 {
     background-image: url("../i1.jpg");
+  }
+  &-2 {
+    background-image: url("../i2.jpg");
+  }
+  &-3 {
+    background-image: url("../i3.jpg");
   }
 }
 
@@ -67,6 +82,7 @@
   height: 100px;
   cursor: pointer;
   transition: background-size 0.2s ease-out;
+  z-index: 2;
 
   &:hover {
     background-size: 40px;
@@ -81,68 +97,3 @@
   right: 0;
   background-image: url("../right-arrow.svg");
 }
-// .slideshow-item {
-//   width: inherit;
-//   height: inherit;
-//   position: absolute;
-//   opacity: 0;
-//   animation: cycleImages 101s infinite;
-// }
-
-// .slideshow-item:nth-child(1) {
-//   animation-delay: 0s;
-// }
-// .slideshow-item:nth-child(2) {
-//   animation-delay: 10s;
-// }
-// .slideshow-item:nth-child(3) {
-//   animation-delay: 20s;
-// }
-// .slideshow-item:nth-child(4) {
-//   animation-delay: 30s;
-// }
-// .slideshow-item:nth-child(5) {
-//   animation-delay: 40s;
-// }
-
-// .slideshow-item img {
-//   width: 100%;
-//   // height: 400px;
-//   height: 100%;
-//   object-fit: cover;
-// }
-
-// .slideshow-item-text {
-//   max-width: 40%;
-//   position: absolute;
-//   top: 50%;
-//   left: 0;
-//   transform: translateY(-50%);
-//   background-color: rgba(0, 0, 0, 0.8);
-//   color: #fff;
-//   padding: 1rem 1rem;
-// }
-
-// .slideshow-item-text h5 {
-//   font-size: 2.5rem;
-//   font-family: Arial, Helvetica, sans-serif;
-//   text-transform: uppercase;
-//   letter-spacing: 3px;
-//   margin-bottom: 1.5rem;
-// }
-// .slideshow-item-text p {
-//   font-size: 1rem;
-//   font-family: Georgia, "Times New Roman", Times, serif;
-//   letter-spacing: 1px;
-//   margin-bottom: 2.5rem;
-//   font-weight: 300px;
-// }
-
-// @keyframes cycleImages {
-//   10% {
-//     opacity: 1;
-//   }
-//   20% {
-//     opacity: 0;
-//   }
-// }

@@ -45,6 +45,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.slide-active {
+  z-index: 1;
 }
 
 .slide-image {
@@ -62,6 +72,14 @@ body {
 
 .slide-image-1 {
   background-image: url("../i1.jpg");
+}
+
+.slide-image-2 {
+  background-image: url("../i2.jpg");
+}
+
+.slide-image-3 {
+  background-image: url("../i3.jpg");
 }
 
 .slide-text {
@@ -97,6 +115,7 @@ body {
   cursor: pointer;
   -webkit-transition: background-size 0.2s ease-out;
   transition: background-size 0.2s ease-out;
+  z-index: 2;
 }
 
 .slide-arrow-left:hover,
