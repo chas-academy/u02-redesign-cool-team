@@ -54,6 +54,12 @@ body {
 }
 
 .slide-active {
+  z-index: 2;
+  -webkit-animation: show-slide 1s ease-out;
+          animation: show-slide 1s ease-out;
+}
+
+.slide-previous {
   z-index: 1;
 }
 
@@ -131,6 +137,28 @@ body {
 .slide-arrow-right {
   right: 0;
   background-image: url("../right-arrow.svg");
+}
+
+@-webkit-keyframes show-slide {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes show-slide {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 .btn-myh {

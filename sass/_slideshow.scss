@@ -25,6 +25,11 @@
   top: 0;
 
   &-active {
+    z-index: 2;
+    animation: show-slide 1s ease-out;
+  }
+
+  &-previous {
     z-index: 1;
   }
 }
@@ -96,4 +101,13 @@
 .slide-arrow-right {
   right: 0;
   background-image: url("../right-arrow.svg");
+}
+
+@keyframes show-slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

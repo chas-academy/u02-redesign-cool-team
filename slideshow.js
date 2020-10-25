@@ -11,16 +11,23 @@ const slides = [
 ];
 let slideCounter = 0; 
 
+function changeSlide() {
+    const previousSlide = document.querySelector('.slide-active');
+    const currentSlide = slides[slideCounter];
+    previousSlide.classList.remove("slide-active");
+    document.querySelector('.slide-previous').classList.remove("slide-previous");
+    previousSlide.classList.add("slide-previous");
+    currentSlide.classList.add("slide-active");
+}
+
+
 leftArrow.onclick = function (e) {
     slideCounter -= 1;
     if(slideCounter === -1) {
         slideCounter = slides.length -1;
     }
 
-    const lastSlide = document.querySelector('.slide-active');
-    const currentSlide = slides[slideCounter];
-    lastSlide.classList.remove("slide-active");
-    currentSlide.classList.add("slide-active");
+    changeSlide();
 }
 
 rightArrow.onclick = function (e) {
@@ -28,10 +35,6 @@ rightArrow.onclick = function (e) {
     if(slideCounter === slides.length) {
         slideCounter = 0;
     }
-
-    const lastSlide = document.querySelector('.slide-active');
-    const currentSlide = slides[slideCounter];
-    lastSlide.classList.remove("slide-active");
-    currentSlide.classList.add("slide-active");
+    changeSlide();
 }
 
