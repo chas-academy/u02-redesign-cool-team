@@ -1,34 +1,168 @@
-.list {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.services {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    display: grid;
+    grid-template-areas: 
+    "services-main calender-main";
+}
+
+#services-main {
+    grid-area: services-main;
+}
+
+#calender-main {
+    grid-area: calender-main;
+}
+
+// Services
+#services-main {
     background-color: #FBEA26;
-    width: 50rem;
-    height: 22rem;
-    position: relative;
-    font-size: 20px;
+    height: 50vh;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: repeat(7, 1fr);
+    display: grid;
+    grid-template-areas:
+    "item-1 item-8"
+    "item-2 item-8"
+    "item-3 item-8"
+    "item-4 item-8"
+    "item-5 item-8"
+    "item-6 item-8"
+    "item-7 item-8";
 }
 
-h2, p, hr { 
-    margin: 10px; // When i put margin on the h2 tag, it puts the margin on the entire div instead, moving the div
+.item {
+    border-bottom: solid 1.5px;
+    margin: 5px;
 }
 
-h2 {
-    text-transform: uppercase;
-}
-
-hr {
-    margin-right: 45%
-}
-
-.information {
+.item-8 {
     background-color: #191E27;
-    width: 20rem;
-    height: 100%;
-    position: relative;
-    float: right;
-    // margin: 10px; I want to use magin here but it moves the div outside of the "list" div
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.infotext {
-    text-align: center;
-    padding: 25% 0; //How do I vertically center the text?
+p {
+    color: #191E27;
+}
+
+.item-8 > p {
     color: white;
+    margin: 10px;
+}
+
+//"grid-area:" (item) elements
+.item-1 {
+    grid-area: item-1;
+}
+
+.item-2 {
+    grid-area: item-2;
+}
+
+.item-3 {
+    grid-area: item-3;
+}
+
+.item-4 {
+    grid-area: item-4;
+}
+
+.item-5 {
+    grid-area: item-5;
+}
+
+.item-6 {
+    grid-area: item-6;
+}
+
+.item-7 {
+    grid-area: item-7;
+}
+
+.item-8 {
+    grid-area: item-8;
+}
+
+// Calender
+#calender-main {
+    height: 50vh;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: repeat(6, 1fr);
+    display: grid;
+    grid-template-areas:
+    "list-1 list-1"
+    "list-2 list-2"
+    "list-3 list-4"
+    "list-5 list-6"
+    "list-7 list-8"
+    "list-9 list-9";
+    position: relative;
+    border: solid 2px;
+}
+
+.list-1 {
+    background-color: #FBEA26;
+    border-bottom: solid 2px;
+}
+
+.list-2, .list-5, .list-6 {
+    background-color: lightgrey;
+}
+
+.list-9 {
+    border-top: solid 2px;
+}
+
+//"grid-area:" (list) elements
+.list-1
+{
+    grid-area: list-1;
+}
+
+.list-2
+{
+    grid-area: list-2;
+}
+
+.list-3
+{
+    grid-area: list-3;
+}
+
+.list-4
+{
+    grid-area: list-4;
+}
+
+.list-5
+{
+    grid-area: list-5;
+}
+
+.list-6
+{
+    grid-area: list-6;
+}
+
+.list-7
+{
+    grid-area: list-7;
+}
+
+.list-8
+{
+    grid-area: list-8;
+}
+
+.list-9
+{
+    grid-area: list-9;
 }
