@@ -18,103 +18,72 @@ body {
 
 .hero {
   width: 100%;
-  height: 400px;
+  height: 628px;
   position: relative;
   overflow: hidden;
+  background: palevioletred;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slideshow {
+  width: 1024px;
+  max-width: 100%;
+  height: 100%;
+  background: slategrey;
+}
+
+.slide {
   width: 100%;
   height: 100%;
-  position: relative;
-  overflow: hidden;
+  padding: 125px 113px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.slideshow-item {
-  width: inherit;
-  height: inherit;
-  position: absolute;
-  opacity: 0;
-  -webkit-animation: cycleImages 101s infinite;
-          animation: cycleImages 101s infinite;
-}
-
-.slideshow-item:nth-child(1) {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-
-.slideshow-item:nth-child(2) {
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
-}
-
-.slideshow-item:nth-child(3) {
-  -webkit-animation-delay: 20s;
-          animation-delay: 20s;
-}
-
-.slideshow-item:nth-child(4) {
-  -webkit-animation-delay: 30s;
-          animation-delay: 30s;
-}
-
-.slideshow-item:nth-child(5) {
-  -webkit-animation-delay: 40s;
-          animation-delay: 40s;
-}
-
-.slideshow-item img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.slideshow-item-text {
-  max-width: 40%;
-  position: absolute;
-  top: 50%;
+.slide-image {
+  top: 0;
   left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  padding: 1rem 1rem;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
 }
 
-.slideshow-item-text h5 {
-  font-size: 2.5rem;
-  font-family: Arial, Helvetica, sans-serif;
+.slide-image-1 {
+  background-image: url("../i1.jpg");
+}
+
+.slide-text {
+  position: relative;
+}
+
+.slide-text h2 {
+  font-size: 50px;
+  color: white;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 76px;
 }
 
-.slideshow-item-text p {
-  font-size: 1rem;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  letter-spacing: 1px;
-  margin-bottom: 2.5rem;
-  font-weight: 300px;
-}
-
-@-webkit-keyframes cycleImages {
-  10% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 0;
-  }
-}
-
-@keyframes cycleImages {
-  10% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 0;
-  }
+.slide-text .slide-button {
+  font-size: 25px;
+  background-color: #fbea26;
+  color: black;
+  padding: 12px 36px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .btn-myh {
