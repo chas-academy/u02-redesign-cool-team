@@ -1,296 +1,73 @@
-// body {
-//   background-color: #ccc;
-// }
-
-// header {
-//   background-color: blue;
-//   height: 66px;
-// }
-
-// header * {
-//   color: $primary-color;
-// }
-
-// header .logo {
-//   float: left;
-//   margin: 1em 0 0 1em;
-//   width: 25vh;
-//   border: 1px solid green;
-// }
-
-// header ul {
-//   float: right;
-//   margin: 0;
-//   padding: 0;
-//   list-style: none;
-//   border: 1px solid red;
-// }
-
-// header ul li {
-//   float: left;
-//   position: relative;
-// }
-
-// header ul li ul {
-//   position: absolute;
-//   top: 66px;
-//   right: 0px;
-//   width: 180px;
-//   display: none;
-// }
-
-// header ul li:hover ul {
-//   display: block;
-// }
-
-// header ul li ul li {
-//   width: 100%;
-// }
-
-// header ul li ul li a {
-//   height: 100%;
-//   padding: 10px;
-//   color: $primary-color;
-// }
-
-// header ul li ul li a:hover {
-//   background-color: lightseagreen;
-//   // color: white;
-// }
-
-// header ul li a {
-//   display: block;
-//   padding: 21px;
-//   font-size: 1.1em;
-//   text-decoration: none;
-// }
-
-// header ul li a:hover {
-//   background-color: darkgrey;
-//   transition: 0.5s;
-// }
-
-// header .mobile-toggle {
-//   display: none;
-// }
-
-// https://www.barkins.com/2015/10/15/flexbox-responsive-dropdown-menu-no-javascript/
-// .menu ul {
-//   list-style: none;
-//   margin: 0;
-//   padding: 0;
-//   display: flex;
-//   flex-wrap: wrap;
-// }
-// .menu ul li {
-//   width: 25%;
-// }
-// @media (max-width: 40em) {
-//   .menu ul li {
-//     width: 100%;
-//   }
-// }
-// .menu ul li > ul {
-//   display: none;
-//   flex-direction: column;
-// }
-// .menu ul li > ul li {
-//   width: 100%;
-// }
-// .menu ul li:hover > ul {
-//   display: flex;
-// }
-// .menu a {
-//   text-transform: uppercase;
-//   display: block;
-//   background: white;
-//   padding: 15px;
-//   color: $primary-color;
-//   text-decoration: none;
-//   text-align: center;
-// }
-// .menu a:hover {
-//   background: $secondary-color;
-//   color: blue;
-// }
-// .menu .sub-menu li > a {
-//   background: lightBlue;
-//   color: blue;
-// }
-// .menu .sub-menu > a:after {
-//   content: '+';
-//   padding-left: 5px;
-// }
-
-// 3. https://github.com/Godsont/Flexbox-Dropdown-Menu/blob/master/index.html
-// * {
-//   margin: 0;
-//   padding: 0;
-//   box-sizing: border-box;
-// }
-
-// h1 {
-//   font-family: lato;
-//   font-size: 72px;
-// }
-// section {
-//   background: #f2f4f3;
-//   height: calc(100vh - 64px);
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
-
-// #main-nav a {
-//   color: #f6f7f8;
-//   background: #254441;
-//   height: 64px;
-//   font-family: lato;
-//   font-weight: bold;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   text-decoration: none;
-//   transition: background 0.4s;
-// }
-// #main-nav a:hover {
-//   background: #305753;
-// }
-
-// #main-nav {
-// }
-
-// #main-nav ul {
-//   list-style: none;
-//   display: flex;
-// }
-
-// #main-nav li {
-//   width: 100%;
-//   text-align: center;
-//   position: relative;
-// }
-
-// #main-nav li:hover .submenu > li {
-//   display: block;
-//   flex-direction: column;
-//   top: 0px;
-// }
-
-// .submenu li {
-//   display: none;
-//   position: absolute;
-//   top: 0px;
-// }
-
-// .submenu {
-//   display: flex;
-//   flex-direction: column;
-//   position: absolute;
-//   width: 100%;
-// }
-
-// .submenu li {
-//   position: relative;
-// }
-
-// .submenu li:hover .submenu-2 li {
-//   display: block;
-// }
-
-// .submenu-2 li {
-//   display: none;
-// }
-// .submenu-2 {
-//   display: flex;
-//   flex-direction: column;
-//   position: absolute;
-//   top: 0px;
-//   left: 100%;
-//   width: 120px;
-// }
-
-// .arrow {
-//   margin-left: 8px;
-//   color: #eee;
-//   font-size: 12px;
-// }
-
-// mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
-
-header {
-  height: 70px;
-  background-color: #ccc;
-  padding: 10px 0;
-}
-.menu-wrap {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 15px;
-}
-.logo-img {
-  height: 50px;
-}
-.menu-icon {
-  font-size: 2.4em;
-  color: $primary-color;
-  line-height: 50px;
-}
-nav {
-  position: absolute;
-  background-color: white;
-  top: 70px;
-  left: 0;
-  width: 100%;
-}
-nav ul {
-  list-style-type: none;
-  max-height: 0px;
-  overflow: hidden;
-  width: 100%;
-}
-nav ul li {
-  padding: 0 15px;
-}
-nav ul li a {
-  display: inline-block;
-  padding: 12px;
-  /* Add your custom styles below to change appearance of links */
+a {
   color: $primary-color;
   text-decoration: none;
-  letter-spacing: 0.05em;
 }
-nav ul li a:hover,
-nav ul li a:focus {
-  background-color: $secondary-color;
+ul {
+  list-style: none;
 }
 
-#checkbox {
+.sub-menu {
   display: none;
 }
-#checkbox:checked ~ nav ul {
-  max-height: 200px;
-  padding: 15px 0;
-  transition: all 0.5s;
-}
 
-// TABLETS
-@media (min-width: 768px) {
-  .menu-icon {
-    display: none;
+nav {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .menu {
+    display: flex;
+    height: 100%;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+    margin-left: 2em;
+    text-align: center;
+    .item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      font-size: 1em;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1em;
+      height: 100%;
+      padding: 0em 1em;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        background-color: $secondary-color;
+      }
+      input[type='checkbox' i] {
+        position: absolute;
+        left: -9999999px;
+      }
+      #toggle:checked ~ .sub-menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 1em;
+        line-height: 1.8em;
+        background-color: $secondary-color;
+        color: $primary-color;
+
+        .sub-item {
+          border-bottom: 1px solid $primary-color;
+        }
+      }
+    }
   }
-  nav {
-    position: relative;
-    top: -10px;
-    background-color: transparent;
+  #search-bar {
+    // float: right;
+    padding: 6px;
+    border: 1px solid grey;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
   }
-  nav ul {
-    max-height: 70px;
-    padding: 15px 0;
-    text-align: right;
-  }
-  nav ul li {
-    display: inline-flex;
-    padding-left: 20px;
+  .logo {
+    padding-left: 1em;
+    height: 55px;
   }
 }

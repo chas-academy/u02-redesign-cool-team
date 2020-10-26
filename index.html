@@ -12,31 +12,31 @@
 </head>
 <body>
   <!-- Header -->
-  <header class="menu">
-   <div class="menu-wrap">
-       <img src="/img/logo-myh.svg" class="logo-img" alt="Logo">
-       <input type="checkbox" id="checkbox">
-       <nav>
-           <ul>
-               <li><a href="#">Hem</a></li>
-               <li><a href="#">Organisation</a></li>
-               <li><a href="#">Student</a></li>
-               <li><a href="#">Mer <i class="fa fa-chevron-down"></i></a></li>
-               <!-- <li><input type="text"></li> -->
-           </ul>
-       </nav>
-       <label for="checkbox">
-          <i class="fa fa-bars menu-icon"></i>
-        </label>
-   </div>
+  <header>
+    <nav>
+      <img class="logo" src="/img/logo-myh.svg" alt="MYH.se">
+      <ul class="menu">
+        <li class="item"><a href="#">Hem</a></li>
+        <li class="item"><a href="#">Organisation</a></li>
+        <li class="item"><a href="#">Student</a></li>
+        <li class="item"><label for="toggle">Mer <i class="fas fa-chevron-down"></i></label><input type="checkbox" id="toggle"> 
+          <ul class="sub-menu">
+            <li class="sub-item"><a href="#">Om oss</a></li>
+            <li class="sub-item"><a href="#">Lagar, regeler, tillsyn</a></li>
+            <li class="sub-item"><a href="#">Statistik</a></li>
+            <li class="sub-item"><a href="#">Publikationer</a></li>
+            <li class="sub-item"><a href="#">Kontakt</a></li>
+          </ul>
+        </li>
+        <li><label for="search-bar"><i class="fas fa-search"></i> </label><input id="search-bar" type="text"></li>
+      </ul>
+    </nav>
   </header>
-  
-
   <!-- Main -->
   <main>
     <!-- Hero Section -->
     <section class="hero">
-      Your code for slider goes here!
+      
     </section>
 
     <!-- Services Section -->
