@@ -1,6 +1,9 @@
 // Base styles for website
 @import 'base';
 
+// Styling for slideshow
+@import "slideshow";
+
 //Topnav Section
 @import 'topnav';
 
@@ -11,4 +14,4 @@
 @import 'button';
 
 // Footer style
-@import 'footer';
+@import "footer";
