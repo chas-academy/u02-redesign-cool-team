@@ -135,6 +135,7 @@ body {
   background-color: #FBEA26;
   color: #191E27;
   text-align: left;
+  z-index: 99;
 }
 
 .main-nav .menu .item #toggle:checked ~ .sub-menu .sub-item {
