@@ -1,24 +1,28 @@
-a {
-  color: $primary-color;
-  text-decoration: none;
-}
-ul {
-  list-style: none;
-}
-
-.sub-menu {
-  display: none;
-}
-
-nav {
+.main-nav {
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  // background-color: #ccc;
+  .sub-menu {
+    display: none;
+  }
+  a {
+    color: $primary-color;
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+  }
+  .logo,
+  .menu {
+    padding: 0 1em;
+    height: 55px;
+  }
   .menu {
     display: flex;
     height: 100%;
-    flex: 1;
+    // flex: 1;
     align-items: center;
     justify-content: space-between;
     padding: 0 1em;
@@ -51,6 +55,7 @@ nav {
         line-height: 1.8em;
         background-color: $secondary-color;
         color: $primary-color;
+        text-align: left;
 
         .sub-item {
           border-bottom: 1px solid $primary-color;
@@ -66,8 +71,4 @@ nav {
     margin-right: 16px;
     font-size: 17px;
   }
-  .logo {
-    padding-left: 1em;
-    height: 55px;
-  }
-}
+} //end .main-nav

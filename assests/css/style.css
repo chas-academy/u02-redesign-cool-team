@@ -16,20 +16,38 @@ body {
   margin: 0 auto;
 }
 
-a {
-  color: #191E27;
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding: 1rem 0 1rem 1rem;
+  margin: 0rem;
+  background-color: #191E27;
+  color: #dddddd;
+}
+
+.topnav li {
+  float: right;
+}
+
+.topnav li a {
+  display: block;
+  padding: 8px;
+  text-align: center;
   text-decoration: none;
+  color: #191E27;
+  background-color: #FBEA26;
+  margin-right: 1rem;
 }
 
-ul {
-  list-style: none;
+.topnav li a:hover {
+  background-color: #191E27;
+  color: #FBEA26;
 }
 
-.sub-menu {
-  display: none;
-}
-
-nav {
+/* this is the right bag*/
+.main-nav {
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,14 +60,30 @@ nav {
           justify-content: space-between;
 }
 
-nav .menu {
+.main-nav .sub-menu {
+  display: none;
+}
+
+.main-nav a {
+  color: #191E27;
+  text-decoration: none;
+}
+
+.main-nav ul {
+  list-style: none;
+}
+
+.main-nav .logo,
+.main-nav .menu {
+  padding: 0 1em;
+  height: 55px;
+}
+
+.main-nav .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -61,7 +95,7 @@ nav .menu {
   text-align: center;
 }
 
-nav .menu .item {
+.main-nav .menu .item {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,16 +113,16 @@ nav .menu .item {
   transition: all 0.2s ease-in-out;
 }
 
-nav .menu .item:hover {
+.main-nav .menu .item:hover {
   background-color: #FBEA26;
 }
 
-nav .menu .item input[type='checkbox' i] {
+.main-nav .menu .item input[type='checkbox' i] {
   position: absolute;
   left: -9999999px;
 }
 
-nav .menu .item #toggle:checked ~ .sub-menu {
+.main-nav .menu .item #toggle:checked ~ .sub-menu {
   display: block;
   position: absolute;
   top: 100%;
@@ -97,13 +131,14 @@ nav .menu .item #toggle:checked ~ .sub-menu {
   line-height: 1.8em;
   background-color: #FBEA26;
   color: #191E27;
+  text-align: left;
 }
 
-nav .menu .item #toggle:checked ~ .sub-menu .sub-item {
+.main-nav .menu .item #toggle:checked ~ .sub-menu .sub-item {
   border-bottom: 1px solid #191E27;
 }
 
-nav #search-bar {
+.main-nav #search-bar {
   padding: 6px;
   border: 1px solid grey;
   margin-top: 8px;
@@ -111,45 +146,6 @@ nav #search-bar {
   font-size: 17px;
 }
 
-nav .logo {
-  padding-left: 1em;
-  height: 55px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.topnav {
-  padding: 1rem 0 1rem 1rem;
-  margin: 0rem;
-  background-color: #191E27;
-  color: #dddddd;
-}
-
-li {
-  float: right;
-}
-
-li a {
-  display: block;
-  padding: 8px;
-  text-align: center;
-  text-decoration: none;
-  color: #191E27;
-  background-color: #FBEA26;
-  margin-right: 1rem;
-}
-
-li a:hover {
-  background-color: #191E27;
-  color: #FBEA26;
-}
-
-/* this is the right bag*/
 .btn-myh {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
