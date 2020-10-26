@@ -16,6 +16,7 @@ body {
   margin: 0 auto;
 }
 
+/* TOPNAV starts here */
 .topnav {
   list-style-type: none;
   margin: 0;
@@ -47,6 +48,8 @@ body {
 }
 
 /* this is the right bag*/
+/* TOPNAV ends here */
+/* NAVBAR starts here */
 .main-nav {
   height: 60px;
   display: -webkit-box;
@@ -146,6 +149,7 @@ body {
   font-size: 17px;
 }
 
+/* NAVBAR ends here */
 .btn-myh {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
