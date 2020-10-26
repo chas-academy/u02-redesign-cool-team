@@ -57,7 +57,7 @@
         background-color: $secondary-color;
         color: $primary-color;
         text-align: left;
-
+        z-index: 99;
         .sub-item {
           border-bottom: 1px solid $primary-color;
         }
