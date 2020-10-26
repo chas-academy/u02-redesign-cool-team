@@ -16,7 +16,6 @@ body {
   margin: 0 auto;
 }
 
-
 .hero {
   width: 100%;
   height: 628px;
@@ -163,25 +162,22 @@ body {
 }
 
 
-ul {
+.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-}
-
-.topnav {
   padding: 1rem 0 1rem 1rem;
   margin: 0rem;
   background-color: #191E27;
   color: #dddddd;
 }
 
-li {
+.topnav li {
   float: right;
 }
 
-li a {
+.topnav li a {
   display: block;
   padding: 8px;
   text-align: center;
@@ -191,12 +187,114 @@ li a {
   margin-right: 1rem;
 }
 
-li a:hover {
+.topnav li a:hover {
   background-color: #191E27;
   color: #FBEA26;
 }
 
 /* this is the right bag*/
+/* TOPNAV ends here */
+/* NAVBAR starts here */
+.main-nav {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-nav .sub-menu {
+  display: none;
+}
+
+.main-nav a {
+  color: #191E27;
+  text-decoration: none;
+}
+
+.main-nav ul {
+  list-style: none;
+}
+
+.main-nav .logo,
+.main-nav .menu {
+  padding: 0 1em;
+  height: 55px;
+}
+
+.main-nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1em;
+  margin-left: 2em;
+  text-align: center;
+}
+
+.main-nav .menu .item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1em;
+  height: 100%;
+  padding: 0em 1em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.main-nav .menu .item:hover {
+  background-color: #FBEA26;
+}
+
+.main-nav .menu .item input[type='checkbox' i] {
+  position: absolute;
+  left: -9999999px;
+}
+
+.main-nav .menu .item #toggle:checked ~ .sub-menu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 1em;
+  line-height: 1.8em;
+  background-color: #FBEA26;
+  color: #191E27;
+  text-align: left;
+}
+
+.main-nav .menu .item #toggle:checked ~ .sub-menu .sub-item {
+  border-bottom: 1px solid #191E27;
+}
+
+.main-nav #search-bar {
+  padding: 6px;
+  border: 1px solid grey;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* NAVBAR ends here */
 
 .btn-myh {
   -webkit-box-sizing: border-box;
