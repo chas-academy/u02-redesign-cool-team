@@ -77,15 +77,15 @@ body {
 }
 
 .slide-image-1 {
-  background-image: url("../i1.jpg");
+  background-image: url("../images/slideshow/i1.jpg");
 }
 
 .slide-image-2 {
-  background-image: url("../i2.jpg");
+  background-image: url("../images/slideshow/i2.jpg");
 }
 
 .slide-image-3 {
-  background-image: url("../i3.jpg");
+  background-image: url("../images/slideshow/i3.jpg");
 }
 
 .slide-text {
@@ -131,12 +131,12 @@ body {
 
 .slide-arrow-left {
   left: 0;
-  background-image: url("../left-arrow.svg");
+  background-image: url("../images/slideshow/left-arrow.svg");
 }
 
 .slide-arrow-right {
   right: 0;
-  background-image: url("../right-arrow.svg");
+  background-image: url("../images/slideshow/right-arrow.svg");
 }
 
 @-webkit-keyframes show-slide {
@@ -309,7 +309,7 @@ body {
 }
 
 .services #services-main {
-  background-color: #fbea26;
+  background-color: #FBEA26;
   height: 70vh;
   -ms-grid-columns: 3fr 2fr;
       grid-template-columns: 3fr 2fr;
@@ -317,13 +317,7 @@ body {
       grid-template-rows: repeat(7, 1fr);
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "item-1 item-8"
- "item-2 item-8"
- "item-3 item-8"
- "item-4 item-8"
- "item-5 item-8"
- "item-6 item-8"
- "item-7 item-8";
+      grid-template-areas: "item-1 item-8" "item-2 item-8" "item-3 item-8" "item-4 item-8" "item-5 item-8" "item-6 item-8" "item-7 item-8";
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: services-main;
@@ -346,7 +340,7 @@ body {
 }
 
 .services #services-main p {
-  color: #191e27;
+  color: #191E27;
 }
 
 .services #services-main .item-7 {
@@ -354,7 +348,7 @@ body {
 }
 
 .services #services-main .item-8 {
-  background-color: #191e27;
+  background-color: #191E27;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -437,12 +431,7 @@ body {
       grid-template-rows: 1fr 0.7fr repeat(3, 1fr) 0.5fr;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "list-1 list-1"
- "list-2 list-2"
- "list-3 list-4"
- "list-5 list-6"
- "list-7 list-8"
- "list-9 list-9";
+      grid-template-areas: "list-1 list-1" "list-2 list-2" "list-3 list-4" "list-5 list-6" "list-7 list-8" "list-9 list-9";
   position: relative;
   border: solid 2.5px;
   -ms-grid-row: 1;
@@ -472,7 +461,7 @@ body {
 }
 
 .services #calender-main .list-1 {
-  background-color: #fbea26;
+  background-color: #FBEA26;
   border-bottom: solid 2.5px;
   text-transform: uppercase;
   font-size: 20px;

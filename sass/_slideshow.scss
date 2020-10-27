@@ -46,13 +46,13 @@
   filter: brightness(40%);
 
   &-1 {
-    background-image: url("../i1.jpg");
+    background-image: url("../images/slideshow/i1.jpg");
   }
   &-2 {
-    background-image: url("../i2.jpg");
+    background-image: url("../images/slideshow/i2.jpg");
   }
   &-3 {
-    background-image: url("../i3.jpg");
+    background-image: url("../images/slideshow/i3.jpg");
   }
 }
 
@@ -96,11 +96,11 @@
 
 .slide-arrow-left {
   left: 0;
-  background-image: url("../left-arrow.svg");
+  background-image: url("../images/slideshow/left-arrow.svg");
 }
 .slide-arrow-right {
   right: 0;
-  background-image: url("../right-arrow.svg");
+  background-image: url("../images/slideshow/right-arrow.svg");
 }
 
 @keyframes show-slide {
