@@ -16,13 +16,6 @@ body {
   margin: 0 auto;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .services {
   -ms-grid-columns: 0.1fr 2fr 5px 1fr 0.1fr;
       grid-template-columns: 0.1fr 2fr 5px 1fr 0.1fr;
@@ -35,19 +28,7 @@ body {
   margin: 20px;
 }
 
-#services-main {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: services-main;
-}
-
-#calender-main {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-  grid-area: calender-main;
-}
-
-#services-main {
+.services #services-main {
   background-color: #FBEA26;
   height: 70vh;
   -ms-grid-columns: 3fr 2fr;
@@ -57,9 +38,12 @@ body {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "item-1 item-8" "item-2 item-8" "item-3 item-8" "item-4 item-8" "item-5 item-8" "item-6 item-8" "item-7 item-8";
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: services-main;
 }
 
-.item {
+.services #services-main .item {
   border-bottom: solid 2px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,20 +54,20 @@ body {
   margin-left: 20px;
 }
 
-.item-1 {
+.services #services-main .item-1 {
   text-transform: uppercase;
   font-size: 30px;
 }
 
-p {
+.services #services-main p {
   color: #191E27;
 }
 
-.item-7 {
+.services #services-main .item-7 {
   border: transparent;
 }
 
-.item-8 {
+.services #services-main .item-8 {
   background-color: #191E27;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,69 +81,69 @@ p {
   margin: 5px;
 }
 
-.item-8 > p {
+.services #services-main .item-8 > p {
   color: white;
   margin: 10px;
 }
 
-#left {
+.services #services-main #left {
   font-size: 20px;
 }
 
-#left > p:hover {
+.services #services-main #left > p:hover {
   cursor: pointer;
 }
 
-.item-1 {
+.services #services-main .item-1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: item-1;
 }
 
-.item-2 {
+.services #services-main .item-2 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: item-2;
 }
 
-.item-3 {
+.services #services-main .item-3 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: item-3;
 }
 
-.item-4 {
+.services #services-main .item-4 {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: item-4;
 }
 
-.item-5 {
+.services #services-main .item-5 {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: item-5;
 }
 
-.item-6 {
+.services #services-main .item-6 {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: item-6;
 }
 
-.item-7 {
+.services #services-main .item-7 {
   -ms-grid-row: 7;
   -ms-grid-column: 1;
   grid-area: item-7;
 }
 
-.item-8 {
+.services #services-main .item-8 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 7;
   -ms-grid-column: 2;
   grid-area: item-8;
 }
 
-#calender-main {
+.services #calender-main {
   height: 70vh;
   -ms-grid-columns: 2fr 4fr;
       grid-template-columns: 2fr 4fr;
@@ -170,9 +154,12 @@ p {
       grid-template-areas: "list-1 list-1" "list-2 list-2" "list-3 list-4" "list-5 list-6" "list-7 list-8" "list-9 list-9";
   position: relative;
   border: solid 2.5px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: calender-main;
 }
 
-.list {
+.services #calender-main .list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,93 +168,93 @@ p {
           align-items: center;
 }
 
-.text {
+.services #calender-main .text {
   margin-left: 15px;
 }
 
-#grey {
+.services #calender-main #grey {
   background-color: lightgrey;
 }
 
-#date {
+.services #calender-main #date {
   font-size: 50px;
 }
 
-.list-1 {
+.services #calender-main .list-1 {
   background-color: #FBEA26;
   border-bottom: solid 2.5px;
   text-transform: uppercase;
   font-size: 20px;
 }
 
-.list-2 {
+.services #calender-main .list-2 {
   font-size: 17px;
 }
 
-.list-9 {
+.services #calender-main .list-9 {
   border-top: solid 2.5px;
 }
 
-#last {
+.services #calender-main #last {
   margin-left: 250px;
   text-decoration: underline;
 }
 
-#last:hover {
+.services #calender-main #last:hover {
   cursor: pointer;
 }
 
-.list-1 {
+.services #calender-main .list-1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: list-1;
 }
 
-.list-2 {
+.services #calender-main .list-2 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: list-2;
 }
 
-.list-3 {
+.services #calender-main .list-3 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: list-3;
 }
 
-.list-4 {
+.services #calender-main .list-4 {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: list-4;
 }
 
-.list-5 {
+.services #calender-main .list-5 {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: list-5;
 }
 
-.list-6 {
+.services #calender-main .list-6 {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: list-6;
 }
 
-.list-7 {
+.services #calender-main .list-7 {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: list-7;
 }
 
-.list-8 {
+.services #calender-main .list-8 {
   -ms-grid-row: 5;
   -ms-grid-column: 2;
   grid-area: list-8;
 }
 
-.list-9 {
+.services #calender-main .list-9 {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
