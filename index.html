@@ -7,6 +7,9 @@
 
   <!-- Style -->
   <link rel="stylesheet" href="./assests/css/style.css">
+
+  <!-- Javascript -->
+  <script src="script.js" defer></script>
 </head>
 <body>
   <!-- Header -->
@@ -28,22 +31,22 @@
         <div class="item item-1">
           <h2>Verksamheter</h2>
         </div> 
-        <div class="item item-2">
+        <div data-tab-target="#1" id="left" class="item item-2">
           <p>Yrkeshögskolan</p>
         </div>
-        <div class="item item-3">
+        <div data-tab-target="#2" id="left" class="item item-3">
           <p>Konst- och kulturutbildningar</p>
         </div>
-        <div class="item item-4">
+        <div data-tab-target="#3" id="left" class="item item-4">
           <p>Tolkutbildningar</p>
         </div>
-        <div class="item item-5">
+        <div data-tab-target="#4" id="left" class="item item-5">
           <p>Utbildningar med endast tillsyn</p>
         </div>
-        <div class="item item-6">
+        <div data-tab-target="#5" id="left" class="item item-6">
           <p>SeQF</p>
         </div>
-        <div class="item item-7">
+        <div data-tab-target="#6" id="left" class="item item-7">
           <p>Validering</p>
         </div>
         <div class="item-8">
@@ -54,31 +57,31 @@
       <!-- Calender -->
       <nav id="calender-main">
         <div class="list list-1">
-          <h2>Kalender</h2>
+          <h2 class="text">Kalender</h2>
         </div>
-        <div class="list list-2">
-          <h3>Oktober</h3>
+        <div id="grey" class="list list-2">
+          <h3 class="text">Oktober</h3>
         </div>
         <div class="list list-3">
-          <h1>15</h1>
+          <h1 id="date" class="text">15</h1>
         </div>
         <div class="list list-4">
           <p>Ansökan öppnar om att bedriva teckenspråks- och dövblindtolkutbildning samt skrivtolkutbildning<p>
         </div>
-        <div class="list list-5">
-          <h1>15</h1>
+        <div id="grey" class="list list-5">
+          <h1 id="date" class="text">15</h1>
         </div>
-        <div class="list list-6">
+        <div id="grey" class="list list-6">
           <p>Webbinarium: Studerandestöd</p>
         </div>
         <div class="list list-7">
-          <h1>19</h1>
+          <h1 id="date" class="text">19</h1>
         </div>
         <div class="list list-8">
           <p>Ansökan öppnar om att bedriva yrkeshögskoleutbildningar</p>
         </div>
         <div class="list list-9">
-          <h4>Hela Kalendern</h4>
+          <h4 id="last" class="text">Hela Kalendern</h4>
         </div>
       </nav>
     </section>
