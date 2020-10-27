@@ -1,0 +1,76 @@
+/* NAVBAR starts here */
+.main-nav {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // background-color: #ccc;
+  .sub-menu {
+    display: none;
+  }
+  a {
+    color: $primary-color;
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+  }
+  .logo,
+  .menu {
+    padding: 0 1em;
+    height: 55px;
+  }
+  .menu {
+    display: flex;
+    height: 100%;
+    // flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+    margin-left: 2em;
+    text-align: center;
+    .item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      font-size: 1em;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1em;
+      height: 100%;
+      padding: 0em 1em;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        background-color: $secondary-color;
+      }
+      input[type='checkbox' i] {
+        position: absolute;
+        left: -9999999px;
+      }
+      #toggle:checked ~ .sub-menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 1em;
+        line-height: 1.8em;
+        background-color: $secondary-color;
+        color: $primary-color;
+        text-align: left;
+        z-index: 99;
+        .sub-item {
+          border-bottom: 1px solid $primary-color;
+        }
+      }
+    }
+  }
+  #search-bar {
+    // float: right;
+    padding: 6px;
+    border: 1px solid grey;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+} //end .main-nav
+/* NAVBAR ends here */
