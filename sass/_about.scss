@@ -1,0 +1,118 @@
+// $btn-primary: #0b2415;
+$btn-primary: #174b2c;
+
+body {
+  background-color: #ccc;
+}
+p {
+  margin-top: 1em;
+}
+.breadcrumbs {
+  padding: 1em;
+}
+
+.about-container {
+  //border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+  // background-color: white;
+  .landing-page-heading {
+    padding-left: 0.8rem;
+  }
+
+  .main-section {
+    //border: 1px solid black;
+    flex: 2;
+    margin-right: 1em;
+    padding-left: 1em;
+    background-color: white;
+    article {
+      //border: 1px solid black;
+      margin: 1em;
+      background-color: white;
+      .preamble {
+        margin: 1em 3em 1em 0;
+      }
+      p {
+        margin: 1em 4em 1em 0;
+      }
+      .landing-page-img {
+        width: 100%;
+      }
+    }
+  }
+
+  aside {
+    // border: 1px solid black;
+    flex: 1;
+    padding-left: 1em;
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
+    background-color: white;
+    padding: 1em;
+    // padding-top: 4.6em;
+
+    .side-menu {
+      background-color: $primary-color;
+
+      ul {
+        list-style: none;
+        padding: 1em;
+        text-decoration: none;
+        line-height: 1.5em;
+        a {
+          color: white;
+        }
+      }
+    }
+    .btn-section {
+      margin: 1em 0 0 0;
+
+      .btn {
+        height: 5rem;
+        width: 100%;
+        font-size: medium;
+        font-weight: bold;
+        font-size: 1em;
+        text-align: center;
+        padding: 2rem;
+        border: none;
+        border-radius: 1rem;
+        text-decoration: none;
+        display: inline-block;
+        min-width: 350px;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+      }
+
+      .gd {
+        background-color: $btn-primary;
+        color: white;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background-color: darken($color: $btn-primary, $amount: 10);
+        }
+      }
+      .hitta {
+        background-color: $secondary-color;
+        color: $primary-color;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background-color: darken($color: $secondary-color, $amount: 15);
+        }
+      }
+    }
+
+    .competitions {
+      background-color: #e7e7e7;
+      padding: 1em;
+    }
+  }
+}
+
+.landing-page-heading {
+  font-size: 3em;
+}
