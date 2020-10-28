@@ -1,57 +1,61 @@
 // color
 $anmal: rgb(4, 4, 31);
 $hitta: rgb(11, 36, 21);
-$ledare:rgb(27, 29, 92);
-$myh:rgb(238, 232, 232);
+$ledare: rgb(27, 29, 92);
+$myh: rgb(238, 232, 232);
+$gd: #1dbef2;
 
 //mixin for button type
-@mixin btn-type ($type) {
-    background-color: $type;
-    color:$white;
-    &:hover{
-        background-color:$secondary-color;
-        color:$primary-color;
-    }
-    &:active{
-        position: relative;
-        top:8px;
-    }
+@mixin btn-type($type) {
+  background-color: $type;
+  color: $white;
+  &:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+  &:active {
+    position: relative;
+    top: 8px;
+  }
 }
 
-
 //button section
-.btn-myh{
-    box-sizing: border-box;
-    padding: 4rem;
-    background-color:$myh;
+.btn-myh {
+  box-sizing: border-box;
+  padding: 4rem;
+  background-color: $myh;
 }
 
 //button
-.btn-anmal,.btn-hitta,.btn-ledare {
-    height:5rem ;
-    width: 3rem ;
-    font-size: medium;
-    font-weight: bold;
-    font-size: 1em;
-    text-align: center;
-    padding:2rem;
-    border: none;
-    border-radius: 1rem;
-    text-decoration: none;
-    display: inline-block;
-    min-width:350px;
+.btn-anmal,
+.btn-hitta,
+.btn-ledare,
+.btn-gd {
+  height: 5rem;
+  width: 3rem;
+  font-size: medium;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  padding: 2rem;
+  border: none;
+  border-radius: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 350px;
 }
 
-.btn-anmal{
-    @include btn-type($anmal)
+.btn-anmal {
+  @include btn-type($anmal);
 }
 
 .btn-hitta {
-    @include btn-type($hitta)
+  @include btn-type($hitta);
 }
-.btn-ledare{
-    @include btn-type($ledare)
+.btn-ledare {
+  @include btn-type($ledare);
 }
 
-
-
+.btn-gd {
+  @include btn-type($gd);
+}

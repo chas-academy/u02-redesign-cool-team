@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // background-color: #ccc;
+  background-color: #f5f5f5;
   .sub-menu {
     display: none;
   }
@@ -52,6 +52,7 @@
         position: absolute;
         top: 100%;
         left: 0;
+        width: 250px;
         padding: 1em;
         line-height: 1.8em;
         background-color: $secondary-color;
