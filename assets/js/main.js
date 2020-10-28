@@ -39,4 +39,37 @@ rightArrow.onclick = function (e) {
 /* ********************************** */
 // Services Section JS
 /* ********************************** */
-const item2 = document.querySelector(".item-2");
+function changeItemInfo(item) {
+  const itemContent = document.querySelector(".item-content-info");
+
+  switch (item) {
+    case "yh":
+      itemContent.textContent =
+        "Utbildningar som svarar mot arbetslivets behov av kvalificerad yrkeskompetens och som drivs i nära samverkan med företag och andra arbetsgivare.";
+      break;
+    case "kk":
+      itemContent.textContent =
+        "Utbildningar som är högskoleförberedande, yrkesinriktade eller inom kulturarvsområdet och drivs av privata utbildningsanordnare.";
+      break;
+    case "tu":
+      itemContent.textContent =
+        "Utbildningar till kontakttolk, teckenspråks- och dövblindtolk samt skrivtolk som drivs av folkhögskolor och studieförbund.";
+      break;
+    case "umt":
+      itemContent.textContent =
+        "Eftergymnasiala utbildningar inom olika områden som bedrivs av fristående skolor. Utbildningarnas statliga stöd omfattas endast av tillsyn.";
+      break;
+    case "seqf":
+      itemContent.textContent =
+        "Sveriges referensram för kvalifikationer (SeQF) ska synliggöra allt lärande för att öka matchningen på arbetsmarknaden.";
+      break;
+    case "vd":
+      itemContent.textContent =
+        "Validering innebär att en persons kunskaper och kompetenser kartläggs och bedöms på ett strukturerat sätt, för studier eller arbete, oavsett hur, var eller när de förvärvats.";
+      break;
+
+    default:
+      itemContent.textContent =
+        "Myndigheten för yrkeshögskolan har i uppdrag att ansvara för frågor som rör utbildningar inom yrkeshögskolan. Dessutom ansvarar vi för ytterligare frågor inom utbildningsområdet.";
+  }
+}

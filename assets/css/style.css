@@ -337,8 +337,8 @@ body {
 }
 
 .services #services-main .item:hover {
-  background-color: #191E27;
-  color: #FBEA26;
+  background-color: rgba(25, 30, 39, 0.2);
+  padding-left: 1.5rem;
 }
 
 .services #services-main .item-1 {
