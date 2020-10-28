@@ -1,9 +1,6 @@
 // $btn-primary: #0b2415;
 $btn-primary: #174b2c;
 
-body {
-  background-color: #ccc;
-}
 p {
   margin-top: 1em;
 }
@@ -16,7 +13,7 @@ p {
   display: flex;
   justify-content: space-between;
   padding: 1em 0;
-  // background-color: white;
+  background-color: #f5f5f5;
   .landing-page-heading {
     padding-left: 0.8rem;
   }
@@ -57,7 +54,21 @@ p {
 
     .side-menu {
       background-color: $primary-color;
-
+      .title {
+        color: white;
+        font-weight: bold;
+      }
+      .description {
+        color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s;
+      }
+      /* för description bredvid active */
+      .active + .description {
+        max-height: 200px;
+        transition: max-height 0.2s;
+      }
       ul {
         list-style: none;
         padding: 1em;
@@ -116,3 +127,19 @@ p {
 .landing-page-heading {
   font-size: 3em;
 }
+// .side-menu {
+//   .title {
+//     color: white;
+//   }
+//   .description {
+//     color: white;
+//     max-height: 0;
+//     overflow: hidden;
+//     transition: max-height 0.3s;
+//   }
+//   /* för description bredvid active */
+//   .active + .description {
+//     max-height: 200px;
+//     transition: max-height 0.2s;
+//   }
+// }
