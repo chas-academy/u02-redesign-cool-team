@@ -21,21 +21,29 @@
       "item-6 item-8"
       "item-7 item-8";
     grid-area: services-main;
+    padding: 1rem;
+
+    @mixin item-hover {
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $secondary-color;
+      }
+    }
 
     .item {
       border-bottom: solid 2px;
       display: flex;
       align-items: center;
-      margin-left: 20px;
+      margin-right: 1rem;
+      padding: 0 0.4rem;
+      @include item-hover();
     }
 
     .item-1 {
       text-transform: uppercase;
       font-size: 30px;
-    }
-
-    p {
-      color: #191e27;
     }
 
     .item-7 {

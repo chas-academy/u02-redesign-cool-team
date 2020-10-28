@@ -319,6 +319,7 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: services-main;
+  padding: 1rem;
 }
 
 .services #services-main .item {
@@ -329,16 +330,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 20px;
+  margin-right: 1rem;
+  padding: 0 0.4rem;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.services #services-main .item:hover {
+  background-color: #191E27;
+  color: #FBEA26;
 }
 
 .services #services-main .item-1 {
   text-transform: uppercase;
   font-size: 30px;
-}
-
-.services #services-main p {
-  color: #191e27;
 }
 
 .services #services-main .item-7 {
