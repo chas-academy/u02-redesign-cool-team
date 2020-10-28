@@ -944,7 +944,7 @@ footer .footer-bar .footer-right a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid #191e27;
+  border-bottom: 1px solid #8b9ab4;
   background-color: #e5e5e5;
 }
 
@@ -974,6 +974,21 @@ footer .footer-bar .footer-right a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.publications-container .page-select .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.publications-container .page-select .pagination li {
+  list-style: none;
+  padding: 1em;
+  border-left: 1px solid #8b9ab4;
 }
 
 .publications-container aside {

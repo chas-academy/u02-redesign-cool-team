@@ -42,7 +42,7 @@ $btn-primary: #174b2c;
   .publication-list {
     .pub-item {
       display: flex;
-      border-bottom: 1px solid $primary-color;
+      border-bottom: 1px solid lighten($color: $primary-color, $amount: 50);
       background-color: #e5e5e5;
 
       img {
@@ -68,6 +68,17 @@ $btn-primary: #174b2c;
   }
   .page-select {
     display: flex;
+    justify-content: flex-end;
+    .pagination {
+      display: flex;
+      // background-color: #174b2c;
+
+      li {
+        list-style: none;
+        padding: 1em;
+        border-left: 1px solid lighten($color: $primary-color, $amount: 50);
+      }
+    } //en PAGINATION
   }
   aside {
     // border: 1px solid black;
