@@ -721,3 +721,44 @@ footer .footer-bar .footer-right {
 footer .footer-bar .footer-right a {
   color: #ffffff;
 }
+
+.about-us {
+  background-color: #dad4d4;
+  padding: 1rem 2rem 2.5rem 2.5rem;
+}
+
+.div2 {
+  text-align: left;
+  background-color: #191E27;
+  padding: 1rem;
+  width: 20rem;
+  height: 21rem;
+  float: auto;
+  margin-left: 4rem;
+}
+
+li a {
+  display: block;
+  color: #ffffff;
+}
+
+li a:hover:not(.active) {
+  background-color: #FBEA26;
+  color: #191E27;
+}
+
+.float-img {
+  float: right;
+  padding-right: 4rem;
+  height: auto;
+  width: auto;
+}
+
+.div3 {
+  background-color: #ffffff;
+  float: right;
+  padding: 2rem;
+  height: auto;
+  width: auto;
+  text-align: center;
+}

@@ -1,0 +1,40 @@
+
+.about-us{
+    background-color: rgb(218, 212, 212);
+    padding: 1rem 2rem 2.5rem 2.5rem;
+}
+
+.div2 {
+    text-align: left;
+    background-color: $primary-color;
+    padding: 1rem;
+    width: 20rem;
+    height: 21rem;
+    float: auto;
+    margin-left: 4rem;
+}
+li a{
+    display: block;
+    color: $white;
+}
+li a:hover:not(.active){
+    background-color: $secondary-color;
+    color: $primary-color;
+}
+.float-img{
+    float: right;
+    padding-right: 4rem;
+    height: auto;
+    width: auto;
+}
+
+.div3{
+    background-color: $white;
+    float: right;
+    padding: 2rem;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+
