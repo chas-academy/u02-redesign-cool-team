@@ -1,211 +1,205 @@
 // Main grid
 .services {
-    grid-template-columns: 0.1fr 2fr 5px 1fr 0.1fr;
-    grid-template-rows: 1fr;
+  grid-template-columns: 5px 2fr 20px 1fr 5px;
+  grid-template-rows: 1fr;
+  display: grid;
+  grid-template-areas: ". services-main . calender-main .";
+  padding: 4rem 0;
+
+  // Services
+  #services-main {
+    background-color: #fbea26;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: repeat(7, 1fr);
     display: grid;
-    grid-template-areas: 
-    ". services-main . calender-main .";
-    grid-gap: 20px;
-    margin: 20px;
+    grid-template-areas:
+      "item-1 item-8"
+      "item-2 item-8"
+      "item-3 item-8"
+      "item-4 item-8"
+      "item-5 item-8"
+      "item-6 item-8"
+      "item-7 item-8";
+    grid-area: services-main;
+    padding: 1rem;
 
-    // Services
-    #services-main {
-        background-color: #FBEA26;
-        height: 70vh;
-        grid-template-columns: 3fr 2fr;
-        grid-template-rows: repeat(7, 1fr);
-        display: grid;
-        grid-template-areas:
-        "item-1 item-8"
-        "item-2 item-8"
-        "item-3 item-8"
-        "item-4 item-8"
-        "item-5 item-8"
-        "item-6 item-8"
-        "item-7 item-8";
-        grid-area: services-main;
+    @mixin item-hover {
+      transition: all 0.3s ease-out;
 
-        .item {
-    border-bottom: solid 2px;
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-}
-
-    .item-1 {
-        text-transform: uppercase;
-        font-size: 30px;
+      &:hover {
+        background-color: rgba($color: $primary-color, $alpha: 0.2);
+        padding-left: 1.5rem;
+      }
     }
 
-    p {
-        color: #191E27;
+    .item {
+      border-bottom: solid 2px;
+      display: flex;
+      align-items: center;
+      margin-right: 1rem;
+      padding: 0 0.4rem;
+      @include item-hover();
+    }
+
+    .item-1 {
+      text-transform: uppercase;
+      font-size: 30px;
     }
 
     .item-7 {
-        border: transparent;
+      border: transparent;
     }
 
     .item-8 {
-        background-color: #191E27;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 5px;
+      background-color: #191e27;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px;
     }
 
     .item-8 > p {
-        color: white;
-        margin: 10px;
+      color: white;
+      margin: 10px;
     }
 
     // left = text elements in the left/first column (services)
     #left {
-        font-size: 20px;
+      font-size: 20px;
     }
 
     #left > p:hover {
-        cursor: pointer;
+      cursor: pointer;
     }
 
     //"grid-area: item" (services) elements
     .item-1 {
-        grid-area: item-1;
+      grid-area: item-1;
     }
 
     .item-2 {
-        grid-area: item-2;
+      grid-area: item-2;
     }
 
     .item-3 {
-        grid-area: item-3;
+      grid-area: item-3;
     }
 
     .item-4 {
-        grid-area: item-4;
+      grid-area: item-4;
     }
 
     .item-5 {
-        grid-area: item-5;
+      grid-area: item-5;
     }
 
     .item-6 {
-        grid-area: item-6;
+      grid-area: item-6;
     }
 
     .item-7 {
-        grid-area: item-7;
+      grid-area: item-7;
     }
 
     .item-8 {
-        grid-area: item-8;
+      grid-area: item-8;
     }
-    }
+  }
 
-    // Calender
-    #calender-main {
-        height: 70vh;
-        grid-template-columns: 2fr 4fr;
-        grid-template-rows: 1fr 0.7fr repeat(3, 1fr) 0.5fr;
-        display: grid;
-        grid-template-areas:
-        "list-1 list-1"
-        "list-2 list-2"
-        "list-3 list-4"
-        "list-5 list-6"
-        "list-7 list-8"
-        "list-9 list-9";
-        position: relative;
-        border: solid 2.5px;
-        grid-area: calender-main;
+  // Calender
+  #calender-main {
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 1fr 0.7fr repeat(3, 1fr) 0.5fr;
+    display: grid;
+    grid-template-areas:
+      "list-1 list-1"
+      "list-2 list-2"
+      "list-3 list-4"
+      "list-5 list-6"
+      "list-7 list-8"
+      "list-9 list-9";
+    position: relative;
+    border: solid 2.5px;
+    grid-area: calender-main;
 
-        .list {
-        display: flex;
-        align-items: center;
+    .list {
+      display: flex;
+      align-items: center;
     }
 
     // text = text elements in the first/left column (calender)
     .text {
-        margin-left: 15px;
+      margin-left: 15px;
     }
 
     #grey {
-        background-color: lightgrey;
+      background-color: lightgrey;
     }
 
     #date {
-        font-size: 50px;
+      font-size: 50px;
     }
 
     .list-1 {
-        background-color: #FBEA26;
-        border-bottom: solid 2.5px;
-        text-transform: uppercase;
-        font-size: 20px;
+      background-color: #fbea26;
+      border-bottom: solid 2.5px;
+      text-transform: uppercase;
+      font-size: 20px;
     }
 
     .list-2 {
-        font-size: 17px;
+      font-size: 17px;
     }
 
     .list-9 {
-        border-top: solid 2.5px;
+      border-top: solid 2.5px;
     }
-
 
     // last = last element
     #last {
-        margin-left: 250px;
-        text-decoration: underline;
+      margin-left: 250px;
+      text-decoration: underline;
     }
 
     #last:hover {
-        cursor: pointer;
+      cursor: pointer;
     }
 
     //"grid-area: list" (calender) elements
-    .list-1
-    {
-        grid-area: list-1;
+    .list-1 {
+      grid-area: list-1;
     }
 
-    .list-2
-    {
-        grid-area: list-2;
+    .list-2 {
+      grid-area: list-2;
     }
 
-    .list-3
-    {
-        grid-area: list-3;
+    .list-3 {
+      grid-area: list-3;
     }
 
-    .list-4
-    {
-        grid-area: list-4;
+    .list-4 {
+      grid-area: list-4;
     }
 
-    .list-5
-    {
-        grid-area: list-5;
+    .list-5 {
+      grid-area: list-5;
     }
 
-    .list-6
-    {
-        grid-area: list-6;
+    .list-6 {
+      grid-area: list-6;
     }
 
-    .list-7
-    {
-        grid-area: list-7;
+    .list-7 {
+      grid-area: list-7;
     }
 
-    .list-8
-    {
-        grid-area: list-8;
+    .list-8 {
+      grid-area: list-8;
     }
 
-    .list-9
-    {
-        grid-area: list-9;
+    .list-9 {
+      grid-area: list-9;
     }
-    }
+  }
 }
