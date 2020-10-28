@@ -722,17 +722,12 @@ footer .footer-bar .footer-right a {
   color: #ffffff;
 }
 
-.about-us {
-  background-color: #dad4d4;
-  padding: 1rem 2rem 2.5rem 2.5rem;
-}
-
 .div2 {
   text-align: left;
   background-color: #191E27;
   padding: 1rem;
   width: 20rem;
-  height: 21rem;
+  height: 20rem;
   float: auto;
   margin-left: 4rem;
 }
@@ -760,5 +755,18 @@ li a:hover:not(.active) {
   padding: 2rem;
   height: auto;
   width: auto;
-  text-align: center;
+  text-align: left;
+}
+
+@media all and (max-width: 480px) {
+  .float-img {
+    width: 100%;
+    margin: 5px auto;
+    float: none;
+  }
+  .div2 {
+    width: 100%;
+    margin: 5px auto;
+    float: none;
+  }
 }
