@@ -10,6 +10,20 @@ $white: #ffffff;
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 // Body styling
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
