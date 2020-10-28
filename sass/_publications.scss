@@ -1,0 +1,97 @@
+/* PUBLICATIONS starts here */
+// $btn-primary: #0b2415;
+$btn-primary: #174b2c;
+
+.breadcrumbs {
+  padding: 1em;
+}
+
+.publications-container {
+  //border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+  background-color: #f5f5f5;
+
+  .landing-page-heading {
+    padding-left: 0.8rem;
+  }
+
+  .main-section {
+    //border: 1px solid black;
+    flex: 2;
+    margin-right: 1em;
+    padding-left: 1em;
+    background-color: white;
+    article {
+      margin: 1em;
+      background-color: white;
+
+      .preamble {
+        margin: 1em 3em 1em 0;
+      }
+      p {
+        margin: 1em 4em 1em 0;
+      }
+      .landing-page-img {
+        width: 100%;
+      }
+    }
+  } //end MAIN-SECTION
+
+  .publication-list {
+    .pub-item {
+      display: flex;
+      border-bottom: 1px solid $primary-color;
+      background-color: #e5e5e5;
+
+      img {
+        flex: 1;
+        padding: 1em;
+      }
+
+      .pub-item-content {
+        flex: 3;
+        padding: 1em;
+
+        .preview {
+          .release-date {
+            margin-right: 1em;
+            text-transform: uppercase;
+            font-size: 0.8 em;
+            font-weight: bold;
+            color: lighten($color: $primary-color, $amount: 50);
+          }
+        }
+      }
+    }
+  }
+  .page-select {
+    display: flex;
+  }
+  aside {
+    // border: 1px solid black;
+    flex: 1;
+    padding-left: 1em;
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1em;
+
+    ul {
+      list-style: none;
+      padding: 1em;
+      text-decoration: none;
+      line-height: 1.5em;
+      a {
+        color: white;
+      }
+    }
+  }
+
+  .landing-page-heading {
+    font-size: 3em;
+  }
+}
+/* PUBLICATIONS ends here */
