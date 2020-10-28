@@ -1,20 +1,23 @@
 // Base styles for website
-@import 'base';
+@import "base";
 
 // Styling for slideshow
 @import "slideshow";
 
 //Topnav Section
-@import 'topnav';
+@import "topnav";
 
 // Navbar Section
-@import 'navbar';
+@import "navbar";
 
 //Services Section
 @import "services";
 
 // Button Section
-@import 'button';
+@import "button";
 
 // Footer style
 @import "footer";
+
+// Kontakt landing page
+@import "kontakt";
