@@ -21,7 +21,7 @@ We use SASS in this project and use Live Sass Compiler by Ritwick Dey to compile
     {
       "format": "expanded",
       "extensionName": ".css",
-      "savePath": "/assests/css"
+      "savePath": "/assets/css"
     }
   ],
 ```

@@ -1,6 +1,10 @@
 footer {
   .footer-main {
-    background: linear-gradient(90deg, $primary-color 60%, $secondary-color 40%);
+    background: linear-gradient(
+      90deg,
+      $primary-color 60%,
+      $secondary-color 40%
+    );
   }
 
   .container {
@@ -71,15 +75,25 @@ footer {
       }
     }
 
+    .external-websites {
+      i {
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
+      }
+    }
+
     .internal-links {
       margin-top: 3rem;
     }
-
   }
 
   // Footer bar
   .footer-bar {
-    background: linear-gradient(90deg, $secondary-color 60%, $primary-color 40%);
+    background: linear-gradient(
+      90deg,
+      $secondary-color 60%,
+      $primary-color 40%
+    );
 
     .footer-left {
       background-color: $secondary-color;
@@ -97,6 +111,15 @@ footer {
 
       a {
         color: $white;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .youtube {
+      i {
+        font-size: 1.5rem;
+        margin-left: 0.5rem;
       }
     }
   }
