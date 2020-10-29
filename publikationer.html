@@ -100,20 +100,61 @@
                   <li><a href="#">3</a></li>
                   <li><a href="#">4</a></li>
                   <li><a href="#">5</a></li>
-                  <li><a href="#">...</a></li>
+                  <li><a href="#"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a></li>
                 </ol>
               </section>
             </section><!--end MAIN-SECTION-->
             <aside>
               <h3>Filtrera publikationer</h3>
-              <input type="text" placeholder="Sök efter publikation...">
+              <input type="text" class="publication-search" placeholder="Sök efter publikation...">
               <p>Resultat per sida <select name="per-page" id="per-page">
               <option value="20">20</option>
               <option value="50">50</option>
               <option value="100">100</option>
               </select></p>
             
-              <section class="filter-section"></section>
+              <section class="filters-section">
+                <a href="#" class="btn-reset">Återställ filter</a>
+                <section class="filter-type">
+                  <h5 class="filter-heading">Publikationstyp</h5>
+                  <ul class="filter-options">
+                    <li><a href="#" class="reset">Alla publikationstyper</a></li>
+                    <li><a href="#">Rapporter</a><span>93</span></li>
+                    <li><a href="#">Återrapportering av regeringsuppdrag</a>64</li>
+                    <li><a href="#">Informationsmaterial</a>61</li>
+                    <li><a href="#">Årsredovisningar</a>15</li>
+                  </ul>
+                </section>
+                <section class="filter-type">
+                  <h5 class="filter-heading">Verksamhetsområde</h5>
+                  <ul class="filter-options">
+                    <li><a href="#" class="reset">Alla verksamhetsområden</a></li>
+                    <li><a href="#">Yrkeshögskolan</a>142</li>
+                    <li><a href="#">Konst- och kulturutbildningar</a>32</li>
+                    <li><a href="#">Tolkutbildningar</a>19</li>
+                    <li><a href="#">Utbildningar med endast tillsyn</a>14</li>
+                    <li><a href="#">Validering</a>12</li>
+                    <li><a href="#">SeQF</a>13</li>
+                  </ul>
+                </section>
+                <section class="filter-type">
+                  <h5 class="filter-heading">År</h5>
+                  <ul class="filter-options">
+                    <li><a href="#" class="reset">Alla år</a></li>
+                    <li><a href="#">2020</a>24</li>
+                    <li><a href="#">2019</a>27</li>
+                    <li><a href="#">2018</a>23</li>
+                    <li><a href="#">2017</a>16</li>
+                    <li><a href="#">2016</a>26</li>
+                    <li><a href="#">2015</a>30</li>
+                    <li><a href="#">2014</a>19</li>
+                    <li><a href="#">2013</a>14</li>
+                    <li><a href="#">2012</a>24</li>
+                    <li><a href="#">2011</a>15</li>
+                    <li><a href="#">2010</a>10</li>
+                  </ul>
+                </section>
+              </section>
           </aside>
           </div>
         </div>
