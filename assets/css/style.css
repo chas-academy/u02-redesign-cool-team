@@ -722,11 +722,6 @@ footer .footer-bar .footer-right a {
   color: #ffffff;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .about-us {
   background-color: #fffefe;
   border: black solid 2px;
