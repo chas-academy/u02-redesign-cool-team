@@ -1,0 +1,56 @@
+
+.statistic{
+    background-color: rgb(255, 254, 254);
+    border: black solid 2px;
+    margin: 1rem;
+
+    .statistic-navbar {
+        text-align: left;
+        background-color: $primary-color;
+        padding: 2rem;
+        width: 20rem;
+        height: 20.6rem;
+        float: auto;
+        margin-left: 10rem;
+
+        li a{
+            display: block;
+            color: $white;
+        }
+        li a:hover:not(.active){
+            background-color: $secondary-color;
+            color: $primary-color;
+        }
+    }
+  
+    h2{
+        text-align: left;
+        padding-left: 5rem;
+    }
+    .float-img{
+        float: right;
+        padding-right: 10rem;
+        height: auto;
+        width: auto;
+    }
+    .statistic-main{
+        text-align: left;
+        padding: 2rem;
+    }
+
+    @media all and (max-width: 480px) {
+        .float-img {
+          width:100%;
+          margin: auto;
+          float: none;
+        }
+        .statistic-navbar{
+          width:100%;
+          margin: auto;
+          float: none;
+        }
+    }
+}
+
+
+
