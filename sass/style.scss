@@ -2,7 +2,7 @@
 @import "base";
 
 // Styling for slideshow
-@import 'slideshow';
+@import "slideshow";
 
 //Topnav Section
 @import "topnav";
@@ -11,7 +11,7 @@
 @import "navbar";
 
 //Services Section
-@import 'services';
+@import "services";
 
 @import "nyhet-section";
 
@@ -25,7 +25,10 @@
 @import "kontakt";
 
 // About style
-@import 'about';
+@import "about";
 
 // Publications style
-@import 'publications';
+@import "publications";
+
+// Services Sub Page
+@import "./sub-pages/page-services";
