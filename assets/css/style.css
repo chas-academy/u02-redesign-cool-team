@@ -332,7 +332,7 @@ body {
       grid-template-rows: repeat(7, 1fr);
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "item-1 item-8" "item-2 item-8" "item-3 item-8" "item-4 item-8" "item-5 item-8" "item-6 item-8" "item-7 item-8";
+      grid-template-areas: "item-1 item-8" "item-2 item-8" "item-3 item-8" "item-4 item-8" "item-5 item-8" "item-6 item-8" "item-7 item-8";
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: services-main;
@@ -450,7 +450,7 @@ body {
       grid-template-rows: 1fr 0.7fr repeat(3, 1fr) 0.5fr;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "list-1 list-1" "list-2 list-2" "list-3 list-4" "list-5 list-6" "list-7 list-8" "list-9 list-9";
+      grid-template-areas: "list-1 list-1" "list-2 list-2" "list-3 list-4" "list-5 list-6" "list-7 list-8" "list-9 list-9";
   position: relative;
   border: solid 2.5px;
   -ms-grid-row: 1;
@@ -773,6 +773,11 @@ footer .footer-right ul a {
   font-size: 1rem;
 }
 
+footer .footer-right .external-websites i {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
 footer .footer-right .internal-links {
   margin-top: 3rem;
 }
@@ -805,8 +810,18 @@ footer .footer-bar .footer-right {
 
 footer .footer-bar .footer-right a {
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+footer .footer-bar .youtube i {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
 
 .contact-page-wrapper h1 {
   color: white;
