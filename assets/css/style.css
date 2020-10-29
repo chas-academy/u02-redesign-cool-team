@@ -1008,11 +1008,40 @@ footer .footer-bar .footer-right a {
   padding: 1em;
 }
 
-.publications-container aside .publication-search {
+.publications-container aside .main-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.publications-container aside .main-filter .flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.publications-container aside .main-filter .flexbox i,
+.publications-container aside .main-filter .flexbox .publication-search {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.publications-container aside .main-filter .flexbox .publication-search {
   margin: 1em 0;
 }
 
-.publications-container aside .filters-section .btn-reset {
+.publications-container aside .main-filter .flexbox .btn-reset {
   font-size: medium;
   font-weight: bold;
   color: #191e27;
@@ -1029,7 +1058,7 @@ footer .footer-bar .footer-right a {
   transition: all 0.1s ease-in-out;
 }
 
-.publications-container aside .filters-section .btn-reset:hover {
+.publications-container aside .main-filter .flexbox .btn-reset:hover {
   background-color: #174b2c;
   color: #ffffff;
 }

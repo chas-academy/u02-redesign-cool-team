@@ -105,16 +105,22 @@
               </section>
             </section><!--end MAIN-SECTION-->
             <aside>
-              <h3>Filtrera publikationer</h3>
-              <input type="text" class="publication-search" placeholder="Sök efter publikation...">
-              <p>Resultat per sida <select name="per-page" id="per-page">
-              <option value="20">20</option>
-              <option value="50">50</option>
-              <option value="100">100</option>
-              </select></p>
+              <section class="main-filter">
+                <h3>Filtrera publikationer</h3>
+                <label for="publicantion-search-bar" class="publicantion-search"><i class="fas fa-search"></i> </label
+                ><input id="publicantion-search-bar" type="text" placeholder="Sök efter publikation..."/>
+                <div class="flexbox">
+                  <label for="per-page">Resultat per sida
+                  <select name="per-page" id="per-page">
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                  </select></label>
+                  <a href="#" class="btn-reset">Återställ filter</a>
+                </div>
+              </section>
             
               <section class="filters-section">
-                <a href="#" class="btn-reset">Återställ filter</a>
                 <section class="filter-type">
                   <h5 class="filter-heading">Publikationstyp</h5>
                   <ul class="filter-options">
