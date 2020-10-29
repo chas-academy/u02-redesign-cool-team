@@ -1,13 +1,21 @@
-
-.div2 {
+*{
+    box-sizing: border-box;
+}
+.about-us{
+    background-color: rgb(255, 254, 254);
+    border: black solid 2px;
+    margin: 1rem;
+}
+.div1 {
     text-align: left;
     background-color: $primary-color;
-    padding: 1rem;
+    padding: 2rem;
     width: 20rem;
-    height: 20rem;
+    height: 20.6rem;
     float: auto;
-    margin-left: 4rem;
+    margin-left: 10rem;
 }
+
 li a{
     display: block;
     color: $white;
@@ -16,30 +24,29 @@ li a:hover:not(.active){
     background-color: $secondary-color;
     color: $primary-color;
 }
+h2{
+    text-align: left;
+    padding-left: 5rem;
+}
 .float-img{
     float: right;
-    padding-right: 4rem;
+    padding-right: 10rem;
     height: auto;
     width: auto;
 }
-
-.div3{
-    background-color: $white;
-    float: right;
-    padding: 2rem;
-    height: auto;
-    width: auto;
+.div2{
     text-align: left;
+    padding: 2rem;
 }
 @media all and (max-width: 480px) {
     .float-img {
       width:100%;
-      margin: 5px auto;
+      margin: auto;
       float: none;
     }
-    .div2{
+    .div1{
       width:100%;
-      margin: 5px auto;
+      margin: auto;
       float: none;
     }
 }
