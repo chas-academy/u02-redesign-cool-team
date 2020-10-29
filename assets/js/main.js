@@ -82,9 +82,23 @@ function toggle() {
 }
 
 let element = document.querySelectorAll(".title");
-console.log(element);
+// console.log(element);
 
 // går igenom alla .title och sätter toggle onclick
 element.forEach((element) => {
   element.onclick = toggle;
 });
+
+/* ********************************** */
+// Sticky Main Menu
+/* ********************************** */
+const navbar = document.getElementById("navbar");
+const sticky = navbar.offsetTop;
+
+window.onscroll = function () {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+};

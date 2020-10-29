@@ -211,6 +211,11 @@ body {
 /* TOPNAV ends here */
 /* NAVBAR starts here */
 .main-nav {
+  background-color: #ffffff;
+  z-index: 999;
+}
+
+.main-nav .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,12 +303,27 @@ body {
 
 .main-nav .menu .menu-nav {
   padding: 2.5rem 1.5rem;
+  -webkit-transition: padding 0.4s ease-out;
+  transition: padding 0.4s ease-out;
 }
 
 .main-nav #search-bar {
   padding: 6px;
   border: 1px solid grey;
   font-size: 17px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.4);
+}
+
+.sticky .menu .menu-nav {
+  padding: 2rem 1.5rem;
 }
 
 /* NAVBAR ends here */

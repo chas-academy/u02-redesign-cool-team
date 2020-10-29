@@ -1,8 +1,14 @@
 /* NAVBAR starts here */
 .main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  background-color: $white;
+  z-index: 999;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .sub-menu {
     display: none;
   }
@@ -60,6 +66,7 @@
 
     .menu-nav {
       padding: 2.5rem 1.5rem;
+      transition: padding 0.4s ease-out;
     }
   }
   #search-bar {
@@ -69,4 +76,20 @@
     font-size: 17px;
   }
 } //end .main-nav
+
+// Sticky
+.sticky {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.4);
+
+  .menu {
+    .menu-nav {
+      padding: 2rem 1.5rem;
+    }
+  }
+}
 /* NAVBAR ends here */
