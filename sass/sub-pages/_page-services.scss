@@ -1,0 +1,51 @@
+.page-services {
+  .page-title {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: #f5f5f5;
+    color: $primary-color;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .page-content {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .sevice-item {
+      flex-basis: 32%;
+      padding: 1rem;
+      background-color: $white;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 2rem;
+      transition: border 0.3s ease-out;
+
+      &:hover {
+        border: 1px solid $primary-color;
+
+        img {
+          border-radius: 5px;
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        h2 {
+          text-decoration: underline;
+        }
+      }
+
+      img {
+        width: 375px;
+        height: 211px;
+        transition: border-radius 0.3s ease-out;
+      }
+    }
+  }
+}

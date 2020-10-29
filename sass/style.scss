@@ -1,23 +1,37 @@
 // Base styles for website
-@import 'base';
+@import "base";
 
 // Styling for slideshow
 @import "slideshow";
 
 //Topnav Section
-@import 'topnav';
+@import "topnav";
 
 // Navbar Section
-@import 'navbar';
+@import "navbar";
 
 //Services Section
 @import "services";
 
+@import "nyhet-section";
+
 // Button Section
-@import 'button';
+@import "button";
 
 // Footer style
 @import "footer";
 
 //Statistic Page
 @import "statistic";
+
+// Kontakt landing page
+@import "kontakt";
+
+// About style
+@import "about";
+
+// Publications style
+@import "publications";
+
+// Services Sub Page
+@import "./sub-pages/page-services";

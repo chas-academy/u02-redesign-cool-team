@@ -15,13 +15,15 @@
     <header>
       <!-- Topnav -->
       <ul class="topnav">
-        <li><a href="#">Mina sidor</a></li>
-        <li><a href="#">Lättläst om oss</a></li>
-        <li><a href="#">About us in english</a></li>
+        <div class="container">
+          <li><a href="#">Mina sidor</a></li>
+          <li><a href="#">Lättläst om oss</a></li>
+          <li><a href="#">About us in english</a></li>
+        </div>
       </ul>
 
       <!-- Navbar-->
-      <nav class="main-nav">
+      <nav class="main-nav container">
         <img class="logo" src="./assets/images/logo-myh.svg" alt="MYH.se" />
         <ul class="menu">
           <li class="item"><a href="index.html">Hem</a></li>
@@ -52,9 +54,107 @@
 
     <!-- Main -->
     <main>
-      <section class="about-us">
+      <section class="page-services">
+        <div class="page-title">
+          <h1>Verksamhetsområden</h1>
+          <p>
+            MYH ansvarar för utbildningar inom yrkeshögskolan och frågor inom
+            utbildningsområdet.
+          </p>
+        </div>
         <div class="container">
-          Your content for Verksamhetsområden goes here
+          <nav class="breadcrumbs">
+            <a href="index.html">Start</a>
+            <i class="fas fa-chevron-right"></i> Verksamhetsområden
+          </nav>
+          <!-- Services Content -->
+          <div class="page-content">
+            <!-- Service Item -->
+            <div class="sevice-item">
+              <a href="#">
+                <img
+                  src="./assets/images/verksamheter/YH-start.png"
+                  alt="Yrkeshögskolan"
+                />
+                <h2>Yrkeshögskolan</h2>
+                <p>
+                  Utbildningar som svarar mot arbetslivets behov av kvalificerad
+                  yrkeskompetens och som drivs i nära samverkan med företag och
+                  andra arbetsgivare.
+                </p>
+              </a>
+            </div>
+            <!-- Service Item -->
+            <div class="sevice-item">
+              <a href="#">
+                <img
+                  src="./assets/images/verksamheter/KK-start.png"
+                  alt="Konst- och kulturutbildningar"
+                />
+                <h2>Konst- och kulturutbildningar</h2>
+                <p>
+                  Utbildningar som är högskoleförberedande, yrkesinriktade eller
+                  inom kulturarvsområdet och drivs av privata
+                  utbildningsanordnare.
+                </p>
+              </a>
+            </div>
+            <!-- Service Item -->
+            <div class="sevice-item">
+              <a href="#">
+                <img
+                  src="./assets/images/verksamheter/Kontakttolk.png"
+                  alt="Tolkutbildningar"
+                />
+                <h2>Tolkutbildningar</h2>
+                <p>
+                  Utbildningar till kontakttolk, teckenspråks- och dövblindtolk
+                  samt skrivtolk som drivs av folkhögskolor och studieförbund.
+                </p>
+              </a>
+            </div>
+            <!-- Service Item -->
+            <div class="sevice-item">
+              <a href="#">
+                <img
+                  src="./assets/images/verksamheter/ET-start.png"
+                  alt="Utbildningar med endast tillsyn"
+                />
+                <h2>Utbildningar med endast tillsyn</h2>
+                <p>
+                  Eftergymnasiala utbildningar inom olika områden som bedrivs av
+                  fristående skolor. Utbildningarnas statliga stöd omfattas
+                  endast av tillsyn.
+                </p>
+              </a>
+            </div>
+            <!-- Service Item -->
+            <div class="sevice-item">
+              <a href="#">
+                <img src="./assets/images/verksamheter/SEQF.png" alt="SeQF" />
+                <h2>SeQF</h2>
+                <p>
+                  Sveriges referensram för kvalifikationer (SeQF) ska synliggöra
+                  allt lärande för att öka matchningen på arbetsmarknaden.
+                </p>
+              </a>
+            </div>
+            <!-- Service Item -->
+            <div class="sevice-item">
+              <a href="#">
+                <img
+                  src="./assets/images/verksamheter/Scandinav_41YW_validering_webb.jpg"
+                  alt="Om validering"
+                />
+                <h2>Om validering</h2>
+                <p>
+                  Validering innebär att en persons kunskaper och kompetenser
+                  kartläggs och bedöms på ett strukturerat sätt, för studier
+                  eller arbete, oavsett hur, var eller när de förvärvats.
+                </p>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -70,17 +170,21 @@
             <h2>Kontakt</h2>
             <!-- Contact Item -->
             <div class="footer-contact">
-              <p class="contact-title">Digitalt kundforum</p>
+              <p class="contact-title">
+                <i class="fas fa-comments"></i> Digitalt kundforum
+              </p>
               <p>Har du en fråga? Besök vårt kundforum, forum.myh.se</p>
             </div>
             <!-- Contact Item -->
             <div class="footer-contact">
-              <p class="contact-title">Press</p>
+              <p class="contact-title">
+                <i class="far fa-newspaper"></i> Press
+              </p>
               <p>Presskontakter och pressmeddelanden finns i vårt nyhetsrum</p>
             </div>
             <!-- Contact Item -->
             <div class="footer-contact">
-              <p class="contact-title">E-post</p>
+              <p class="contact-title"><i class="fas fa-at"></i> E-post</p>
               <p>
                 Allmänna frågor/synpunkter: info@myh.se<br />
                 Registrator: registrator@myh.se
@@ -88,7 +192,9 @@
             </div>
             <!-- Contact Item -->
             <div class="footer-contact">
-              <p class="contact-title">Adress</p>
+              <p class="contact-title">
+                <i class="fas fa-map-marked-alt"></i> Adress
+              </p>
               <p>
                 Myndigheten för yrkeshögskolan<br />
                 Box 145<br />
@@ -102,10 +208,30 @@
             <div class="external-websites">
               <h2>Våra webbplatser</h2>
               <ul>
-                <li><a href="#">yrkeshogskolan.se</a></li>
-                <li><a href="#">konstkulturutbildning.se</a></li>
-                <li><a href="#">blitolk.nu</a></li>
-                <li><a href="#">seqf.se</a></li>
+                <li>
+                  <a href="https://www.yrkeshogskolan.se/" target="_blank">
+                    yrkeshogskolan.se <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.konstkulturutbildning.se/"
+                    target="_blank"
+                  >
+                    konstkulturutbildning.se
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.myh.se/blitolk/" target="_blank">
+                    blitolk.nu <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.seqf.se/" target="_blank">
+                    seqf.se <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </li>
               </ul>
             </div>
             <!-- Internal Links -->
@@ -131,12 +257,16 @@
               generaldirektör MYH.
             </p>
           </div>
-          <div class="footer-right">
-            <a href="#">YouTube</a>
+          <div class="footer-right youtube">
+            <a
+              href="https://www.youtube.com/channel/UC8iPn0eKy-5vQ6Mx_-ep-KA"
+              target="_blank"
+              >YouTube <i class="fab fa-youtube"></i
+            ></a>
           </div>
         </div>
       </div>
     </footer>
-    <script src="./assets/js/slideshow.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

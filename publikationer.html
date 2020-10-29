@@ -21,7 +21,7 @@
       </ul>
 
       <!-- Navbar-->
-      <nav class="main-nav">
+      <nav class="main-nav container">
         <img class="logo" src="./assets/images/logo-myh.svg" alt="MYH.se" />
         <ul class="menu">
           <li class="item"><a href="index.html">Hem</a></li>
@@ -52,8 +52,71 @@
 
     <!-- Main -->
     <main>
-      <section class="about-us">
-        <div class="container">Your content for Publikationer goes here</div>
+      <section class="publications">
+        <div class="container">
+           <nav class="breadcrumbs"><a href="index.html">Start</a> <i class="fas fa-chevron-right"></i> Publikationer</nav>
+           <div class="publications-container">
+            <section class="main-section">
+              <h1 class="landing-page-heading">Publikationer</h1>
+              <article>
+                <h2 class="preamble">
+                  Här hittar du Myndigheten för yrkeshögskolans rapporter, faktablad, broschyrer, informationsblad och andra publikationer. Du kan välja typ av publikation, område och utgivningsår i rutan till höger.
+                </h2>
+              </article>
+               <ul class="publication-list">
+                 <li class="pub-item"><a href="#"><img src="./assets/images/publications/placeholder.png" alt="placeholder for publication"></a>
+                  <div class="pub-item-content">
+                    <h4><a href="#">Handbok för tillträde till yrkeshögskolan - 2020</a></h4>
+                    <p class="preview"><span class="release-date">Utgiven: 2020-07-10</span>Denna handbok vänder sig i första hand till de som bedriver yrkeshögskoleutbildning och behöver stöd...  </p>
+                    <p><a href="https://www.myh.se/Documents/Publikationer/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf"><i class="fas fa-file-pdf">&nbsp;</i>Handbok för tillträde till yrkeshögskolan - 2020</a></p>
+                  </div>
+                </li><!--end PUB-ITEM-->
+                 <li class="pub-item"><a href="#"><img src="./assets/images/publications/placeholder.png" alt="placeholder for publication"></a>
+                  <div class="pub-item-content">
+                    <h4><a href="#">Handbok för tillträde till yrkeshögskolan - 2020</a></h4>
+                    <p class="preview"><span class="release-date">Utgiven: 2020-07-10</span>Denna handbok vänder sig i första hand till de som bedriver yrkeshögskoleutbildning och behöver stöd...  </p>
+                    <p><a href="https://www.myh.se/Documents/Publikationer/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf"><i class="fas fa-file-pdf">&nbsp;</i>Handbok för tillträde till yrkeshögskolan - 2020</a></p>
+                  </div>
+                </li><!--end PUB-ITEM-->
+                <li class="pub-item"><a href="#"><img src="./assets/images/publications/placeholder.png" alt="placeholder for publication"></a>
+                  <div class="pub-item-content">
+                    <h4><a href="#">Handbok för tillträde till yrkeshögskolan - 2020</a></h4>
+                    <p class="preview"><span class="release-date">Utgiven: 2020-07-10</span>Denna handbok vänder sig i första hand till de som bedriver yrkeshögskoleutbildning och behöver stöd...  </p>
+                    <p><a href="https://www.myh.se/Documents/Publikationer/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf"><i class="fas fa-file-pdf">&nbsp;</i>Handbok för tillträde till yrkeshögskolan - 2020</a></p>
+                  </div>
+                </li><!--end PUB-ITEM-->
+                <li class="pub-item"><a href="#"><img src="./assets/images/publications/placeholder.png" alt="placeholder for publication"></a>
+                  <div class="pub-item-content">
+                    <h4><a href="#">Handbok för tillträde till yrkeshögskolan - 2020</a></h4>
+                    <p class="preview"><span class="release-date">Utgiven: 2020-07-10</span>Denna handbok vänder sig i första hand till de som bedriver yrkeshögskoleutbildning och behöver stöd...  </p>
+                    <p><a href="https://www.myh.se/Documents/Publikationer/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf"><i class="fas fa-file-pdf">&nbsp;</i>Handbok för tillträde till yrkeshögskolan - 2020</a></p>
+                  </div>                 
+                </li><!--end PUB-ITEM-->
+              </ul>
+              <section class="page-select">
+                <ol class="pagination">
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">...</a></li>
+                </ol>
+              </section>
+            </section><!--end MAIN-SECTION-->
+            <aside>
+              <h3>Filtrera publikationer</h3>
+              <input type="text" placeholder="Sök efter publikation...">
+              <p>Resultat per sida <select name="per-page" id="per-page">
+              <option value="20">20</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+              </select></p>
+            
+              <section class="filter-section"></section>
+          </aside>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -68,17 +131,21 @@
             <h2>Kontakt</h2>
             <!-- Contact Item -->
             <div class="footer-contact">
-              <p class="contact-title">Digitalt kundforum</p>
+              <p class="contact-title">
+                <i class="fas fa-comments"></i> Digitalt kundforum
+              </p>
               <p>Har du en fråga? Besök vårt kundforum, forum.myh.se</p>
             </div>
             <!-- Contact Item -->
             <div class="footer-contact">
-              <p class="contact-title">Press</p>
+              <p class="contact-title">
+                <i class="far fa-newspaper"></i> Press
+              </p>
               <p>Presskontakter och pressmeddelanden finns i vårt nyhetsrum</p>
             </div>
             <!-- Contact Item -->
             <div class="footer-contact">
-              <p class="contact-title">E-post</p>
+              <p class="contact-title"><i class="fas fa-at"></i> E-post</p>
               <p>
                 Allmänna frågor/synpunkter: info@myh.se<br />
                 Registrator: registrator@myh.se
@@ -86,7 +153,9 @@
             </div>
             <!-- Contact Item -->
             <div class="footer-contact">
-              <p class="contact-title">Adress</p>
+              <p class="contact-title">
+                <i class="fas fa-map-marked-alt"></i> Adress
+              </p>
               <p>
                 Myndigheten för yrkeshögskolan<br />
                 Box 145<br />
@@ -100,10 +169,30 @@
             <div class="external-websites">
               <h2>Våra webbplatser</h2>
               <ul>
-                <li><a href="#">yrkeshogskolan.se</a></li>
-                <li><a href="#">konstkulturutbildning.se</a></li>
-                <li><a href="#">blitolk.nu</a></li>
-                <li><a href="#">seqf.se</a></li>
+                <li>
+                  <a href="https://www.yrkeshogskolan.se/" target="_blank">
+                    yrkeshogskolan.se <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.konstkulturutbildning.se/"
+                    target="_blank"
+                  >
+                    konstkulturutbildning.se
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.myh.se/blitolk/" target="_blank">
+                    blitolk.nu <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.seqf.se/" target="_blank">
+                    seqf.se <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </li>
               </ul>
             </div>
             <!-- Internal Links -->
@@ -129,12 +218,16 @@
               generaldirektör MYH.
             </p>
           </div>
-          <div class="footer-right">
-            <a href="#">YouTube</a>
+          <div class="footer-right youtube">
+            <a
+              href="https://www.youtube.com/channel/UC8iPn0eKy-5vQ6Mx_-ep-KA"
+              target="_blank"
+              >YouTube <i class="fab fa-youtube"></i
+            ></a>
           </div>
         </div>
       </div>
     </footer>
-    <script src="./assets/js/slideshow.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
