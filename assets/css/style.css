@@ -211,7 +211,6 @@ body {
 /* TOPNAV ends here */
 /* NAVBAR starts here */
 .main-nav {
-  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,7 +220,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #f5f5f5;
 }
 
 .main-nav .sub-menu {
@@ -237,9 +235,7 @@ body {
   list-style: none;
 }
 
-.main-nav .logo,
-.main-nav .menu {
-  padding: 0 1em;
+.main-nav .logo {
   height: 55px;
 }
 
@@ -254,8 +250,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 1em;
-  margin-left: 2em;
   text-align: center;
 }
 
@@ -271,8 +265,6 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1em;
-  height: 100%;
-  padding: 0em 1em;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -281,7 +273,7 @@ body {
   background-color: #fbea26;
 }
 
-.main-nav .menu .item input[type='checkbox' i] {
+.main-nav .menu .item input[type="checkbox" i] {
   position: absolute;
   left: -9999999px;
 }
@@ -304,11 +296,13 @@ body {
   border-bottom: 1px solid #191e27;
 }
 
+.main-nav .menu .menu-nav {
+  padding: 2.5rem 1.5rem;
+}
+
 .main-nav #search-bar {
   padding: 6px;
   border: 1px solid grey;
-  margin-top: 8px;
-  margin-right: 16px;
   font-size: 17px;
 }
 
@@ -1198,17 +1192,6 @@ footer .footer-bar .youtube i {
 }
 
 /* PUBLICATIONS ends here */
-.page-services .page-title {
-  padding: 2rem 0;
-  text-align: center;
-  background-color: #f5f5f5;
-  color: #191e27;
-}
-
-.page-services .page-title h1 {
-  font-size: 2rem;
-}
-
 .page-services .page-content {
   padding: 4rem 0;
   display: -webkit-box;
@@ -1256,6 +1239,17 @@ footer .footer-bar .youtube i {
   transition: border-radius 0.3s ease-out;
 }
 
+.page-title {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #f5f5f5;
+  color: #191e27;
+}
+
+.page-title h1 {
+  font-size: 2rem;
+}
+
 .statistic {
   background-color: #fffefe;
   border: black solid 2px;
@@ -1264,7 +1258,7 @@ footer .footer-bar .youtube i {
 
 .statistic .statistic-navbar {
   text-align: left;
-  background-color: #191E27;
+  background-color: #191e27;
   padding: 2rem;
   width: 20rem;
   height: 20.6rem;
@@ -1278,8 +1272,8 @@ footer .footer-bar .youtube i {
 }
 
 .statistic .statistic-navbar li a:hover:not(.active) {
-  background-color: #FBEA26;
-  color: #191E27;
+  background-color: #fbea26;
+  color: #191e27;
 }
 
 .statistic h2 {

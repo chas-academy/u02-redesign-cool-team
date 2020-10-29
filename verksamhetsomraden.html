@@ -24,16 +24,21 @@
 
       <!-- Navbar-->
       <nav class="main-nav container">
-        <img class="logo" src="./assets/images/logo-myh.svg" alt="MYH.se" />
+        <a href="index.html"
+          ><img class="logo" src="./assets/images/logo-myh.svg" alt="MYH.se"
+        /></a>
         <ul class="menu">
-          <li class="item"><a href="index.html">Hem</a></li>
-          <li class="item"><a href="#">Organisation</a></li>
-          <li class="item"><a href="#">Student</a></li>
+          <li class="item"><a href="index.html" class="menu-nav">Hem</a></li>
+          <li class="item"><a href="#" class="menu-nav">Organisation</a></li>
+          <li class="item"><a href="#" class="menu-nav">Student</a></li>
           <li class="item">
-            <label for="toggle">Mer <i class="fas fa-chevron-down"></i></label
+            <label for="toggle" class="menu-nav"
+              >Mer <i class="fas fa-chevron-down"></i></label
             ><input type="checkbox" id="toggle" />
             <ul class="sub-menu">
-              <li class="sub-item"><a href="om-oss.html">Om oss</a></li>
+              <li class="sub-item">
+                <a href="verksamhetsomraden.html">Verksamhetsområden</a>
+              </li>
               <li class="sub-item">
                 <a href="lagar-regler-tillsyn.html">Lagar, regeler, tillsyn</a>
               </li>
@@ -41,6 +46,7 @@
               <li class="sub-item">
                 <a href="publikationer.html">Publikationer</a>
               </li>
+              <li class="sub-item"><a href="om-oss.html">Om oss</a></li>
               <li class="sub-item"><a href="kontakt.html">Kontakt</a></li>
             </ul>
           </li>
@@ -54,14 +60,16 @@
 
     <!-- Main -->
     <main>
+      <!-- Page Title -->
+      <section class="page-title">
+        <h1>Verksamhetsområden</h1>
+        <p>
+          MYH ansvarar för utbildningar inom yrkeshögskolan och frågor inom
+          utbildningsområdet.
+        </p>
+      </section>
+      <!-- Services Section -->
       <section class="page-services">
-        <div class="page-title">
-          <h1>Verksamhetsområden</h1>
-          <p>
-            MYH ansvarar för utbildningar inom yrkeshögskolan och frågor inom
-            utbildningsområdet.
-          </p>
-        </div>
         <div class="container">
           <nav class="breadcrumbs">
             <a href="index.html">Start</a>
