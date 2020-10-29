@@ -1061,6 +1061,11 @@ footer .footer-bar .footer-right a {
   border-bottom: 1px solid #8b9ab4;
 }
 
+.publications-container aside .filters-section .filter-type .filter-options li .reset {
+  font-weight: bold;
+  margin-left: -1em;
+}
+
 .publications-container aside .filters-section .filter-type .filter-options li a {
   color: #0080cc;
   text-decoration: underline;

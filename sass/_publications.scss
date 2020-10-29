@@ -133,10 +133,10 @@
             margin: 0 1em;
             border-bottom: 1px solid lighten($color: $primary-color, $amount: 50);
 
-            // .btn-reset {
-            //   font-weight: bold;
-            //   margin-left: -1em;
-            // }
+            .reset {
+              font-weight: bold;
+              margin-left: -1em;
+            }
 
             a {
               color: #0080cc;
