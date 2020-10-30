@@ -3,7 +3,8 @@ $anmal: rgb(4, 4, 31);
 $hitta: rgb(11, 36, 21);
 $ledare: rgb(27, 29, 92);
 $myh: rgb(238, 232, 232);
-$gd: #1dbef2;
+$gd: $btn-2;
+$reset: btn-1;
 
 //mixin for button type
 @mixin btn-type($type) {

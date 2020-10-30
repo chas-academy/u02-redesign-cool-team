@@ -1176,15 +1176,96 @@ footer .footer-bar .youtube i {
   padding: 1em;
 }
 
-.publications-container aside ul {
-  list-style: none;
-  padding: 1em;
+.publications-container aside .main-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.publications-container aside .main-filter .flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.publications-container aside .main-filter .flexbox i,
+.publications-container aside .main-filter .flexbox .publication-search {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.publications-container aside .main-filter .flexbox .publication-search {
+  margin: 1em 0;
+}
+
+.publications-container aside .main-filter .flexbox .btn-reset {
+  font-size: medium;
+  font-weight: bold;
+  color: #191e27;
+  font-size: 1em;
+  text-align: center;
+  margin: 1em 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
   text-decoration: none;
+  display: inline-block;
+  background-color: #35ad65;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.publications-container aside .main-filter .flexbox .btn-reset:hover {
+  background-color: #174b2c;
+  color: #ffffff;
+}
+
+.publications-container aside .filters-section .filter-type {
+  padding: 1em 0.5em 1em 0.5em;
+  margin: 1em 0 1em 0;
+  border-top: 1px solid #8b9ab4;
+}
+
+.publications-container aside .filters-section .filter-type .filter-heading {
+  font-size: 1.3em;
+}
+
+.publications-container aside .filters-section .filter-type .filter-options {
+  list-style: none;
   line-height: 1.5em;
 }
 
-.publications-container aside ul a {
-  color: white;
+.publications-container aside .filters-section .filter-type .filter-options li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 0;
+  margin: 0 1em;
+  border-bottom: 1px solid #8b9ab4;
+}
+
+.publications-container aside .filters-section .filter-type .filter-options li .reset {
+  font-weight: bold;
+  margin-left: -1em;
+}
+
+.publications-container aside .filters-section .filter-type .filter-options li a {
+  color: #0080cc;
+  text-decoration: underline;
 }
 
 .publications-container .landing-page-heading {

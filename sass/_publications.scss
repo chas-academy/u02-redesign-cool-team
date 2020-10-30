@@ -1,7 +1,4 @@
 /* PUBLICATIONS starts here */
-// $btn-primary: #0b2415;
-$btn-primary: #174b2c;
-
 .breadcrumbs {
   padding: 1em;
 }
@@ -78,7 +75,7 @@ $btn-primary: #174b2c;
         padding: 1em;
         border-left: 1px solid lighten($color: $primary-color, $amount: 50);
       }
-    } //en PAGINATION
+    } //end PAGINATION
   }
   aside {
     // border: 1px solid black;
@@ -90,13 +87,77 @@ $btn-primary: #174b2c;
     background-color: white;
     padding: 1em;
 
-    ul {
-      list-style: none;
-      padding: 1em;
-      text-decoration: none;
-      line-height: 1.5em;
-      a {
-        color: white;
+    .main-filter {
+      display: flex;
+      flex-direction: column;
+      .flexbox {
+        display: flex;
+        // flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        i,
+        .publication-search {
+          flex: 1;
+        }
+
+        .publication-search {
+          margin: 1em 0;
+        }
+        .btn-reset {
+          font-size: medium;
+          font-weight: bold;
+          color: $primary-color;
+          font-size: 1em;
+          text-align: center;
+          margin: 1em 0;
+          padding: 1rem;
+          border: none;
+          border-radius: 1rem;
+          text-decoration: none;
+          display: inline-block;
+          background-color: $green-light;
+          transition: all 0.1s ease-in-out;
+
+          &:hover {
+            background-color: $btn-1;
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .filters-section {
+      .filter-type {
+        padding: 1em 0.5em 1em 0.5em;
+        margin: 1em 0 1em 0;
+        border-top: 1px solid lighten($color: $primary-color, $amount: 50);
+
+        .filter-heading {
+          font-size: 1.3em;
+        }
+
+        .filter-options {
+          list-style: none;
+          line-height: 1.5em;
+
+          li {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em 0;
+            margin: 0 1em;
+            border-bottom: 1px solid lighten($color: $primary-color, $amount: 50);
+
+            .reset {
+              font-weight: bold;
+              margin-left: -1em;
+            }
+
+            a {
+              color: #0080cc;
+              text-decoration: underline;
+            }
+          }
+        }
       }
     }
   }
