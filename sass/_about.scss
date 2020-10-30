@@ -55,6 +55,7 @@ $btn-primary: #174b2c;
       .title {
         color: white;
         font-weight: bold;
+        cursor: pointer;
       }
       .description {
         color: white;
@@ -74,6 +75,7 @@ $btn-primary: #174b2c;
         line-height: 1.5em;
         a {
           color: white;
+          cursor: pointer;
         }
       }
     }
@@ -125,19 +127,3 @@ $btn-primary: #174b2c;
 .landing-page-heading {
   font-size: 3em;
 }
-// .side-menu {
-//   .title {
-//     color: white;
-//   }
-//   .description {
-//     color: white;
-//     max-height: 0;
-//     overflow: hidden;
-//     transition: max-height 0.3s;
-//   }
-//   /* för description bredvid active */
-//   .active + .description {
-//     max-height: 200px;
-//     transition: max-height 0.2s;
-//   }
-// }
