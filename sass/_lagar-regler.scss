@@ -18,7 +18,7 @@ h2 {
 }
 
 .rightcolumn {
-  background-color: blue;
+  background-color: $primary-color;
   color: white;
   display: flex;
   flex-direction: column;
@@ -31,4 +31,10 @@ a {
 }
 p {
   margin: 3px;
+}
+.linkstyle {
+  &:hover {
+    background-color: white;
+    color: $primary-color;
+  }
 }

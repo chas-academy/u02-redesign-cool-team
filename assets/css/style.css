@@ -1220,7 +1220,7 @@ h2 {
 }
 
 .rightcolumn {
-  background-color: blue;
+  background-color: #191e27;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1240,4 +1240,9 @@ a {
 
 p {
   margin: 3px;
+}
+
+.linkstyle:hover {
+  background-color: white;
+  color: #191e27;
 }
