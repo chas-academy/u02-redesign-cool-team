@@ -3,6 +3,11 @@
   background-color: $white;
   z-index: 999;
 
+  #hamburger-btn,
+  .hamburger-toggle {
+    display: none;
+  }
+
   .container {
     display: flex;
     align-items: center;
@@ -106,5 +111,8 @@
 }
 /* NAVBAR ends here */
 
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 1000px) {
+  .main-nav {
+    background-color: aqua;
+  }
 }

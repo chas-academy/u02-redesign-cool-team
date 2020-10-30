@@ -332,6 +332,11 @@ body {
   z-index: 999;
 }
 
+.main-nav #hamburger-btn,
+.main-nav .hamburger-toggle {
+  display: none;
+}
+
 .main-nav .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -455,6 +460,12 @@ body {
 }
 
 /* NAVBAR ends here */
+@media only screen and (max-width: 1000px) {
+  .main-nav {
+    background-color: aqua;
+  }
+}
+
 .services {
   -ms-grid-columns: 5px 2fr 20px 1fr 5px;
       grid-template-columns: 5px 2fr 20px 1fr 5px;
