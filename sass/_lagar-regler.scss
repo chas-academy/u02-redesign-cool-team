@@ -1,0 +1,34 @@
+.lagar-page {
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  color: white;
+}
+
+.lagarcontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: green;
+  border: 2px solid black;
+
+  /*stilar för allt main content*/
+}
+
+.rightcolumn {
+  background-color: blue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 1em;
+  text-align: left;
+}
+a {
+  color: white;
+}
+p {
+  margin: 3px;
+}

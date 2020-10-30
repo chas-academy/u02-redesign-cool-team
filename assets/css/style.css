@@ -332,7 +332,7 @@ body {
       grid-template-rows: repeat(7, 1fr);
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "item-1 item-8" "item-2 item-8" "item-3 item-8" "item-4 item-8" "item-5 item-8" "item-6 item-8" "item-7 item-8";
+      grid-template-areas: "item-1 item-8" "item-2 item-8" "item-3 item-8" "item-4 item-8" "item-5 item-8" "item-6 item-8" "item-7 item-8";
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: services-main;
@@ -450,7 +450,7 @@ body {
       grid-template-rows: 1fr 0.7fr repeat(3, 1fr) 0.5fr;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "list-1 list-1" "list-2 list-2" "list-3 list-4" "list-5 list-6" "list-7 list-8" "list-9 list-9";
+      grid-template-areas: "list-1 list-1" "list-2 list-2" "list-3 list-4" "list-5 list-6" "list-7 list-8" "list-9 list-9";
   position: relative;
   border: solid 2.5px;
   -ms-grid-row: 1;
@@ -1198,3 +1198,46 @@ footer .footer-bar .youtube i {
 }
 
 /* PUBLICATIONS ends here */
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  color: white;
+}
+
+.lagarcontainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: green;
+  border: 2px solid black;
+  /*stilar för allt main content*/
+}
+
+.rightcolumn {
+  background-color: blue;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  padding: 1em;
+  text-align: left;
+}
+
+a {
+  color: white;
+}
+
+p {
+  margin: 3px;
+}
