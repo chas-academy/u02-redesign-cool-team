@@ -1657,10 +1657,14 @@ footer .footer-bar .youtube i {
   }
 }
 
+.nav-side {
+  padding: 1em;
+}
+
 .statistic {
   background-color: #fffefe;
-  border: black solid 2px;
   margin: 1rem;
+  border: black solid;
 }
 
 .statistic .statistic-navbar {
@@ -1668,24 +1672,52 @@ footer .footer-bar .youtube i {
   background-color: #191e27;
   padding: 2rem;
   width: 20rem;
-  height: 20.6rem;
-  float: auto;
+  height: 20.5rem;
   margin-left: 10rem;
 }
 
-.statistic .statistic-navbar li a {
-  display: block;
-  color: #ffffff;
+.statistic .statistic-navbar aside {
+  padding: 1rem;
 }
 
-.statistic .statistic-navbar li a:hover:not(.active) {
-  background-color: #fbea26;
-  color: #191e27;
+.statistic .statistic-navbar aside .side-menu {
+  background-color: #191e27;
+  /* för description bredvid active */
+}
+
+.statistic .statistic-navbar aside .side-menu .title {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.statistic .statistic-navbar aside .side-menu .description {
+  color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s;
+  transition: max-height 0.3s;
+}
+
+.statistic .statistic-navbar aside .side-menu .active + .description {
+  max-height: 200px;
+  -webkit-transition: max-height 0.2s;
+  transition: max-height 0.2s;
+}
+
+.statistic .statistic-navbar aside .side-menu ul {
+  list-style: none;
+  padding: 1em;
+  text-decoration: none;
+  line-height: 1.5em;
+}
+
+.statistic .statistic-navbar aside .side-menu ul a {
+  color: white;
 }
 
 .statistic h2 {
   text-align: left;
-  padding-left: 5rem;
+  padding: 1rem 10rem;
 }
 
 .statistic .float-img {
@@ -1697,7 +1729,9 @@ footer .footer-bar .youtube i {
 
 .statistic .statistic-main {
   text-align: left;
-  padding: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  border: none;
 }
 
 @media all and (max-width: 480px) {
