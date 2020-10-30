@@ -405,7 +405,8 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  max-width: 550px;
+  max-height: 500px;
+  width: 350px;
   padding: 1em;
   line-height: 1.8em;
   background-color: #fbea26;
@@ -425,6 +426,7 @@ body {
 
 .main-nav .menu .item #toggle:checked ~ .sub-menu .sub-item:hover {
   background-color: #ead704;
+  padding-left: 1.5rem;
 }
 
 .main-nav .menu .menu-nav {
