@@ -23,11 +23,12 @@
   color: white;
   padding-left: 1rem;
   h1 {
-    padding-bottom: 84px;
+    padding-bottom: 60px;
   }
 
   p {
     margin-right: 10%;
+    padding-bottom: 20px;
   }
 }
 
@@ -51,13 +52,15 @@
 }
 
 .contact-card {
-  background-image: linear-gradient(white, rgb(209, 205, 205));
-  border: 1px solid black;
-  border-radius: 5px;
+  background-color: #ffff99;
+  filter: drop-shadow(-10px 7px 4px $primary-color);
   width: 27%;
   padding: 10px;
   margin: 10px;
   line-height: 1.5rem;
+  // border: 1px solid black;
+  // border-radius: 5px;
+  // background-image: linear-gradient(white, rgb(209, 205, 205));
 
   h3 {
     font-size: 1.2rem;
@@ -69,10 +72,35 @@
 .contact-card-list-hidden {
   list-style: none;
   font-size: 1rem;
+
+  a {
+    color: blue;
+  }
 }
 
 .iframe-container {
   display: flex;
   justify-content: center;
   padding: 10px 0 20px 0;
+}
+
+.forum-button {
+  color: $primary-color;
+  background-color: $secondary-color;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $secondary-color;
+    text-decoration: none;
+  }
+}
+
+.kontakt-3-button-container {
+  display: flex;
+  justify-content: center;
+  padding: 2% 0 2% 0;
 }
