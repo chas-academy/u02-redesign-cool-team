@@ -1,0 +1,6 @@
+// Media query which take the breakpoint as a variable
+@mixin responsive($breakpoint) {
+  @media (max-width: $breakpoint * 1px) {
+    @content;
+  }
+}

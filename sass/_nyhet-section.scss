@@ -2,6 +2,18 @@
   padding: 4rem 0;
   background-color: #c4c4c4;
 
+  @include responsive(730) {
+    padding: 2rem;
+  }
+
+  @include responsive(600) {
+    padding: 2rem 1rem;
+  }
+
+  @include responsive(500) {
+    padding: 1.5rem 0.3rem;
+  }
+
   h2 {
     font-size: 2.4rem;
     margin-bottom: 2rem;
@@ -12,9 +24,21 @@
     display: flex;
     justify-content: space-between;
 
+    @include responsive(730) {
+      flex-direction: column;
+    }
+
     .news-item {
       flex-basis: 32%;
       padding: 0.5rem;
+
+      @include responsive(800) {
+        flex-basis: 33%;
+      }
+
+      @include responsive(730) {
+        flex-basis: 100%;
+      }
 
       img {
         width: 100%;
