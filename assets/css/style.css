@@ -968,11 +968,12 @@ footer .footer-bar .youtube i {
 }
 
 .contact-landing-graphic-wrapper h1 {
-  padding-bottom: 84px;
+  padding-bottom: 60px;
 }
 
 .contact-landing-graphic-wrapper p {
   margin-right: 10%;
+  padding-bottom: 20px;
 }
 
 .placeholder-for-buttons {
@@ -1003,10 +1004,9 @@ footer .footer-bar .youtube i {
 }
 
 .contact-card {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#d1cdcd));
-  background-image: linear-gradient(white, #d1cdcd);
-  border: 1px solid black;
-  border-radius: 5px;
+  background-color: #ffff99;
+  -webkit-filter: drop-shadow(-10px 7px 4px #191e27);
+          filter: drop-shadow(-10px 7px 4px #191e27);
   width: 27%;
   padding: 10px;
   margin: 10px;
@@ -1024,6 +1024,10 @@ footer .footer-bar .youtube i {
   font-size: 1rem;
 }
 
+.contact-card-list-hidden a {
+  color: blue;
+}
+
 .iframe-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1032,6 +1036,31 @@ footer .footer-bar .youtube i {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px 0 20px 0;
+}
+
+.forum-button {
+  color: #191e27;
+  background-color: #fbea26;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.forum-button:hover {
+  background-color: #191e27;
+  color: #fbea26;
+  text-decoration: none;
+}
+
+.kontakt-3-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2% 0 2% 0;
 }
 
 .breadcrumbs {
