@@ -42,7 +42,7 @@
       &:hover {
         background-color: $secondary-color;
       }
-      input[type="checkbox" i] {
+      input[type='checkbox' i] {
         position: absolute;
         left: -9999999px;
       }
@@ -51,7 +51,7 @@
         position: absolute;
         top: 100%;
         left: 0;
-        width: 250px;
+        max-width: 550px;
         padding: 1em;
         line-height: 1.8em;
         background-color: $secondary-color;
@@ -60,6 +60,14 @@
         z-index: 99;
         .sub-item {
           border-bottom: 1px solid $primary-color;
+          text-decoration: underline;
+          width: 100%;
+          padding: 0 1em;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            background-color: darken($color: $secondary-color, $amount: 10);
+          }
         }
       }
     }

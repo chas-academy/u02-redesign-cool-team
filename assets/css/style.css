@@ -395,7 +395,7 @@ body {
   background-color: #fbea26;
 }
 
-.main-nav .menu .item input[type="checkbox" i] {
+.main-nav .menu .item input[type='checkbox' i] {
   position: absolute;
   left: -9999999px;
 }
@@ -405,7 +405,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 250px;
+  max-width: 550px;
   padding: 1em;
   line-height: 1.8em;
   background-color: #fbea26;
@@ -416,6 +416,15 @@ body {
 
 .main-nav .menu .item #toggle:checked ~ .sub-menu .sub-item {
   border-bottom: 1px solid #191e27;
+  text-decoration: underline;
+  width: 100%;
+  padding: 0 1em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.main-nav .menu .item #toggle:checked ~ .sub-menu .sub-item:hover {
+  background-color: #ead704;
 }
 
 .main-nav .menu .menu-nav {
@@ -463,7 +472,7 @@ body {
       grid-template-rows: repeat(7, 1fr);
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "item-1 item-8" "item-2 item-8" "item-3 item-8" "item-4 item-8" "item-5 item-8" "item-6 item-8" "item-7 item-8";
+      grid-template-areas: "item-1 item-8" "item-2 item-8" "item-3 item-8" "item-4 item-8" "item-5 item-8" "item-6 item-8" "item-7 item-8";
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: services-main;
@@ -581,7 +590,7 @@ body {
       grid-template-rows: 1fr 0.7fr repeat(3, 1fr) 0.5fr;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "list-1 list-1" "list-2 list-2" "list-3 list-4" "list-5 list-6" "list-7 list-8" "list-9 list-9";
+      grid-template-areas: "list-1 list-1" "list-2 list-2" "list-3 list-4" "list-5 list-6" "list-7 list-8" "list-9 list-9";
   position: relative;
   border: solid 2.5px;
   -ms-grid-row: 1;
