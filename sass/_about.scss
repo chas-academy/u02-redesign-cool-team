@@ -25,7 +25,7 @@ $btn-primary: #174b2c;
     article {
       //border: 1px solid black;
       margin: 1em;
-      background-color: white;
+      background-color: $white;
       .preamble {
         margin: 1em 3em 1em 0;
       }
@@ -36,37 +36,58 @@ $btn-primary: #174b2c;
         width: 100%;
       }
     }
+    a {
+      color: $link-color;
+    }
   }
 
   aside {
-    // border: 1px solid black;
     flex: 1;
     padding-left: 1em;
     margin-left: 1em;
     display: flex;
     flex-direction: column;
-    // justify-content: space-around;
-    background-color: white;
+    background-color: $white;
     padding: 1em;
-    // padding-top: 4.6em;
+
+    section {
+      padding: 3em 0;
+    }
 
     .side-menu {
       background-color: $primary-color;
       .title {
-        color: white;
+        color: $white;
         font-weight: bold;
         cursor: pointer;
+        padding: 1em 0;
       }
       .description {
-        color: white;
+        color: $white;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s;
       }
       /* för description bredvid active */
       .active + .description {
-        max-height: 200px;
+        max-height: 400px;
         transition: max-height 0.2s;
+        background-color: lighten($color: $primary-color, $amount: 10);
+
+        li {
+          padding: 0.5em;
+          margin: 0.5em 0;
+          border-bottom: 1px solid $primary-color;
+          &:first-of-type {
+            padding-top: 0;
+            margin-top: 0;
+          }
+          &:last-of-type {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border: 0;
+          }
+        }
       }
       ul {
         list-style: none;
@@ -120,10 +141,20 @@ $btn-primary: #174b2c;
     .competitions {
       background-color: #e7e7e7;
       padding: 1em;
+
+      p {
+        margin-top: 1em;
+      }
+
+      a {
+        color: $link-color;
+      }
     }
   }
 }
 
 .landing-page-heading {
   font-size: 3em;
+}
+@media only screen and (max-width: 420px) {
 }

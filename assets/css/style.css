@@ -1210,7 +1210,7 @@ footer .footer-bar .youtube i {
 
 .about-container .main-section article {
   margin: 1em;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .about-container .main-section article .preamble {
@@ -1223,6 +1223,10 @@ footer .footer-bar .youtube i {
 
 .about-container .main-section article .landing-page-img {
   width: 100%;
+}
+
+.about-container .main-section a {
+  color: #1dbef2;
 }
 
 .about-container aside {
@@ -1238,8 +1242,12 @@ footer .footer-bar .youtube i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: white;
+  background-color: #ffffff;
   padding: 1em;
+}
+
+.about-container aside section {
+  padding: 3em 0;
 }
 
 .about-container aside .side-menu {
@@ -1248,13 +1256,14 @@ footer .footer-bar .youtube i {
 }
 
 .about-container aside .side-menu .title {
-  color: white;
+  color: #ffffff;
   font-weight: bold;
   cursor: pointer;
+  padding: 1em 0;
 }
 
 .about-container aside .side-menu .description {
-  color: white;
+  color: #ffffff;
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.3s;
@@ -1262,9 +1271,27 @@ footer .footer-bar .youtube i {
 }
 
 .about-container aside .side-menu .active + .description {
-  max-height: 200px;
+  max-height: 400px;
   -webkit-transition: max-height 0.2s;
   transition: max-height 0.2s;
+  background-color: #2d3646;
+}
+
+.about-container aside .side-menu .active + .description li {
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border-bottom: 1px solid #191e27;
+}
+
+.about-container aside .side-menu .active + .description li:first-of-type {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.about-container aside .side-menu .active + .description li:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: 0;
 }
 
 .about-container aside .side-menu ul {
@@ -1325,6 +1352,14 @@ footer .footer-bar .youtube i {
 .about-container aside .competitions {
   background-color: #e7e7e7;
   padding: 1em;
+}
+
+.about-container aside .competitions p {
+  margin-top: 1em;
+}
+
+.about-container aside .competitions a {
+  color: #1dbef2;
 }
 
 .landing-page-heading {
