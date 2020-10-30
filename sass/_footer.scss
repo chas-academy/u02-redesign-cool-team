@@ -9,11 +9,27 @@ footer {
 
   .container {
     display: flex;
+
+    @include responsive(730) {
+      flex-direction: column;
+    }
   }
 
   h2 {
     font-size: 2rem;
     text-transform: uppercase;
+
+    @include responsive(1230) {
+      font-size: 1.5rem;
+    }
+
+    @include responsive(960) {
+      font-size: 1.3rem;
+    }
+
+    @include responsive(840) {
+      font-size: 1rem;
+    }
 
     &::before {
       content: "";
@@ -39,11 +55,19 @@ footer {
       padding: 1rem 0;
       font-size: 1.2rem;
 
+      @include responsive(960) {
+        font-size: 1rem;
+      }
+
       .contact-title {
         text-transform: uppercase;
         font-size: 1.4rem;
         font-weight: 600;
         margin-bottom: 0.5rem;
+
+        @include responsive(960) {
+          font-size: 1.2rem;
+        }
       }
     }
   }
@@ -99,6 +123,10 @@ footer {
       background-color: $secondary-color;
       padding: 1rem 0 1rem 1rem;
       color: $primary-color;
+
+      @include responsive(730) {
+        text-align: center;
+      }
     }
 
     .footer-right {
@@ -120,6 +148,15 @@ footer {
       i {
         font-size: 1.5rem;
         margin-left: 0.5rem;
+      }
+
+      @include responsive(1230) {
+        padding-right: 1rem;
+        padding-left: 0;
+      }
+
+      @include responsive(730) {
+        justify-content: center;
       }
     }
   }

@@ -5,6 +5,31 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
+    @include responsive(1280) {
+      padding: 4rem 1rem;
+    }
+
+    @include responsive(1160) {
+      padding: 3rem;
+    }
+
+    @include responsive(960) {
+      padding: 3rem 2rem;
+    }
+
+    @include responsive(840) {
+      padding: 3rem 1rem;
+    }
+
+    @include responsive(730) {
+      flex-direction: column;
+      padding: 2rem;
+    }
+
+    @include responsive(600) {
+      padding: 2rem 1rem;
+    }
+
     .sevice-item {
       flex-basis: 32%;
       padding: 1rem;
@@ -13,6 +38,10 @@
       border-radius: 5px;
       margin-bottom: 2rem;
       transition: border 0.3s ease-out;
+
+      @include responsive(1160) {
+        flex-basis: 48%;
+      }
 
       &:hover {
         border: 1px solid $primary-color;
@@ -31,9 +60,15 @@
       }
 
       img {
-        width: 375px;
+        width: 100%;
         height: 211px;
         transition: border-radius 0.3s ease-out;
+      }
+
+      h2 {
+        @include responsive(1280) {
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -47,5 +82,9 @@
 
   h1 {
     font-size: 2rem;
+
+    @include responsive(730) {
+      font-size: 1.5rem;
+    }
   }
 }
