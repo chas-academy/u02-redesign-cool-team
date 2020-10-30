@@ -157,4 +157,7 @@ $btn-primary: #174b2c;
   font-size: 3em;
 }
 @media only screen and (max-width: 420px) {
+  .about-container {
+    flex-direction: column;
+  }
 }

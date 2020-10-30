@@ -1366,6 +1366,15 @@ footer .footer-bar .youtube i {
   font-size: 3em;
 }
 
+@media only screen and (max-width: 420px) {
+  .about-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 /* PUBLICATIONS starts here */
 .breadcrumbs {
   padding: 1em;
