@@ -178,37 +178,154 @@ body {
 
 /* TOPNAV starts here */
 .topnav {
+  background-color: #191e27;
+  color: #ffffff;
+}
+
+.topnav .topnav-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1280px) {
+  .topnav .topnav-main {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .topnav .topnav-main {
+    padding: 0;
+  }
+}
+
+.topnav .topnav-main .topnav-left {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+@media (max-width: 870px) {
+  .topnav .topnav-main .topnav-left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .topnav .topnav-main .topnav-left {
+    display: none;
+  }
+}
+
+.topnav .topnav-main .topnav-left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topnav .topnav-main .topnav-left ul li {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  padding: 1rem 0 1rem 1rem;
-  margin: 0rem;
-  background-color: #191e27;
-  color: #dddddd;
+  color: #ffffff;
+  padding: 0.8rem 3rem 0.8rem 0;
 }
 
-.topnav li {
-  float: right;
+@media (max-width: 890px) {
+  .topnav .topnav-main .topnav-left ul li:nth-child(2) {
+    display: none;
+  }
 }
 
-.topnav li a {
+.topnav .topnav-main .topnav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 870px) {
+  .topnav .topnav-main .topnav-right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .topnav .topnav-main .topnav-right {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.topnav .topnav-main .topnav-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topnav .topnav-main .topnav-right ul li {
+  list-style-type: none;
+}
+
+.topnav .topnav-main .topnav-right ul li a {
+  color: #ffffff;
+  padding: 0.8rem 3rem;
   display: block;
-  padding: 8px;
-  text-align: center;
-  text-decoration: none;
-  color: #191e27;
+}
+
+@media (max-width: 1200px) {
+  .topnav .topnav-main .topnav-right ul li a {
+    padding: 0.8rem 2rem;
+  }
+}
+
+@media (max-width: 1010px) {
+  .topnav .topnav-main .topnav-right ul li a {
+    padding: 0.8rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .topnav .topnav-main .topnav-right ul li a {
+    padding: 0.8rem 5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .topnav .topnav-main .topnav-right ul li a {
+    padding: 0.8rem 4rem;
+  }
+}
+
+.topnav .topnav-main .topnav-right .topnav-login {
   background-color: #fbea26;
-  margin-right: 1rem;
+  color: #191e27;
 }
 
-.topnav li a:hover {
-  background-color: #191e27;
-  color: #fbea26;
+.topnav .topnav-main i {
+  font-size: 1rem;
+  margin-right: 0.2rem;
 }
 
-/* this is the right bag*/
-/* TOPNAV ends here */
+.topnav .topnav-main a {
+  color: #ffffff;
+}
+
 /* NAVBAR starts here */
 .main-nav {
   background-color: #ffffff;
