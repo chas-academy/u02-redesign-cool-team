@@ -2,7 +2,7 @@
   padding: 1em;
 }
 .statistic {
-  background-color: rgb(255, 254, 254);
+  background-color: $white;
   margin: 1rem;
   border: black solid;
 
@@ -13,6 +13,7 @@
     width: 20rem;
     height: 20.5rem;
     margin-left: 10rem;
+    float: left;
 
     aside {
       padding: 1rem;
@@ -57,20 +58,14 @@
   }
   .statistic-main {
     text-align: left;
-    padding-left: 2rem;
-    padding-bottom: 2rem;
+    padding: 3rem; 
     border: none;
   }
 
-  @media all and (max-width: 480px) {
-    .float-img {
-      width: 100%;
-      margin: auto;
-      float: none;
-    }
-    .statistic-navbar {
-      width: 100%;
-      margin: auto;
+  @media all and (max-width: 414px) {
+    .float-img, .statistic-navbar {
+      width: 94%;
+      margin: 5px auto;
       float: none;
     }
   }
