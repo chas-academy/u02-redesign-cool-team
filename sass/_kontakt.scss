@@ -1,3 +1,6 @@
+// $breakpoint-desktop: 800px;
+// $breakpoint-tablet: 540px;
+
 .contact-page-wrapper {
   h1 {
     color: white;
@@ -18,40 +21,61 @@
 
 .contact-landing-graphic-wrapper {
   background-color: #191e27;
-  display: flex;
-  align-items: center;
   color: white;
+  display: flex;
+
   padding-left: 1rem;
   h1 {
+    font-size: 1rem;
+    font-weight: 300;
     padding-bottom: 60px;
+    margin-top: 2rem;
   }
-
+  
   p {
     margin-right: 10%;
     padding-bottom: 10%;
   }
+ 
 }
 
-
+.contact-landing-text {
+  padding-top: 30px;
+  align-self: center;
+}
 
 .contact-cards-wrapper {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  max-width: 1280px;
 }
 
 .contact-card {
-  background-color: #ffff99;
-  filter: drop-shadow(-10px 7px 4px $primary-color);
-  width: 27%;
+  width: 80%;
+  background-color: #b7d7e6;
+  filter: drop-shadow(-10px 7px 4px rgba($primary-color, .12));
   padding: 10px;
-  margin: 10px;
+  margin: 5px;
   line-height: 1.5rem;
-
+  transform: rotate(-3deg);
+  &:nth-child(2n) {
+    transform: rotate(-1deg);
+    
+  }
+  
   h3 {
+    font-weight: 400;
     font-size: 1.2rem;
     padding: 0 0 1rem 0;
     text-transform: uppercase;
+  }
+  @media (min-width: $breakpoint-tablet) {
+    width: 40%;
+    
+  }
+  @media (min-width: $breakpoint-desktop) {
+    width: 27%;
   }
 }
 
@@ -79,64 +103,118 @@
   text-decoration: none;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 700px) {
   .contact-landing-graphic-wrapper {
-    // color: red;
-    padding-left: 0;
+    display: flex;
     flex-direction: column-reverse;
-
-    img {
-      margin-bottom: 3%;
-    }
-
+    padding: 0;
+    margin-right: 0;
     h2 {
-      color: white;
-      font-size: 1rem;
-      text-transform: uppercase;
-      text-align: center;
-    }
-
-    p {
-      padding: 0 3% 0 3%;
-      margin-top: 5%;
-      margin-bottom: 10%;
-      text-align: center;
-      font-size: 1rem;
-    }
-
+     font-size: 1rem;
+   }
+   p {
+     font-size: 1rem;
+     margin-left: 1rem;
+   }
+   .contact-landing-text {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 5%;
+   }
   }
-  .contact-card {
-    background-color: #ffff99;
-    filter: drop-shadow(-10px 7px 4px $primary-color);
-    width: 70%;
-    margin: 3%;
-    line-height: 1.3rem;
-    font-size: 1rem;
-    word-break: break-word;
+    
+  } // end mq
+  // .contact-landing-page-text {
+  //       h2 {
+  //         font-size: 1rem;
+  //         color: red;
+  //       }
+  //     }
 
-    h3 {
-      font-size: 1rem;
-      text-transform: uppercase;
-    }
 
-    li {
-      font-size: 1rem;
-    }
 
-    p {
-      font-size: 1rem;
-    }
-  }
+
+// @media (min-width: 420px) {
+//   .contact-landing-graphic-wrapper {
+//     flex-direction: column-reverse;
+//   }
+// }
+
+// @media (min-width: $breakpoint-tablet) {
+//   .contact-landing-graphic-wrapper {
+
+//   }
+// }
+// @media (min-width: $breakpoint-desktop) {
+//   .contact-landing-graphic-wrapper {
+//     display: flex;
+//     align-items: center;
+//     padding-left: 1rem;
+//     h1 {
+//       padding-bottom: 60px;
+//     }
+//   }
+// }
+
+// @media only screen and (max-width: 420px) {
+//   .contact-landing-graphic-wrapper {
+//     padding-left: 0;
+//     flex-direction: column-reverse;
+
+//     img {
+//       margin-bottom: 3%;
+//     }
+
+//     h2 {
+//       color: white;
+//       font-size: 1rem;
+//       text-transform: uppercase;
+//       text-align: center;
+//     }
+
+//     p {
+//       padding: 0 3% 0 3%;
+//       margin-top: 5%;
+//       margin-bottom: 10%;
+//       text-align: center;
+//       font-size: 1rem;
+//     }
+
+//   }
+//   .contact-card {
+//     background-color: #ffff99;
+//     filter: drop-shadow(-10px 7px 4px $primary-color);
+//     width: 70%;
+//     margin: 3%;
+//     line-height: 1.3rem;
+//     font-size: 1rem;
+//     word-break: break-word;
+
+//     h3 {
+//       font-size: 1rem;
+//       text-transform: uppercase;
+//     }
+
+//     li {
+//       font-size: 1rem;
+//     }
+
+//     p {
+//       font-size: 1rem;
+//     }
+//   }
 
   
-  .contact-landing-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
+//   .contact-landing-text {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     }
 
-  .forum-button {
-  margin-bottom: 5%;
-}  
-} 
+//   .forum-button {
+//   margin-bottom: 5%;
+// }  
+// } 
