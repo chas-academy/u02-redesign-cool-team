@@ -607,7 +607,7 @@ body {
       grid-template-rows: repeat(7, 1fr);
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "item-1 item-8" "item-2 item-8" "item-3 item-8" "item-4 item-8" "item-5 item-8" "item-6 item-8" "item-7 item-8";
+      grid-template-areas: "item-1 item-8" "item-2 item-8" "item-3 item-8" "item-4 item-8" "item-5 item-8" "item-6 item-8" "item-7 item-8";
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: services-main;
@@ -725,7 +725,7 @@ body {
       grid-template-rows: 1fr 0.7fr repeat(3, 1fr) 0.5fr;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "list-1 list-1" "list-2 list-2" "list-3 list-4" "list-5 list-6" "list-7 list-8" "list-9 list-9";
+      grid-template-areas: "list-1 list-1" "list-2 list-2" "list-3 list-4" "list-5 list-6" "list-7 list-8" "list-9 list-9";
   position: relative;
   border: solid 2.5px;
   -ms-grid-row: 1;
@@ -1601,6 +1601,16 @@ footer .footer-bar .youtube i {
   padding: 1em;
 }
 
+.publications-container aside .mobile-filter-type {
+  display: none;
+}
+
+.publications-container aside #publication-search-bar {
+  margin: 1em 0;
+  padding: 4px;
+  border: 1px solid grey;
+}
+
 .publications-container aside .main-filter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1609,6 +1619,8 @@ footer .footer-bar .youtube i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #e5e5e5;
+  padding: 1em;
 }
 
 .publications-container aside .main-filter .flexbox {
@@ -1628,10 +1640,6 @@ footer .footer-bar .youtube i {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-}
-
-.publications-container aside .main-filter .flexbox .publication-search {
-  margin: 1em 0;
 }
 
 .publications-container aside .main-filter .flexbox .btn-reset {
@@ -1698,12 +1706,52 @@ footer .footer-bar .youtube i {
 }
 
 /* PUBLICATIONS ends here */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   .publications-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  .publications-container .main-section article .preamble {
+    font-size: 1em;
+  }
+  .publications-container .filters-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 1em;
+  }
+  .publications-container .filters-section .mobile-filter-heading {
+    margin: 0.5em 0 0.2em 0;
+  }
+  .publications-container .filter-type {
+    display: none;
+  }
+  .publications-container aside .mobile-filter-type {
+    display: block;
+    padding-left: 1em;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .filters-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .publications-container .mobile-filter-type {
+    padding-left: 0;
   }
 }
 

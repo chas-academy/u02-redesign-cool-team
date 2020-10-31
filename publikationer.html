@@ -113,9 +113,9 @@
                 </h2>
               </article>
                <ul class="publication-list">
-                 <li class="pub-item"><a href="#"><img src="./assets/images/publications/placeholder.png" alt="placeholder for publication"></a>
+                 <li class="pub-item"><a href="https://www.myh.se/Publikationer/2020/Handbok-for-tilltrade-till-yrkeshogskolan---2020/"><img src="./assets/images/publications/placeholder.png" alt="bild på handbokens omlsag"></a>
                   <div class="pub-item-content">
-                    <h4><a href="#">Handbok för tillträde till yrkeshögskolan - 2020</a></h4>
+                    <h4><a href="https://www.myh.se/Publikationer/2020/Handbok-for-tilltrade-till-yrkeshogskolan---2020/">Handbok för tillträde till yrkeshögskolan - 2020</a></h4>
                     <p class="preview"><span class="release-date">Utgiven: 2020-07-10</span>Denna handbok vänder sig i första hand till de som bedriver yrkeshögskoleutbildning och behöver stöd...  </p>
                     <a class="pdf-link" href="https://www.myh.se/Documents/Publikationer/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf"><i class="fas fa-file-pdf">&nbsp;</i>Handbok för tillträde till yrkeshögskolan - 2020</a>
                   </div>
@@ -156,8 +156,7 @@
             <aside>
               <section class="main-filter">
                 <h3>Filtrera publikationer</h3>
-                <label for="publicantion-search-bar" class="publicantion-search"><i class="fas fa-search"></i> </label
-                ><input id="publicantion-search-bar" type="text" placeholder="Sök efter publikation..."/>
+                <label for="publication-search-bar" class="publication-search"><i class="fas fa-search"></i> </label><input id="publication-search-bar" type="text" placeholder="Sök efter publikation..."/>
                 <div class="flexbox">
                   <label for="per-page">Resultat per sida
                   <select name="per-page" id="per-page">
@@ -170,6 +169,17 @@
               </section>
             
               <section class="filters-section">
+                <!-- MOBILE -->
+                <section class="mobile-filter-type">
+                  <h5 class="mobile-filter-heading">Publikationstyp</h5>
+                  <select name="publication-type" id="publication-type">
+                    <option value="rapporter">Rapporter</option>
+                    <option value="aterrapportering">Återrapportering av regeringsuppdrag</option>
+                    <option value="informationsmaterial">Informationsmaterial</option>
+                    <option value="arsredovisningar">Årsredovisningar</option>
+                  </select>
+                </section>
+                <!-- DESKTOP -->
                 <section class="filter-type">
                   <h5 class="filter-heading">Publikationstyp</h5>
                   <ul class="filter-options">
@@ -180,6 +190,19 @@
                     <li><a href="#">Årsredovisningar</a>15</li>
                   </ul>
                 </section>
+                <!-- MOBILE -->
+                <section class="mobile-filter-type">
+                  <h5 class="mobile-filter-heading">Verksamhetsområde</h5>
+                  <select name="publication-type" id="publication-type">
+                    <option value="yrkeshogskolan">Yrkeshögskolan</option>
+                    <option value="konst-kultur">Konst- och kulturutbildningar</option>
+                    <option value="tolkutbildningar">Tolkutbildningar</option>
+                    <option value="tillsyn">Utbildningar med endast tillsyn</option>
+                    <option value="validering">Validering</option>
+                    <option value="seqf">SeQF</option>
+                  </select>
+                </section>
+                <!-- DESKTOP -->
                 <section class="filter-type">
                   <h5 class="filter-heading">Verksamhetsområde</h5>
                   <ul class="filter-options">
@@ -192,6 +215,24 @@
                     <li><a href="#">SeQF</a>13</li>
                   </ul>
                 </section>
+                <!-- MOBILE -->
+                <section class="mobile-filter-type">
+                  <h5 class="mobile-filter-heading">År</h5>
+                  <select name="publication-type" id="publication-type">
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                  </select>
+                </section>
+                <!-- DESKTOP -->
                 <section class="filter-type">
                   <h5 class="filter-heading">År</h5>
                   <ul class="filter-options">
