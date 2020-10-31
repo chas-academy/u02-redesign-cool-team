@@ -1662,7 +1662,7 @@ footer .footer-bar .youtube i {
 }
 
 .statistic {
-  background-color: #ffffff;
+  background-color: #fffefe;
   margin: 1rem;
   border: black solid;
 }
@@ -1674,7 +1674,6 @@ footer .footer-bar .youtube i {
   width: 20rem;
   height: 20.5rem;
   margin-left: 10rem;
-  float: left;
 }
 
 .statistic .statistic-navbar aside {
@@ -1730,14 +1729,20 @@ footer .footer-bar .youtube i {
 
 .statistic .statistic-main {
   text-align: left;
-  padding: 3rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
   border: none;
 }
 
-@media all and (max-width: 414px) {
-  .statistic .float-img, .statistic .statistic-navbar {
-    width: 94%;
-    margin: 5px auto;
+@media all and (max-width: 480px) {
+  .statistic .float-img {
+    width: 100%;
+    margin: auto;
+    float: none;
+  }
+  .statistic .statistic-navbar {
+    width: 100%;
+    margin: auto;
     float: none;
   }
 }
