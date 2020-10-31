@@ -1563,6 +1563,15 @@ footer .footer-bar .youtube i {
 }
 
 /* PUBLICATIONS ends here */
+@media only screen and (max-width: 1000px) {
+  .publications-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .page-services .page-content {
   padding: 4rem 0;
   display: -webkit-box;

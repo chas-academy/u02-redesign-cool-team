@@ -177,4 +177,8 @@
 }
 /* PUBLICATIONS ends here */
 
-@media only screen and (max-width: 1000px);
+@media only screen and (max-width: 1000px) {
+  .publications-container {
+    flex-direction: column-reverse;
+  }
+}
