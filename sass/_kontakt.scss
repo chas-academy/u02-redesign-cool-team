@@ -32,19 +32,6 @@
   }
 }
 
-.placeholder-for-buttons {
-  background-color: gray;
-  p {
-    font-size: 40px;
-  }
-}
-.placeholder-for-breadcrumbs {
-  background-color: gray;
-  p {
-    font-size: 40px;
-  }
-}
-
 .contact-cards-wrapper {
   display: flex;
   justify-content: space-evenly;
@@ -104,3 +91,60 @@
   justify-content: center;
   padding: 2% 0 2% 0;
 }
+
+@media only screen and (max-width: 420px) {
+  .contact-landing-graphic-wrapper {
+    color: red;
+    flex-direction: column-reverse;
+    padding-left: 0;
+
+    img {
+      margin-bottom: 3%;
+    }
+
+    h2 {
+      color: white;
+      font-size: 1rem;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    p {
+      padding: 0 3% 0 3%;
+      margin-top: 5%;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+  }
+  .contact-card {
+    background-color: #ffff99;
+    filter: drop-shadow(-10px 7px 4px $primary-color);
+    width: 70%;
+    margin: 3%;
+    line-height: 1.3rem;
+    font-size: 1rem;
+    word-break: break-word;
+
+    h3 {
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+
+    li {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  
+    .kontakt-3-button-container {
+      // display: flex;
+      // flex-direction: column;
+      // padding: 10% 0 10% 0;
+      background-color: red;
+    }
+} // end media q

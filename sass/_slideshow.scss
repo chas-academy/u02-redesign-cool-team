@@ -11,6 +11,7 @@
   position: relative;
   display: flex;
   align-items: center;
+
 }
 
 .slide {
@@ -72,6 +73,8 @@
     padding: 12px 36px;
     text-transform: uppercase;
     text-decoration: none;
+    
+    
   }
 }
 
@@ -111,3 +114,17 @@
     transform: translateX(0);
   }
 }
+
+
+// @media only screen and (max-width: 420px) {
+//   .slideshow {
+//     width: 100%;
+//     height: 30%;
+//     color: red;
+
+//   }
+ 
+//   .slide {
+//     padding: 2%;
+//   }
+// }

@@ -976,22 +976,6 @@ footer .footer-bar .youtube i {
   padding-bottom: 20px;
 }
 
-.placeholder-for-buttons {
-  background-color: gray;
-}
-
-.placeholder-for-buttons p {
-  font-size: 40px;
-}
-
-.placeholder-for-breadcrumbs {
-  background-color: gray;
-}
-
-.placeholder-for-breadcrumbs p {
-  font-size: 40px;
-}
-
 .contact-cards-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1061,6 +1045,55 @@ footer .footer-bar .youtube i {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 2% 0 2% 0;
+}
+
+@media only screen and (max-width: 420px) {
+  .contact-landing-graphic-wrapper {
+    color: red;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-left: 0;
+  }
+  .contact-landing-graphic-wrapper img {
+    margin-bottom: 3%;
+  }
+  .contact-landing-graphic-wrapper h2 {
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .contact-landing-graphic-wrapper p {
+    padding: 0 3% 0 3%;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .contact-card {
+    background-color: #ffff99;
+    -webkit-filter: drop-shadow(-10px 7px 4px #191e27);
+            filter: drop-shadow(-10px 7px 4px #191e27);
+    width: 70%;
+    margin: 3%;
+    line-height: 1.3rem;
+    font-size: 1rem;
+    word-break: break-word;
+  }
+  .contact-card h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  .contact-card li {
+    font-size: 1rem;
+  }
+  .contact-card p {
+    font-size: 1rem;
+  }
+  .kontakt-3-button-container {
+    background-color: red;
+  }
 }
 
 .breadcrumbs {
