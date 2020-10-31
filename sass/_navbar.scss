@@ -3,7 +3,10 @@
   background-color: $white;
   z-index: 999;
 
-  #hamburger-btn,
+  #hamburger-btn {
+    height: 0;
+    width: 0;
+  }
   .hamburger-toggle {
     display: none;
   }
@@ -111,8 +114,45 @@
 }
 /* NAVBAR ends here */
 
-@media only screen and (max-width: 1000px) {
+// Side-padding for smaller screens
+@media only screen and (max-width: 1337px) {
   .main-nav {
-    background-color: aqua;
+    // background-color: green;
+    padding: 0 1em;
+  }
+}
+// Styling for hamburger-menu
+@media only screen and (max-width: 1000px) {
+  .flex-col {
+    // background-color: aqua;
+    display: flex;
+    flex-direction: column;
+
+    .flex-row {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo,
+    .hamburger-toggle {
+      display: block;
+      padding-top: 1em;
+    }
+
+    .menu {
+      // background-color: cadetblue;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .item {
+        width: 100%;
+      }
+      .search-item {
+        width: 100%;
+        text-align: left;
+        padding-bottom: 1em;
+      }
+    }
   }
 }
