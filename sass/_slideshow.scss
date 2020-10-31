@@ -1,7 +1,16 @@
+$breakpoint-desktop: 800px;
+$breakpoint-tablet: 540px;
+
 .hero {
+  height: 300px;
   width: 100%;
-  height: 628px;
   overflow: hidden;
+  @media (min-width: $breakpoint-tablet) {
+    height: 420px;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    height: 628px;
+  }
 }
 
 .slideshow {
@@ -17,14 +26,17 @@
 .slide {
   width: 100%;
   height: 100%;
-  padding: 125px 113px;
+  padding: 125px 70px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
   left: 0;
   top: 0;
+@media (min-width: $breakpoint-desktop) {
+  padding: 125px 113px;
 
+}
   &-active {
     z-index: 2;
     animation: show-slide 1s ease-out;
@@ -61,18 +73,36 @@
   position: relative;
 
   h2 {
-    font-size: 50px;
+    font-size: 24px;
     color: white;
     text-transform: uppercase;
-    margin-bottom: 76px;
+    margin-bottom: 45px;
+
+    @media (min-width: $breakpoint-desktop) {
+      font-size: 50px;
+      margin-bottom: 76px;
+    
+  } 
+
   }
   .slide-button {
-    font-size: 25px;
+    font-size: 18px;
     background-color: #fbea26;
     color: black;
-    padding: 12px 36px;
+    padding: 12px 24px;
     text-transform: uppercase;
     text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    @media (min-width: $breakpoint-tablet) {
+      text-align: left;
+      width: auto;
+    }
+    @media (min-width: $breakpoint-desktop) {
+      font-size: 25px;
+      padding: 12px 36px;
+    }
     
     
   }
