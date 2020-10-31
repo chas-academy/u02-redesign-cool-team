@@ -973,7 +973,7 @@ footer .footer-bar .youtube i {
 
 .contact-landing-graphic-wrapper p {
   margin-right: 10%;
-  padding-bottom: 20px;
+  padding-bottom: 10%;
 }
 
 .contact-cards-wrapper {
@@ -1023,38 +1023,21 @@ footer .footer-bar .youtube i {
 }
 
 .forum-button {
-  color: #191e27;
+  font-size: 1rem;
   background-color: #fbea26;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
+  color: black;
+  padding: 12px 36px;
   text-transform: uppercase;
-}
-
-.forum-button:hover {
-  background-color: #191e27;
-  color: #fbea26;
   text-decoration: none;
-}
-
-.kontakt-3-button-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 2% 0 2% 0;
 }
 
 @media only screen and (max-width: 420px) {
   .contact-landing-graphic-wrapper {
-    color: red;
+    padding-left: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    padding-left: 0;
   }
   .contact-landing-graphic-wrapper img {
     margin-bottom: 3%;
@@ -1068,6 +1051,7 @@ footer .footer-bar .youtube i {
   .contact-landing-graphic-wrapper p {
     padding: 0 3% 0 3%;
     margin-top: 5%;
+    margin-bottom: 10%;
     text-align: center;
     font-size: 1rem;
   }
@@ -1091,8 +1075,23 @@ footer .footer-bar .youtube i {
   .contact-card p {
     font-size: 1rem;
   }
-  .kontakt-3-button-container {
-    background-color: red;
+  .contact-landing-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .forum-button {
+    margin-bottom: 5%;
   }
 }
 

@@ -28,9 +28,11 @@
 
   p {
     margin-right: 10%;
-    padding-bottom: 20px;
+    padding-bottom: 10%;
   }
 }
+
+
 
 .contact-cards-wrapper {
   display: flex;
@@ -45,9 +47,6 @@
   padding: 10px;
   margin: 10px;
   line-height: 1.5rem;
-  // border: 1px solid black;
-  // border-radius: 5px;
-  // background-image: linear-gradient(white, rgb(209, 205, 205));
 
   h3 {
     font-size: 1.2rem;
@@ -72,31 +71,19 @@
 }
 
 .forum-button {
-  color: $primary-color;
-  background-color: $secondary-color;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
+  font-size: 1rem;
+  background-color: #fbea26;
+  color: black;
+  padding: 12px 36px;
   text-transform: uppercase;
-
-  &:hover {
-    background-color: $primary-color;
-    color: $secondary-color;
-    text-decoration: none;
-  }
-}
-
-.kontakt-3-button-container {
-  display: flex;
-  justify-content: center;
-  padding: 2% 0 2% 0;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 420px) {
   .contact-landing-graphic-wrapper {
-    color: red;
-    flex-direction: column-reverse;
+    // color: red;
     padding-left: 0;
+    flex-direction: column-reverse;
 
     img {
       margin-bottom: 3%;
@@ -112,6 +99,7 @@
     p {
       padding: 0 3% 0 3%;
       margin-top: 5%;
+      margin-bottom: 10%;
       text-align: center;
       font-size: 1rem;
     }
@@ -141,10 +129,14 @@
   }
 
   
-    .kontakt-3-button-container {
-      // display: flex;
-      // flex-direction: column;
-      // padding: 10% 0 10% 0;
-      background-color: red;
+  .contact-landing-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
-} // end media q
+
+  .forum-button {
+  margin-bottom: 5%;
+}  
+} 
