@@ -62,13 +62,8 @@
     border: none;
   }
 
-  @media all and (max-width: 480px) {
-    .float-img {
-      width: 100%;
-      margin: auto;
-      float: none;
-    }
-    .statistic-navbar {
+  @media all and (max-width: 420px) {
+    .float-img, .statistic-navbar {
       width: 100%;
       margin: auto;
       float: none;
