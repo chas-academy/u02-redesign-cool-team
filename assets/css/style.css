@@ -1735,12 +1735,7 @@ footer .footer-bar .youtube i {
 }
 
 @media all and (max-width: 480px) {
-  .statistic .float-img {
-    width: 100%;
-    margin: auto;
-    float: none;
-  }
-  .statistic .statistic-navbar {
+  .statistic .float-img, .statistic .statistic-navbar {
     width: 100%;
     margin: auto;
     float: none;
