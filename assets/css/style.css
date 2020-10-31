@@ -1224,6 +1224,7 @@ footer .footer-bar .youtube i {
 
 .about-container .main-section article .preamble {
   margin: 1em 3em 1em 0;
+  font-size: 1.5em;
 }
 
 .about-container .main-section article p {
@@ -1374,6 +1375,7 @@ footer .footer-bar .youtube i {
 
 .publications-container .main-section article .preamble {
   margin: 1em 3em 1em 0;
+  font-size: 1.5em;
 }
 
 .publications-container .main-section article p {
@@ -1406,12 +1408,24 @@ footer .footer-bar .youtube i {
   padding: 1em;
 }
 
+.publications-container .publication-list .pub-item .pub-item-content h4 {
+  margin-bottom: 1em;
+}
+
+.publications-container .publication-list .pub-item .pub-item-content .preview {
+  margin-bottom: 1em;
+}
+
 .publications-container .publication-list .pub-item .pub-item-content .preview .release-date {
   margin-right: 1em;
   text-transform: uppercase;
   font-size: 0.8 em;
   font-weight: bold;
   color: #8b9ab4;
+}
+
+.publications-container .publication-list .pub-item a {
+  color: #1dbef2;
 }
 
 .publications-container .page-select {
@@ -1664,6 +1678,11 @@ footer .footer-bar .youtube i {
   .page-title h1 {
     font-size: 1.5rem;
   }
+}
+
+.page-title .page-title-p {
+  width: 50%;
+  margin: 0 auto;
 }
 
 .nav-side {

@@ -26,6 +26,7 @@
 
       .preamble {
         margin: 1em 3em 1em 0;
+        font-size: 1.5em;
       }
       p {
         margin: 1em 4em 1em 0;
@@ -51,7 +52,12 @@
         flex: 3;
         padding: 1em;
 
+        h4 {
+          margin-bottom: 1em;
+        }
+
         .preview {
+          margin-bottom: 1em;
           .release-date {
             margin-right: 1em;
             text-transform: uppercase;
@@ -60,6 +66,9 @@
             color: lighten($color: $primary-color, $amount: 50);
           }
         }
+      }
+      a {
+        color: $link-color;
       }
     }
   }
@@ -167,3 +176,5 @@
   }
 }
 /* PUBLICATIONS ends here */
+
+@media only screen and (max-width: 1000px);
