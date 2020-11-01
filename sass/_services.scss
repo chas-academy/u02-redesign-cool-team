@@ -6,11 +6,22 @@
   grid-template-areas: ". services-main . calender-main .";
   padding: 4rem 0;
 
+  @include responsive(1280) {
+    padding: 4rem 1rem;
+  }
+
+  @include responsive(800) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "services-main"
+      "calender-main";
+  }
+
   // Services
   #services-main {
     background-color: #fbea26;
     grid-template-columns: 3fr 2fr;
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     display: grid;
     grid-template-areas:
       "item-1 item-8"
@@ -19,9 +30,27 @@
       "item-4 item-8"
       "item-5 item-8"
       "item-6 item-8"
-      "item-7 item-8";
+      "item-7 item-8"
+      "service-btn item-8";
     grid-area: services-main;
     padding: 1rem;
+
+    @include responsive(1020) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "item-1"
+        "item-2"
+        "item-3"
+        "item-4"
+        "item-5"
+        "item-6"
+        "item-7"
+        "service-btn";
+    }
+
+    @include responsive(800) {
+      margin-bottom: 2rem;
+    }
 
     @mixin item-hover {
       transition: all 0.3s ease-out;
@@ -39,11 +68,19 @@
       margin-right: 1rem;
       padding: 0 0.4rem;
       @include item-hover();
+
+      @include responsive(800) {
+        padding: 0.5rem 0;
+      }
     }
 
     .item-1 {
       text-transform: uppercase;
       font-size: 30px;
+
+      @include responsive(870) {
+        font-size: 1.5rem;
+      }
     }
 
     .item-7 {
@@ -103,6 +140,24 @@
 
     .item-8 {
       grid-area: item-8;
+
+      @include responsive(1020) {
+        display: none;
+      }
+    }
+
+    .service-btn {
+      grid-area: service-btn;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $white;
+      margin-right: 1rem;
+      margin-top: 1rem;
+
+      a {
+        text-transform: uppercase;
+      }
     }
   }
 
@@ -153,11 +208,13 @@
 
     .list-9 {
       border-top: solid 2.5px;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 1rem;
     }
 
     // last = last element
     #last {
-      margin-left: 250px;
       text-decoration: underline;
     }
 
