@@ -10,7 +10,7 @@ footer {
   .container {
     display: flex;
 
-    @include responsive(730) {
+    @include responsive(800) {
       flex-direction: column;
     }
   }
@@ -124,7 +124,7 @@ footer {
       padding: 1rem 0 1rem 1rem;
       color: $primary-color;
 
-      @include responsive(730) {
+      @include responsive(800) {
         text-align: center;
       }
     }
@@ -155,7 +155,7 @@ footer {
         padding-left: 0;
       }
 
-      @include responsive(730) {
+      @include responsive(800) {
         justify-content: center;
       }
     }
