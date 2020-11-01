@@ -1438,11 +1438,15 @@ footer .footer-bar .youtube i {
 }
 
 .about-container .main-section article p {
-  margin: 1em 4em 1em 0;
+  margin: 1em 10% 1em 0;
 }
 
 .about-container .main-section article .landing-page-img {
   width: 100%;
+}
+
+.about-container .main-section article a {
+  color: #1d80f2;
 }
 
 .about-container aside {
@@ -1546,8 +1550,28 @@ footer .footer-bar .youtube i {
   padding: 1em;
 }
 
+.about-container aside .competitions p {
+  margin-bottom: 1em;
+}
+
+.about-container aside .competitions a {
+  color: #1d80f2;
+}
+
 .landing-page-heading {
   font-size: 3em;
+}
+
+@media only screen and (max-width: 1050px) {
+  .about-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-container .main-section article p {
+    margin: 1em 0 0 0;
+  }
 }
 
 /* PUBLICATIONS starts here */
@@ -1636,7 +1660,7 @@ footer .footer-bar .youtube i {
 }
 
 .publications-container .publication-list .pub-item a {
-  color: #1dbef2;
+  color: #1d80f2;
 }
 
 .publications-container .page-select {

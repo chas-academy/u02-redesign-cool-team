@@ -17,13 +17,11 @@ $btn-primary: #174b2c;
   }
 
   .main-section {
-    //border: 1px solid black;
     flex: 2;
     margin-right: 1em;
     padding-left: 1em;
     background-color: white;
     article {
-      //border: 1px solid black;
       margin: 1em;
       background-color: white;
       .preamble {
@@ -31,10 +29,13 @@ $btn-primary: #174b2c;
         font-size: 1.5em;
       }
       p {
-        margin: 1em 4em 1em 0;
+        margin: 1em 10% 1em 0;
       }
       .landing-page-img {
         width: 100%;
+      }
+      a {
+        color: $link-color;
       }
     }
   }
@@ -120,6 +121,13 @@ $btn-primary: #174b2c;
     .competitions {
       background-color: #e7e7e7;
       padding: 1em;
+
+      p {
+        margin-bottom: 1em;
+      }
+      a {
+        color: $link-color;
+      }
     }
   }
 }
@@ -127,19 +135,16 @@ $btn-primary: #174b2c;
 .landing-page-heading {
   font-size: 3em;
 }
-// .side-menu {
-//   .title {
-//     color: white;
-//   }
-//   .description {
-//     color: white;
-//     max-height: 0;
-//     overflow: hidden;
-//     transition: max-height 0.3s;
-//   }
-//   /* för description bredvid active */
-//   .active + .description {
-//     max-height: 200px;
-//     transition: max-height 0.2s;
-//   }
-// }
+
+@media only screen and (max-width: 1050px) {
+  .about-container {
+    flex-direction: column;
+    .main-section {
+      article {
+        p {
+          margin: 1em 0 0 0;
+        }
+      }
+    }
+  }
+}
