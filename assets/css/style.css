@@ -607,7 +607,7 @@ body {
       grid-template-rows: repeat(7, 1fr);
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "item-1 item-8" "item-2 item-8" "item-3 item-8" "item-4 item-8" "item-5 item-8" "item-6 item-8" "item-7 item-8";
+      grid-template-areas: "item-1 item-8" "item-2 item-8" "item-3 item-8" "item-4 item-8" "item-5 item-8" "item-6 item-8" "item-7 item-8";
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: services-main;
@@ -725,7 +725,7 @@ body {
       grid-template-rows: 1fr 0.7fr repeat(3, 1fr) 0.5fr;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "list-1 list-1" "list-2 list-2" "list-3 list-4" "list-5 list-6" "list-7 list-8" "list-9 list-9";
+      grid-template-areas: "list-1 list-1" "list-2 list-2" "list-3 list-4" "list-5 list-6" "list-7 list-8" "list-9 list-9";
   position: relative;
   border: solid 2.5px;
   -ms-grid-row: 1;
@@ -1850,54 +1850,58 @@ footer .footer-bar .youtube i {
   transition: border-radius 0.3s ease-out;
 }
 
-<<<<<<< HEAD
+@media (max-width: 1280px) {
+  .page-services .page-content .sevice-item h2 {
+    font-size: 1rem;
+  }
+}
+
+.page-title {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #f5f5f5;
+  color: #191e27;
+}
+
+.page-title h1 {
+  font-size: 2rem;
+}
+
+@media (max-width: 730px) {
+  .page-title h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.page-title .page-title-p {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .nyheter {
   display: -ms-grid;
   display: grid;
   height: 300vh;
-  -ms-grid-columns: 0.15fr 1fr 0.5fr 0.15fr;
-      grid-template-columns: 0.15fr 1fr 0.5fr 0.15fr;
+  -ms-grid-columns: 1fr 0.5fr;
+      grid-template-columns: 1fr 0.5fr;
   -ms-grid-rows: 0.03fr 0.05fr 1fr;
       grid-template-rows: 0.03fr 0.05fr 1fr;
-      grid-template-areas: "upper upper upper upper" ". breadcrumbs . ." ". nyheter-main nyheter-main .";
-}
-
-.nyheter .upper {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: upper;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  text-align: center;
-  background-color: #f5f5f5;
-  padding: 2rem;
-}
-
-.nyheter .upper h1 {
-  font-size: 2rem;
-}
-
-.nyheter .breadcrumbs {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: breadcrumbs;
+      grid-template-areas: "nyheter-main nyheter-main";
 }
 
 .nyheter .nyheter-main {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: nyheter-main;
   background-color: #f5f5f5;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
-  -ms-grid-rows: 0.1fr 1fr;
-      grid-template-rows: 0.1fr 1fr;
-      grid-template-areas: "aktuellt-content aktuellt-content aktuellt-content aktuellt-content aktuellt-content aktuellt-content";
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "aktuellt-content";
 }
 
 .nyheter .nyheter-main .title-text {
@@ -1910,34 +1914,9 @@ footer .footer-bar .youtube i {
   background: lightgrey;
 }
 
-.nyheter .nyheter-main .aktuellt {
-  grid-area: aktuellt;
-}
-
-.nyheter .nyheter-main .pressmeddelanden {
-  grid-area: pressmeddelanden;
-}
-
-.nyheter .nyheter-main .kalender {
-  grid-area: kalender;
-}
-
-.nyheter .nyheter-main .filmer {
-  grid-area: filmer;
-}
-
-.nyheter .nyheter-main .pressbilder {
-  grid-area: pressbilder;
-}
-
-.nyheter .nyheter-main .nyhetsbrev {
-  grid-area: nyhetsbrev;
-}
-
 .nyheter .nyheter-main .aktuellt-content {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
   grid-area: aktuellt-content;
   -ms-grid-columns: 1fr 0.1fr;
       grid-template-columns: 1fr 0.1fr;
@@ -1953,12 +1932,12 @@ footer .footer-bar .youtube i {
   margin: 20px;
 }
 
-.nyheter .nyheter-main .aktuellt-content .aktuellt-main h4:hover {
+.nyheter .nyheter-main .aktuellt-content .aktuellt-main h2:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
-.nyheter .nyheter-main .aktuellt-content h4 {
+.nyheter .nyheter-main .aktuellt-content h2 {
   margin-bottom: 10px;
 }
 
@@ -2037,12 +2016,12 @@ footer .footer-bar .youtube i {
   margin: 20px;
 }
 
-.nyheter .nyheter-main .pressmeddelanden-content .pressmeddelanden-main h4:hover {
+.nyheter .nyheter-main .pressmeddelanden-content .pressmeddelanden-main h2:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
-.nyheter .nyheter-main .pressmeddelanden-content h4 {
+.nyheter .nyheter-main .pressmeddelanden-content h2 {
   margin-bottom: 10px;
 }
 
@@ -2236,33 +2215,6 @@ footer .footer-bar .youtube i {
 
 .nyheter .nyheter-main .kalender-content .text-5 {
   grid-area: text-5;
-=======
-@media (max-width: 1280px) {
-  .page-services .page-content .sevice-item h2 {
-    font-size: 1rem;
-  }
-}
-
-.page-title {
-  padding: 2rem 0;
-  text-align: center;
-  background-color: #f5f5f5;
-  color: #191e27;
-}
-
-.page-title h1 {
-  font-size: 2rem;
-}
-
-@media (max-width: 730px) {
-  .page-title h1 {
-    font-size: 1.5rem;
-  }
-}
-
-.page-title .page-title-p {
-  width: 50%;
-  margin: 0 auto;
 }
 
 .nav-side {
@@ -2347,5 +2299,4 @@ footer .footer-bar .youtube i {
     margin: auto;
     float: none;
   }
->>>>>>> main
 }

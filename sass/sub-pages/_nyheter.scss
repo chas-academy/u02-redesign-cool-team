@@ -1,38 +1,19 @@
 .nyheter {
     display: grid;
     height: 300vh;
-    grid-template-columns: 0.15fr 1fr 0.5fr 0.15fr;
+    grid-template-columns: 1fr 0.5fr;
     grid-template-rows: 0.03fr 0.05fr 1fr;
     grid-template-areas:
-    "upper upper upper upper"
-    ". breadcrumbs . ."
-    ". nyheter-main nyheter-main .";
-
-    .upper {
-        grid-area: upper;
-        align-self: center;
-        text-align: center;
-        background-color: #f5f5f5;
-        padding: 2rem;
-
-        h1 {
-            font-size: 2rem;
-        }
-    }
-
-    .breadcrumbs {
-        grid-area: breadcrumbs;
-    }
+    "nyheter-main nyheter-main";
 
     .nyheter-main {
         grid-area: nyheter-main;
         background-color: #f5f5f5;
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 0.1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         grid-template-areas: 
-        //"aktuellt pressmeddelanden kalender filmer pressbilder nyhetsbrev"
-        "aktuellt-content aktuellt-content aktuellt-content aktuellt-content aktuellt-content aktuellt-content";
+        "aktuellt-content";
         //"pressmeddelanden-content pressmeddelanden-content pressmeddelanden-content pressmeddelanden-content pressmeddelanden-content pressmeddelanden-content";
         //"kalender-content kalender-content kalender-content kalender-content kalender-content kalender-content";
 
@@ -44,30 +25,6 @@
         .title-text:hover {
             cursor: pointer;
             background: lightgrey;
-        }
-
-        .aktuellt {
-            grid-area: aktuellt;
-        }
-
-        .pressmeddelanden {
-            grid-area: pressmeddelanden;
-        }
-
-        .kalender {
-            grid-area: kalender;
-        }
-
-        .filmer {
-            grid-area: filmer;
-        }
-
-        .pressbilder {
-            grid-area: pressbilder;
-        }
-
-        .nyhetsbrev {
-            grid-area: nyhetsbrev;
         }
 
         .aktuellt-content {
@@ -90,13 +47,13 @@
                 border-bottom: 2px solid grey;
                 margin: 20px;
 
-                h4:hover {
+                h2:hover {
                     cursor: pointer;
                     text-decoration: underline;
                 }
             }
 
-            h4 {
+            h2 {
                 margin-bottom: 10px;
             }
 
@@ -164,13 +121,13 @@
                 border-bottom: 2px solid grey;
                 margin: 20px;
 
-                h4:hover {
+                h2:hover {
                     cursor: pointer;
                     text-decoration: underline;
                 }
             }
 
-            h4 {
+            h2 {
                 margin-bottom: 10px;
             }
 
