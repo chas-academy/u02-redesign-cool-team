@@ -1,0 +1,329 @@
+.nyheter {
+    display: grid;
+    height: 300vh;
+    grid-template-columns: 0.15fr 1fr 0.5fr 0.15fr;
+    grid-template-rows: 0.03fr 0.05fr 1fr;
+    grid-template-areas:
+    "upper upper upper upper"
+    ". breadcrumbs . ."
+    ". nyheter-main nyheter-main .";
+
+    .upper {
+        grid-area: upper;
+        align-self: center;
+        text-align: center;
+        background-color: #f5f5f5;
+        padding: 2rem;
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    .breadcrumbs {
+        grid-area: breadcrumbs;
+    }
+
+    .nyheter-main {
+        grid-area: nyheter-main;
+        background-color: #f5f5f5;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 0.1fr 1fr;
+        grid-template-areas: 
+        //"aktuellt pressmeddelanden kalender filmer pressbilder nyhetsbrev"
+        "aktuellt-content aktuellt-content aktuellt-content aktuellt-content aktuellt-content aktuellt-content";
+        //"pressmeddelanden-content pressmeddelanden-content pressmeddelanden-content pressmeddelanden-content pressmeddelanden-content pressmeddelanden-content";
+        //"kalender-content kalender-content kalender-content kalender-content kalender-content kalender-content";
+
+        .title-text {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .title-text:hover {
+            cursor: pointer;
+            background: lightgrey;
+        }
+
+        .aktuellt {
+            grid-area: aktuellt;
+        }
+
+        .pressmeddelanden {
+            grid-area: pressmeddelanden;
+        }
+
+        .kalender {
+            grid-area: kalender;
+        }
+
+        .filmer {
+            grid-area: filmer;
+        }
+
+        .pressbilder {
+            grid-area: pressbilder;
+        }
+
+        .nyhetsbrev {
+            grid-area: nyhetsbrev;
+        }
+
+        .aktuellt-content {
+            grid-area: aktuellt-content;
+            grid-template-columns: 1fr 0.1fr;
+            grid-template-rows: repeat(9, 1fr);
+            display: grid;
+            grid-template-areas:
+            "aktuellt-main-1 ."
+            "aktuellt-main-2 ."
+            "aktuellt-main-3 ."
+            "aktuellt-main-4 ."
+            "aktuellt-main-5 ."
+            "aktuellt-main-6 ."
+            "aktuellt-main-7 ."
+            "aktuellt-main-8 ."
+            "aktuellt-main-9 .";
+
+            .aktuellt-main {
+                border-bottom: 2px solid grey;
+                margin: 20px;
+
+                h4:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+
+            h4 {
+                margin-bottom: 10px;
+            }
+
+            .published {
+                color: blue;
+            }
+
+            .aktuellt-main-1 {
+                grid-area: aktuellt-main-1;
+            }
+
+            .aktuellt-main-2 {
+                grid-area: aktuellt-main-2;
+            }
+
+            .aktuellt-main-3 {
+                grid-area: aktuellt-main-3;
+            }
+
+            .aktuellt-main-4 {
+                grid-area: aktuellt-main-4;
+            }
+
+            .aktuellt-main-5 {
+                grid-area: aktuellt-main-5;
+            }
+
+            .aktuellt-main-6 {
+                grid-area: aktuellt-main-6;
+            }
+
+            .aktuellt-main-7 {
+                grid-area: aktuellt-main-7;
+            }
+
+            .aktuellt-main-8 {
+                grid-area: aktuellt-main-8;
+            }
+
+            .aktuellt-main-9 {
+                grid-area: aktuellt-main-9;
+            }
+        }
+
+        .pressmeddelanden-content {
+            grid-area: pressmeddelanden-content;
+            grid-template-columns: 1fr 0.1fr;
+            grid-template-rows: repeat(9, 1fr) 0.2fr;
+            display: grid;
+            grid-template-areas:
+            "pressmeddelanden-main-1 ."
+            "pressmeddelanden-main-2 ."
+            "pressmeddelanden-main-3 ."
+            "pressmeddelanden-main-4 ."
+            "pressmeddelanden-main-5 ."
+            "pressmeddelanden-main-6 ."
+            "pressmeddelanden-main-7 ."
+            "pressmeddelanden-main-8 ."
+            "pressmeddelanden-main-9 ."
+            "pressmeddelanden-more .";
+
+            display: none;
+
+            .pressmeddelanden-main {
+                border-bottom: 2px solid grey;
+                margin: 20px;
+
+                h4:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+
+            h4 {
+                margin-bottom: 10px;
+            }
+
+            .published-2 {
+                color: blue;
+            }
+
+            .pressmeddelanden-main-1 {
+                grid-area: pressmeddelanden-main-1;
+            }
+
+            .pressmeddelanden-main-2 {
+                grid-area: pressmeddelanden-main-2;
+            }
+
+            .pressmeddelanden-main-3 {
+                grid-area: pressmeddelanden-main-3;
+            }
+
+            .pressmeddelanden-main-4 {
+                grid-area: pressmeddelanden-main-4;
+            }
+
+            .pressmeddelanden-main-5 {
+                grid-area: pressmeddelanden-main-5;
+            }
+
+            .pressmeddelanden-main-6 {
+                grid-area: pressmeddelanden-main-6;
+            }
+
+            .pressmeddelanden-main-7 {
+                grid-area: pressmeddelanden-main-7;
+            }
+
+            .pressmeddelanden-main-8 {
+                grid-area: pressmeddelanden-main-8;
+            }
+
+            .pressmeddelanden-main-9 {
+                grid-area: pressmeddelanden-main-9;
+            }
+
+            .pressmeddelanden-more {
+                grid-area: pressmeddelanden-more;
+                
+                h5 {
+                    float: right;
+                }
+
+                h5:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .kalender-content {
+            grid-area: kalender-content;
+            grid-template-columns: 0.3fr 1fr;
+            grid-template-rows: 0.04fr repeat(4, 0.15fr);
+            display: grid;
+            grid-template-areas:
+            "month-1 month-1"
+            "date-1 text-1"
+            "date-2 text-2"
+            "date-3 text-3"
+            "date-4 text-4";
+
+            display: none;
+
+            .month {
+                background-color: $secondary-color;
+
+                h2 {
+                    padding: 25px 0;
+                    margin-left: 20px;
+                }
+            }
+
+            .date {
+                font-size: 50px;
+                margin-left: 2rem;
+                padding: 5px;
+                background-color: lightgrey;
+            }
+
+            .text {
+                margin: 20px;
+            }
+
+            .date-main, .kalender-group {
+                border-bottom: 2px solid grey;
+                display: flex;
+                align-items: center;
+            }
+
+            .date-main {
+                margin-left: 20px;
+                justify-content: center;
+            }
+
+            .kalender-group {
+                margin-right: 20px;
+            }
+
+            // Calender Grid Elements
+            .month-1 {
+                grid-area: month-1;
+            }
+
+            .month-2 {
+                grid-area: month-2;
+            }
+
+            .date-1 {
+                grid-area: date-1;
+            }
+            
+            .date-2 {
+                grid-area: date-2;
+            }
+
+            .date-3 {
+                grid-area: date-3;
+            }
+            
+            .date-4 {
+                grid-area: date-4;
+            }
+
+            .date-5 {
+                grid-area: date-5;
+            }
+
+            .text-1 {
+                grid-area: text-1;
+            }
+
+            .text-2 {
+                grid-area: text-2;
+            }
+
+            .text-3 {
+                grid-area: text-3;
+            }
+
+            .text-4 {
+                grid-area: text-4;
+            }
+
+            .text-5 {
+                grid-area: text-5;
+            }
+        }
+    }
+}

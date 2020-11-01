@@ -1255,3 +1255,390 @@ footer .footer-bar .youtube i {
   -webkit-transition: border-radius 0.3s ease-out;
   transition: border-radius 0.3s ease-out;
 }
+
+.nyheter {
+  display: -ms-grid;
+  display: grid;
+  height: 300vh;
+  -ms-grid-columns: 0.15fr 1fr 0.5fr 0.15fr;
+      grid-template-columns: 0.15fr 1fr 0.5fr 0.15fr;
+  -ms-grid-rows: 0.03fr 0.05fr 1fr;
+      grid-template-rows: 0.03fr 0.05fr 1fr;
+      grid-template-areas: "upper upper upper upper" ". breadcrumbs . ." ". nyheter-main nyheter-main .";
+}
+
+.nyheter .upper {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: upper;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 2rem;
+}
+
+.nyheter .upper h1 {
+  font-size: 2rem;
+}
+
+.nyheter .breadcrumbs {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: breadcrumbs;
+}
+
+.nyheter .nyheter-main {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: nyheter-main;
+  background-color: #f5f5f5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: 0.1fr 1fr;
+      grid-template-rows: 0.1fr 1fr;
+      grid-template-areas: "aktuellt-content aktuellt-content aktuellt-content aktuellt-content aktuellt-content aktuellt-content";
+}
+
+.nyheter .nyheter-main .title-text {
+  text-align: center;
+  padding: 10px;
+}
+
+.nyheter .nyheter-main .title-text:hover {
+  cursor: pointer;
+  background: lightgrey;
+}
+
+.nyheter .nyheter-main .aktuellt {
+  grid-area: aktuellt;
+}
+
+.nyheter .nyheter-main .pressmeddelanden {
+  grid-area: pressmeddelanden;
+}
+
+.nyheter .nyheter-main .kalender {
+  grid-area: kalender;
+}
+
+.nyheter .nyheter-main .filmer {
+  grid-area: filmer;
+}
+
+.nyheter .nyheter-main .pressbilder {
+  grid-area: pressbilder;
+}
+
+.nyheter .nyheter-main .nyhetsbrev {
+  grid-area: nyhetsbrev;
+}
+
+.nyheter .nyheter-main .aktuellt-content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: aktuellt-content;
+  -ms-grid-columns: 1fr 0.1fr;
+      grid-template-columns: 1fr 0.1fr;
+  -ms-grid-rows: (1fr)[9];
+      grid-template-rows: repeat(9, 1fr);
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "aktuellt-main-1 ." "aktuellt-main-2 ." "aktuellt-main-3 ." "aktuellt-main-4 ." "aktuellt-main-5 ." "aktuellt-main-6 ." "aktuellt-main-7 ." "aktuellt-main-8 ." "aktuellt-main-9 .";
+}
+
+.nyheter .nyheter-main .aktuellt-content .aktuellt-main {
+  border-bottom: 2px solid grey;
+  margin: 20px;
+}
+
+.nyheter .nyheter-main .aktuellt-content .aktuellt-main h4:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.nyheter .nyheter-main .aktuellt-content h4 {
+  margin-bottom: 10px;
+}
+
+.nyheter .nyheter-main .aktuellt-content .published {
+  color: blue;
+}
+
+.nyheter .nyheter-main .aktuellt-content .aktuellt-main-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: aktuellt-main-1;
+}
+
+.nyheter .nyheter-main .aktuellt-content .aktuellt-main-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: aktuellt-main-2;
+}
+
+.nyheter .nyheter-main .aktuellt-content .aktuellt-main-3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: aktuellt-main-3;
+}
+
+.nyheter .nyheter-main .aktuellt-content .aktuellt-main-4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: aktuellt-main-4;
+}
+
+.nyheter .nyheter-main .aktuellt-content .aktuellt-main-5 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: aktuellt-main-5;
+}
+
+.nyheter .nyheter-main .aktuellt-content .aktuellt-main-6 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: aktuellt-main-6;
+}
+
+.nyheter .nyheter-main .aktuellt-content .aktuellt-main-7 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: aktuellt-main-7;
+}
+
+.nyheter .nyheter-main .aktuellt-content .aktuellt-main-8 {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: aktuellt-main-8;
+}
+
+.nyheter .nyheter-main .aktuellt-content .aktuellt-main-9 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: aktuellt-main-9;
+}
+
+.nyheter .nyheter-main .pressmeddelanden-content {
+  grid-area: pressmeddelanden-content;
+  -ms-grid-columns: 1fr 0.1fr;
+      grid-template-columns: 1fr 0.1fr;
+  -ms-grid-rows: (1fr)[9] 0.2fr;
+      grid-template-rows: repeat(9, 1fr) 0.2fr;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "pressmeddelanden-main-1 ." "pressmeddelanden-main-2 ." "pressmeddelanden-main-3 ." "pressmeddelanden-main-4 ." "pressmeddelanden-main-5 ." "pressmeddelanden-main-6 ." "pressmeddelanden-main-7 ." "pressmeddelanden-main-8 ." "pressmeddelanden-main-9 ." "pressmeddelanden-more .";
+  display: none;
+}
+
+.nyheter .nyheter-main .pressmeddelanden-content .pressmeddelanden-main {
+  border-bottom: 2px solid grey;
+  margin: 20px;
+}
+
+.nyheter .nyheter-main .pressmeddelanden-content .pressmeddelanden-main h4:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.nyheter .nyheter-main .pressmeddelanden-content h4 {
+  margin-bottom: 10px;
+}
+
+.nyheter .nyheter-main .pressmeddelanden-content .published-2 {
+  color: blue;
+}
+
+.nyheter .nyheter-main .pressmeddelanden-content .pressmeddelanden-main-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: pressmeddelanden-main-1;
+}
+
+.nyheter .nyheter-main .pressmeddelanden-content .pressmeddelanden-main-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: pressmeddelanden-main-2;
+}
+
+.nyheter .nyheter-main .pressmeddelanden-content .pressmeddelanden-main-3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: pressmeddelanden-main-3;
+}
+
+.nyheter .nyheter-main .pressmeddelanden-content .pressmeddelanden-main-4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: pressmeddelanden-main-4;
+}
+
+.nyheter .nyheter-main .pressmeddelanden-content .pressmeddelanden-main-5 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: pressmeddelanden-main-5;
+}
+
+.nyheter .nyheter-main .pressmeddelanden-content .pressmeddelanden-main-6 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: pressmeddelanden-main-6;
+}
+
+.nyheter .nyheter-main .pressmeddelanden-content .pressmeddelanden-main-7 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: pressmeddelanden-main-7;
+}
+
+.nyheter .nyheter-main .pressmeddelanden-content .pressmeddelanden-main-8 {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: pressmeddelanden-main-8;
+}
+
+.nyheter .nyheter-main .pressmeddelanden-content .pressmeddelanden-main-9 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: pressmeddelanden-main-9;
+}
+
+.nyheter .nyheter-main .pressmeddelanden-content .pressmeddelanden-more {
+  -ms-grid-row: 10;
+  -ms-grid-column: 1;
+  grid-area: pressmeddelanden-more;
+}
+
+.nyheter .nyheter-main .pressmeddelanden-content .pressmeddelanden-more h5 {
+  float: right;
+}
+
+.nyheter .nyheter-main .pressmeddelanden-content .pressmeddelanden-more h5:hover {
+  cursor: pointer;
+}
+
+.nyheter .nyheter-main .kalender-content {
+  grid-area: kalender-content;
+  -ms-grid-columns: 0.3fr 1fr;
+      grid-template-columns: 0.3fr 1fr;
+  -ms-grid-rows: 0.04fr (0.15fr)[4];
+      grid-template-rows: 0.04fr repeat(4, 0.15fr);
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "month-1 month-1" "date-1 text-1" "date-2 text-2" "date-3 text-3" "date-4 text-4";
+  display: none;
+}
+
+.nyheter .nyheter-main .kalender-content .month {
+  background-color: #fbea26;
+}
+
+.nyheter .nyheter-main .kalender-content .month h2 {
+  padding: 25px 0;
+  margin-left: 20px;
+}
+
+.nyheter .nyheter-main .kalender-content .date {
+  font-size: 50px;
+  margin-left: 2rem;
+  padding: 5px;
+  background-color: lightgrey;
+}
+
+.nyheter .nyheter-main .kalender-content .text {
+  margin: 20px;
+}
+
+.nyheter .nyheter-main .kalender-content .date-main, .nyheter .nyheter-main .kalender-content .kalender-group {
+  border-bottom: 2px solid grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nyheter .nyheter-main .kalender-content .date-main {
+  margin-left: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nyheter .nyheter-main .kalender-content .kalender-group {
+  margin-right: 20px;
+}
+
+.nyheter .nyheter-main .kalender-content .month-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: month-1;
+}
+
+.nyheter .nyheter-main .kalender-content .month-2 {
+  grid-area: month-2;
+}
+
+.nyheter .nyheter-main .kalender-content .date-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: date-1;
+}
+
+.nyheter .nyheter-main .kalender-content .date-2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: date-2;
+}
+
+.nyheter .nyheter-main .kalender-content .date-3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: date-3;
+}
+
+.nyheter .nyheter-main .kalender-content .date-4 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: date-4;
+}
+
+.nyheter .nyheter-main .kalender-content .date-5 {
+  grid-area: date-5;
+}
+
+.nyheter .nyheter-main .kalender-content .text-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: text-1;
+}
+
+.nyheter .nyheter-main .kalender-content .text-2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: text-2;
+}
+
+.nyheter .nyheter-main .kalender-content .text-3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: text-3;
+}
+
+.nyheter .nyheter-main .kalender-content .text-4 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: text-4;
+}
+
+.nyheter .nyheter-main .kalender-content .text-5 {
+  grid-area: text-5;
+}
