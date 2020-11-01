@@ -16,59 +16,122 @@
     <!-- Header -->
     <header>
       <!-- Topnav -->
-      <ul class="topnav">
-        <li><a href="#">Mina sidor</a></li>
-        <li><a href="#">Lättläst om oss</a></li>
-        <li><a href="#">About us in english</a></li>
-      </ul>
+      <div class="topnav">
+        <div class="container">
+          <div class="topnav-main">
+            <!-- Topnav Left Side -->
+            <div class="topnav-left">
+              <ul>
+                <li>
+                  <i class="fas fa-phone-square-alt"></i> Växel
+                  <a href="tel: 0102090100">010-209 01 00</a>
+                </li>
+                <li>
+                  <i class="far fa-clock"></i> Vardagar 9.00 - 11.30, 13.00 -
+                  15.00
+                </li>
+              </ul>
+            </div>
+            <!-- Topnav Right Side -->
+            <div class="topnav-right">
+              <ul>
+                <li>
+                  <a href="#"><i class="fas fa-globe"></i> In English</a>
+                </li>
+                <li>
+                  <a href="#" class="topnav-login">
+                    <i class="fas fa-lock"></i> Mina Sidor
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Navbar-->
       <nav id="navbar" class="main-nav">
-        <div class="container">
+        <div class="nav-container container">
           <a href="index.html"
             ><img class="logo" src="./assets/images/logo-myh.svg" alt="MYH.se"
           /></a>
-          <ul class="menu">
+          <ul id="main-menu" class="menu">
             <li class="item"><a href="index.html" class="menu-nav">Hem</a></li>
             <li class="item"><a href="#" class="menu-nav">Organisation</a></li>
             <li class="item"><a href="#" class="menu-nav">Student</a></li>
-            <li class="item">
-              <label for="toggle" class="menu-nav"
-                >Mer <i class="fas fa-chevron-down"></i></label
-              ><input type="checkbox" id="toggle" />
-              <ul class="sub-menu">
-                <li class="sub-item">
+            <li class="item dropdown">
+              <a href="javascript:void(0)" class="menu-nav dropbtn"
+                >Mer <i class="fas fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-content">
+                <li>
                   <a href="verksamhetsomraden.html">Verksamhetsområden</a>
                 </li>
-                <li class="sub-item">
+                <li>
                   <a href="lagar-regler-tillsyn.html"
                     >Lagar, regeler, tillsyn</a
                   >
                 </li>
-                <li class="sub-item"><a href="statistik.html">Statistik</a></li>
-                <li class="sub-item">
-                  <a href="publikationer.html">Publikationer</a>
-                </li>
-                <li class="sub-item"><a href="om-oss.html">Om oss</a></li>
-                <li class="sub-item"><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="statistik.html">Statistik</a></li>
+                <li><a href="publikationer.html">Publikationer</a></li>
+                <li><a href="om-oss.html">Om oss</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
               </ul>
             </li>
-            <li>
+            <li class="search-container">
               <label for="search-bar"><i class="fas fa-search"></i> </label
               ><input id="search-bar" type="text" />
             </li>
           </ul>
+          <a
+            href="javascript:void(0);"
+            class="mobile-nav-btn"
+            title="Mobile Menu"
+            aria-label="Mobile Menu"
+          >
+            <i class="fas fa-bars"></i>
+          </a>
         </div>
       </nav>
     </header>
 
     <!-- Main -->
     <main>
+      <!-- Page Title -->
+      <section class="page-title">
+        <h1>Om oss</h1>
+        <p class="page-title-p">
+          Myndigheten för yrkeshögskolans huvuduppdrag är att ansvara för frågor som rör yrkeshögskolan i Sverige och verka för att utbildningarna tillgodoser arbetslivets behov av kompetens.
+        </p>
+      </section>
       <section class="about-us">
         <div class="container">
           <nav class="breadcrumbs"><a href="index.html">Start</a> <i class="fas fa-chevron-right"></i> Om oss</nav>
           <div class="about-container">
-            <aside>
+           
+            <section class="main-section">
+              <article>
+                <img class="landing-page-img" src="/assets/images/about/penna2.jpg" alt="">
+                <h2 class="preamble">
+                  Vad vi gör?
+                </h2>
+                <p>
+                  Vi analyserar arbetsmarknadens behov av utbildningar inom yrkeshögskolan, beslutar vilka utbildningar som ska ingå i yrkeshögskolan och beviljar statliga medel till utbildningsanordnarna. Vi främjar även validering i utbildningarna.
+                </p>
+                <p>
+                  Vi ansvarar också för frågor som rör vissa utbildningar som ligger utanför yrkeshögskolan - eftergymnasiala konst- och kulturutbildningar som bedrivs av fristående skolor samt tolkutbildningar inom folkbildningen
+                </p>
+                <p>
+                  Myndigheten utövar tillsyn och hanterar klagomål på de utbildningar som ligger inom vårt ansvarsområde. Vi granskar även utbildningarnas kvalitet, framställer statistik och följer upp utbildningars resultat.
+                </p>
+                <p>
+                  Vi är också nationell samordningspunkt för EQF (European Qualifications Framework) som ska göra det lättare att jämföra utbildnings- och yrkeskvalifikationer inom EU.
+                </p>
+
+                <p><a href="verksamhetsomraden.html">Läs mer om våra verksamhetsområden</a></p>
+              </article>
+            </section>
+             <aside>
              <nav class="side-menu">
                <ul class="accordion">
                 <li class="title" id="side-menu-heading1">Så styrs myndigheten</li>
@@ -165,30 +228,6 @@
                <p><a href="#">Läs mer</a></p>
               </section>
             </aside>
-            <section class="main-section">
-              <h1 class="landing-page-heading">Om oss</h1>
-              <article>
-                <img class="landing-page-img" src="/assets/images/about/penna2.jpg" alt="">
-                <h2 class="preamble">
-                  Myndigheten för yrkeshögskolans huvuduppdrag är att ansvara för frågor som rör yrkeshögskolan i Sverige och verka för att utbildningarna tillgodoser arbetslivets behov av kompetens.
-                </h2>
-                <p>
-                  Vi analyserar arbetsmarknadens behov av utbildningar inom yrkeshögskolan, beslutar vilka utbildningar som ska ingå i yrkeshögskolan och beviljar statliga medel till utbildningsanordnarna. Vi främjar även validering i utbildningarna.
-                </p>
-                <p>
-                  Vi ansvarar också för frågor som rör vissa utbildningar som ligger utanför yrkeshögskolan - eftergymnasiala konst- och kulturutbildningar som bedrivs av fristående skolor samt tolkutbildningar inom folkbildningen
-                </p>
-                <p>
-                  Myndigheten utövar tillsyn och hanterar klagomål på de utbildningar som ligger inom vårt ansvarsområde. Vi granskar även utbildningarnas kvalitet, framställer statistik och följer upp utbildningars resultat.
-                </p>
-                <p>
-                  Vi är också nationell samordningspunkt för EQF (European Qualifications Framework) som ska göra det lättare att jämföra utbildnings- och yrkeskvalifikationer inom EU.
-                </p>
-
-                <p><a href="verksamhetsomraden.html">Läs mer om våra verksamhetsområden</a></p>
-              </article>
-            </section>
-            
           </div>
         </div>
       </section>

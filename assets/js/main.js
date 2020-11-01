@@ -102,3 +102,21 @@ window.onscroll = function () {
     navbar.classList.remove("sticky");
   }
 };
+
+/* ********************************** */
+// Mobile Menu
+/* ********************************** */
+const mobileBtn = document.querySelector(".mobile-nav-btn");
+const mobileMenu = document.querySelector("#main-menu");
+const mobileIcon = document.querySelector(".fa-bars");
+
+mobileBtn.addEventListener("click", function () {
+  mobileMenu.classList.toggle("mobile-menu");
+  if (mobileMenu.classList.contains("mobile-menu")) {
+    mobileIcon.classList.remove("fa-bars");
+    mobileIcon.classList.add("fa-times");
+  } else {
+    mobileIcon.classList.remove("fa-times");
+    mobileIcon.classList.add("fa-bars");
+  }
+});

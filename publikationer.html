@@ -14,85 +14,124 @@
     <!-- Header -->
     <header>
       <!-- Topnav -->
-      <ul class="topnav">
-        <li><a href="#">Mina sidor</a></li>
-        <li><a href="#">Lättläst om oss</a></li>
-        <li><a href="#">About us in english</a></li>
-      </ul>
+      <div class="topnav">
+        <div class="container">
+          <div class="topnav-main">
+            <!-- Topnav Left Side -->
+            <div class="topnav-left">
+              <ul>
+                <li>
+                  <i class="fas fa-phone-square-alt"></i> Växel
+                  <a href="tel: 0102090100">010-209 01 00</a>
+                </li>
+                <li>
+                  <i class="far fa-clock"></i> Vardagar 9.00 - 11.30, 13.00 -
+                  15.00
+                </li>
+              </ul>
+            </div>
+            <!-- Topnav Right Side -->
+            <div class="topnav-right">
+              <ul>
+                <li>
+                  <a href="#"><i class="fas fa-globe"></i> In English</a>
+                </li>
+                <li>
+                  <a href="#" class="topnav-login">
+                    <i class="fas fa-lock"></i> Mina Sidor
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Navbar-->
       <nav id="navbar" class="main-nav">
-        <div class="container">
+        <div class="nav-container container">
           <a href="index.html"
             ><img class="logo" src="./assets/images/logo-myh.svg" alt="MYH.se"
           /></a>
-          <ul class="menu">
+          <ul id="main-menu" class="menu">
             <li class="item"><a href="index.html" class="menu-nav">Hem</a></li>
             <li class="item"><a href="#" class="menu-nav">Organisation</a></li>
             <li class="item"><a href="#" class="menu-nav">Student</a></li>
-            <li class="item">
-              <label for="toggle" class="menu-nav"
-                >Mer <i class="fas fa-chevron-down"></i></label
-              ><input type="checkbox" id="toggle" />
-              <ul class="sub-menu">
-                <li class="sub-item">
+            <li class="item dropdown">
+              <a href="javascript:void(0)" class="menu-nav dropbtn"
+                >Mer <i class="fas fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-content">
+                <li>
                   <a href="verksamhetsomraden.html">Verksamhetsområden</a>
                 </li>
-                <li class="sub-item">
+                <li>
                   <a href="lagar-regler-tillsyn.html"
                     >Lagar, regeler, tillsyn</a
                   >
                 </li>
-                <li class="sub-item"><a href="statistik.html">Statistik</a></li>
-                <li class="sub-item">
-                  <a href="publikationer.html">Publikationer</a>
-                </li>
-                <li class="sub-item"><a href="om-oss.html">Om oss</a></li>
-                <li class="sub-item"><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="statistik.html">Statistik</a></li>
+                <li><a href="publikationer.html">Publikationer</a></li>
+                <li><a href="om-oss.html">Om oss</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
               </ul>
             </li>
-            <li>
+            <li class="search-container">
               <label for="search-bar"><i class="fas fa-search"></i> </label
               ><input id="search-bar" type="text" />
             </li>
           </ul>
+          <a
+            href="javascript:void(0);"
+            class="mobile-nav-btn"
+            title="Mobile Menu"
+            aria-label="Mobile Menu"
+          >
+            <i class="fas fa-bars"></i>
+          </a>
         </div>
       </nav>
     </header>
 
     <!-- Main -->
     <main>
+      <!-- Page Title -->
+      <section class="page-title">
+        <h1>Publikationer</h1>
+        <p class="page-title-p">
+          Här hittar du Myndigheten för yrkeshögskolans rapporter, faktablad, broschyrer, informationsblad och andra publikationer.
+        </p>
+      </section>
       <section class="publications">
         <div class="container">
            <nav class="breadcrumbs"><a href="index.html">Start</a> <i class="fas fa-chevron-right"></i> Publikationer</nav>
            <div class="publications-container">
             <section class="main-section">
-              <h1 class="landing-page-heading">Publikationer</h1>
               <article>
                 <h2 class="preamble">
-                  Här hittar du Myndigheten för yrkeshögskolans rapporter, faktablad, broschyrer, informationsblad och andra publikationer. Du kan välja typ av publikation, område och utgivningsår i rutan till höger.
+                  Du kan välja typ av publikation, område och utgivningsår i filter-rutan.
                 </h2>
               </article>
                <ul class="publication-list">
-                 <li class="pub-item"><a href="#"><img src="./assets/images/publications/placeholder.png" alt="placeholder for publication"></a>
+                 <li class="pub-item"><a href="https://www.myh.se/Publikationer/2020/Handbok-for-tilltrade-till-yrkeshogskolan---2020/"><img src="./assets/images/publications/placeholder.png" alt="bild på handbokens omlsag"></a>
                   <div class="pub-item-content">
-                    <h4><a href="#">Handbok för tillträde till yrkeshögskolan - 2020</a></h4>
+                    <h4><a href="https://www.myh.se/Publikationer/2020/Handbok-for-tilltrade-till-yrkeshogskolan---2020/">Handbok för tillträde till yrkeshögskolan - 2020</a></h4>
                     <p class="preview"><span class="release-date">Utgiven: 2020-07-10</span>Denna handbok vänder sig i första hand till de som bedriver yrkeshögskoleutbildning och behöver stöd...  </p>
-                    <p><a href="https://www.myh.se/Documents/Publikationer/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf"><i class="fas fa-file-pdf">&nbsp;</i>Handbok för tillträde till yrkeshögskolan - 2020</a></p>
+                    <a class="pdf-link" href="https://www.myh.se/Documents/Publikationer/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf"><i class="fas fa-file-pdf">&nbsp;</i>Handbok för tillträde till yrkeshögskolan - 2020</a>
                   </div>
                 </li><!--end PUB-ITEM-->
                  <li class="pub-item"><a href="#"><img src="./assets/images/publications/placeholder.png" alt="placeholder for publication"></a>
                   <div class="pub-item-content">
                     <h4><a href="#">Handbok för tillträde till yrkeshögskolan - 2020</a></h4>
                     <p class="preview"><span class="release-date">Utgiven: 2020-07-10</span>Denna handbok vänder sig i första hand till de som bedriver yrkeshögskoleutbildning och behöver stöd...  </p>
-                    <p><a href="https://www.myh.se/Documents/Publikationer/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf"><i class="fas fa-file-pdf">&nbsp;</i>Handbok för tillträde till yrkeshögskolan - 2020</a></p>
+                    <a href="https://www.myh.se/Documents/Publikationer/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf"><i class="fas fa-file-pdf">&nbsp;</i>Handbok för tillträde till yrkeshögskolan - 2020</a>
                   </div>
                 </li><!--end PUB-ITEM-->
                 <li class="pub-item"><a href="#"><img src="./assets/images/publications/placeholder.png" alt="placeholder for publication"></a>
                   <div class="pub-item-content">
                     <h4><a href="#">Handbok för tillträde till yrkeshögskolan - 2020</a></h4>
                     <p class="preview"><span class="release-date">Utgiven: 2020-07-10</span>Denna handbok vänder sig i första hand till de som bedriver yrkeshögskoleutbildning och behöver stöd...  </p>
-                    <p><a href="https://www.myh.se/Documents/Publikationer/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf"><i class="fas fa-file-pdf">&nbsp;</i>Handbok för tillträde till yrkeshögskolan - 2020</a></p>
+                    <a href="https://www.myh.se/Documents/Publikationer/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf"><i class="fas fa-file-pdf">&nbsp;</i>Handbok för tillträde till yrkeshögskolan - 2020</a>
                   </div>
                 </li><!--end PUB-ITEM-->
                 <li class="pub-item"><a href="#"><img src="./assets/images/publications/placeholder.png" alt="placeholder for publication"></a>
@@ -117,8 +156,7 @@
             <aside>
               <section class="main-filter">
                 <h3>Filtrera publikationer</h3>
-                <label for="publicantion-search-bar" class="publicantion-search"><i class="fas fa-search"></i> </label
-                ><input id="publicantion-search-bar" type="text" placeholder="Sök efter publikation..."/>
+                <label for="publication-search-bar" class="publication-search"><i class="fas fa-search"></i> </label><input id="publication-search-bar" type="text" placeholder="Sök efter publikation..."/>
                 <div class="flexbox">
                   <label for="per-page">Resultat per sida
                   <select name="per-page" id="per-page">
@@ -131,6 +169,17 @@
               </section>
             
               <section class="filters-section">
+                <!-- MOBILE -->
+                <section class="mobile-filter-type">
+                  <h5 class="mobile-filter-heading">Publikationstyp</h5>
+                  <select name="publication-type" id="publication-type">
+                    <option value="rapporter">Rapporter</option>
+                    <option value="aterrapportering">Återrapportering av regeringsuppdrag</option>
+                    <option value="informationsmaterial">Informationsmaterial</option>
+                    <option value="arsredovisningar">Årsredovisningar</option>
+                  </select>
+                </section>
+                <!-- DESKTOP -->
                 <section class="filter-type">
                   <h5 class="filter-heading">Publikationstyp</h5>
                   <ul class="filter-options">
@@ -141,6 +190,19 @@
                     <li><a href="#">Årsredovisningar</a>15</li>
                   </ul>
                 </section>
+                <!-- MOBILE -->
+                <section class="mobile-filter-type">
+                  <h5 class="mobile-filter-heading">Verksamhetsområde</h5>
+                  <select name="publication-type" id="publication-type">
+                    <option value="yrkeshogskolan">Yrkeshögskolan</option>
+                    <option value="konst-kultur">Konst- och kulturutbildningar</option>
+                    <option value="tolkutbildningar">Tolkutbildningar</option>
+                    <option value="tillsyn">Utbildningar med endast tillsyn</option>
+                    <option value="validering">Validering</option>
+                    <option value="seqf">SeQF</option>
+                  </select>
+                </section>
+                <!-- DESKTOP -->
                 <section class="filter-type">
                   <h5 class="filter-heading">Verksamhetsområde</h5>
                   <ul class="filter-options">
@@ -153,6 +215,24 @@
                     <li><a href="#">SeQF</a>13</li>
                   </ul>
                 </section>
+                <!-- MOBILE -->
+                <section class="mobile-filter-type">
+                  <h5 class="mobile-filter-heading">År</h5>
+                  <select name="publication-type" id="publication-type">
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                  </select>
+                </section>
+                <!-- DESKTOP -->
                 <section class="filter-type">
                   <h5 class="filter-heading">År</h5>
                   <ul class="filter-options">
