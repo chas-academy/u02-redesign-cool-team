@@ -1,6 +1,9 @@
 // Base styles for website
 @import "base";
 
+// Mixins
+@import "mixins";
+
 // Styling for slideshow
 @import "slideshow";
 
@@ -33,5 +36,10 @@
 // Services Sub Page
 @import "./sub-pages/page-services";
 
+<<<<<<< HEAD
 // Nyheter Style
 @import "./sub-pages/nyheter";
+=======
+//Statistic Page
+@import "statistic";
+>>>>>>> main

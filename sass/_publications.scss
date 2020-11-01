@@ -1,7 +1,4 @@
 /* PUBLICATIONS starts here */
-// $btn-primary: #0b2415;
-$btn-primary: #174b2c;
-
 .breadcrumbs {
   padding: 1em;
 }
@@ -29,6 +26,7 @@ $btn-primary: #174b2c;
 
       .preamble {
         margin: 1em 3em 1em 0;
+        font-size: 1.5em;
       }
       p {
         margin: 1em 4em 1em 0;
@@ -54,7 +52,12 @@ $btn-primary: #174b2c;
         flex: 3;
         padding: 1em;
 
+        h4 {
+          margin-bottom: 1em;
+        }
+
         .preview {
+          margin-bottom: 1em;
           .release-date {
             margin-right: 1em;
             text-transform: uppercase;
@@ -63,6 +66,9 @@ $btn-primary: #174b2c;
             color: lighten($color: $primary-color, $amount: 50);
           }
         }
+      }
+      a {
+        color: $link-color;
       }
     }
   }
@@ -78,7 +84,7 @@ $btn-primary: #174b2c;
         padding: 1em;
         border-left: 1px solid lighten($color: $primary-color, $amount: 50);
       }
-    } //en PAGINATION
+    } //end PAGINATION
   }
   aside {
     // border: 1px solid black;
@@ -89,14 +95,85 @@ $btn-primary: #174b2c;
     flex-direction: column;
     background-color: white;
     padding: 1em;
-
-    ul {
-      list-style: none;
+    .mobile-filter-type {
+      display: none;
+    }
+    #publication-search-bar {
+      margin: 1em 0;
+      padding: 4px;
+      border: 1px solid grey;
+    }
+    .main-filter {
+      display: flex;
+      flex-direction: column;
+      background-color: #e5e5e5;
       padding: 1em;
-      text-decoration: none;
-      line-height: 1.5em;
-      a {
-        color: white;
+      .flexbox {
+        display: flex;
+        // flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        i,
+        .publication-search {
+          flex: 1;
+        }
+
+        .btn-reset {
+          font-size: medium;
+          font-weight: bold;
+          color: $primary-color;
+          font-size: 1em;
+          text-align: center;
+          margin: 1em 0;
+          padding: 1rem;
+          border: none;
+          border-radius: 1rem;
+          text-decoration: none;
+          display: inline-block;
+          background-color: $green-light;
+          transition: all 0.1s ease-in-out;
+
+          &:hover {
+            background-color: $btn-1;
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .filters-section {
+      .filter-type {
+        padding: 1em 0.5em 1em 0.5em;
+        margin: 1em 0 1em 0;
+        border-top: 1px solid lighten($color: $primary-color, $amount: 50);
+
+        .filter-heading {
+          font-size: 1.3em;
+        }
+
+        .filter-options {
+          list-style: none;
+          line-height: 1.5em;
+
+          li {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em 0;
+            margin: 0 1em;
+            border-bottom: 1px solid lighten($color: $primary-color, $amount: 50);
+
+            .reset {
+              font-weight: bold;
+              margin-left: -1em;
+            }
+
+            a {
+              color: #0080cc;
+              text-decoration: underline;
+            }
+          }
+        }
       }
     }
   }
@@ -106,3 +183,52 @@ $btn-primary: #174b2c;
   }
 }
 /* PUBLICATIONS ends here */
+
+@media only screen and (max-width: 800px) {
+  .publications-container {
+    flex-direction: column-reverse;
+
+    .main-section {
+      article {
+        .preamble {
+          font-size: 1em;
+        }
+      }
+    }
+
+    .filters-section {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1em;
+
+      .mobile-filter-heading {
+        margin: 0.5em 0 0.2em 0;
+      }
+    }
+
+    // hide filter list
+    .filter-type {
+      display: none;
+    }
+    aside {
+      .mobile-filter-type {
+        display: block;
+        padding-left: 1em;
+      }
+    }
+  }
+}
+///////////////////////////////////////////////
+@media only screen and (max-width: 630px) {
+  .filters-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .publications-container {
+    .mobile-filter-type {
+      padding-left: 0;
+    }
+  }
+}

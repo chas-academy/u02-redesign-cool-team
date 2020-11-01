@@ -14,39 +14,82 @@
     <!-- Header -->
     <header>
       <!-- Topnav -->
-      <ul class="topnav">
-        <li><a href="#">Mina sidor</a></li>
-        <li><a href="#">Lättläst om oss</a></li>
-        <li><a href="#">About us in english</a></li>
-      </ul>
+      <div class="topnav">
+        <div class="container">
+          <div class="topnav-main">
+            <!-- Topnav Left Side -->
+            <div class="topnav-left">
+              <ul>
+                <li>
+                  <i class="fas fa-phone-square-alt"></i> Växel
+                  <a href="tel: 0102090100">010-209 01 00</a>
+                </li>
+                <li>
+                  <i class="far fa-clock"></i> Vardagar 9.00 - 11.30, 13.00 -
+                  15.00
+                </li>
+              </ul>
+            </div>
+            <!-- Topnav Right Side -->
+            <div class="topnav-right">
+              <ul>
+                <li>
+                  <a href="#"><i class="fas fa-globe"></i> In English</a>
+                </li>
+                <li>
+                  <a href="#" class="topnav-login">
+                    <i class="fas fa-lock"></i> Mina Sidor
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Navbar-->
-      <nav class="main-nav container">
-        <img class="logo" src="./assets/images/logo-myh.svg" alt="MYH.se" />
-        <ul class="menu">
-          <li class="item"><a href="index.html">Hem</a></li>
-          <li class="item"><a href="#">Organisation</a></li>
-          <li class="item"><a href="#">Student</a></li>
-          <li class="item">
-            <label for="toggle">Mer <i class="fas fa-chevron-down"></i></label
-            ><input type="checkbox" id="toggle" />
-            <ul class="sub-menu">
-              <li class="sub-item"><a href="om-oss.html">Om oss</a></li>
-              <li class="sub-item">
-                <a href="lagar-regler-tillsyn.html">Lagar, regeler, tillsyn</a>
-              </li>
-              <li class="sub-item"><a href="statistik.html">Statistik</a></li>
-              <li class="sub-item">
-                <a href="publikationer.html">Publikationer</a>
-              </li>
-              <li class="sub-item"><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-          </li>
-          <li>
-            <label for="search-bar"><i class="fas fa-search"></i> </label
-            ><input id="search-bar" type="text" />
-          </li>
-        </ul>
+      <nav id="navbar" class="main-nav">
+        <div class="nav-container container">
+          <a href="index.html"
+            ><img class="logo" src="./assets/images/logo-myh.svg" alt="MYH.se"
+          /></a>
+          <ul id="main-menu" class="menu">
+            <li class="item"><a href="index.html" class="menu-nav">Hem</a></li>
+            <li class="item"><a href="#" class="menu-nav">Organisation</a></li>
+            <li class="item"><a href="#" class="menu-nav">Student</a></li>
+            <li class="item dropdown">
+              <a href="javascript:void(0)" class="menu-nav dropbtn"
+                >Mer <i class="fas fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-content">
+                <li>
+                  <a href="verksamhetsomraden.html">Verksamhetsområden</a>
+                </li>
+                <li>
+                  <a href="lagar-regler-tillsyn.html"
+                    >Lagar, regeler, tillsyn</a
+                  >
+                </li>
+                <li><a href="statistik.html">Statistik</a></li>
+                <li><a href="publikationer.html">Publikationer</a></li>
+                <li><a href="om-oss.html">Om oss</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+              </ul>
+            </li>
+            <li class="search-container">
+              <label for="search-bar"><i class="fas fa-search"></i> </label
+              ><input id="search-bar" type="text" />
+            </li>
+          </ul>
+          <a
+            href="javascript:void(0);"
+            class="mobile-nav-btn"
+            title="Mobile Menu"
+            aria-label="Mobile Menu"
+          >
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
       </nav>
     </header>
     <!-- Main -->
@@ -57,14 +100,14 @@
           <div class="slide slide-1 slide-active">
             <div class="slide-image slide-image-1"></div>
             <div class="slide-text">
-              <h2>This is random text</h2>
+              <h2>GD har ordet - många frågor blir det, tack för input</h2>
               <a href="#" class="slide-button">Läs Mer</a>
             </div>
           </div>
           <div class="slide slide-2">
             <div class="slide-image slide-image-2"></div>
             <div class="slide-text">
-              <h2>This is also some random text</h2>
+              <h2>Distansstöd - webbinarium, webbcaféer och pod</h2>
               <a href="#" class="slide-button">Läs Mer</a>
             </div>
           </div>
@@ -72,7 +115,8 @@
             <div class="slide-image slide-image-3"></div>
             <div class="slide-text">
               <h2>
-                This text is gonna be longer than the other previous texts
+                Information till YH anordnare som fått fler platser i form av en
+                ytterligare omgång
               </h2>
               <a href="#" class="slide-button">Läs Mer</a>
             </div>

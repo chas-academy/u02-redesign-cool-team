@@ -1,0 +1,73 @@
+.nav-side {
+  padding: 1em;
+}
+.statistic {
+  background-color: rgb(255, 254, 254);
+  margin: 1rem;
+  // border: black solid;
+
+  .statistic-navbar {
+    text-align: left;
+    background-color: $primary-color;
+    width: 22rem;
+    margin-left: 10rem;
+
+    aside {
+      padding: 1rem;
+      .side-menu {
+        background-color: $primary-color;
+
+        .title {
+          color: $white;
+          font-weight: bold;
+        }
+        .description {
+          color: white;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s;
+        }
+        /* för description bredvid active */
+        .active + .description {
+          max-height: 200px;
+          transition: max-height 0.2s;
+        }
+        ul {
+          list-style: none;
+          padding: 1em;
+          text-decoration: none;
+          line-height: 2em;
+          cursor: pointer;
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  h2 {
+    text-align: left;
+    padding: 1rem 10rem;
+  }
+  .float-img {
+    float: right;
+    padding-right: 10rem;
+    height: auto;
+    width: auto;
+  }
+  .statistic-main {
+    text-align: left;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    border: none;
+  }
+
+  @media all and (max-width: 420px) {
+    .float-img,
+    .statistic-navbar {
+      width: 100%;
+      margin: auto;
+      float: none;
+    }
+  }
+}

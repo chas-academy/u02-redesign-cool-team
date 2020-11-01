@@ -1,45 +1,105 @@
 /* TOPNAV starts here */
 .topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  padding: 1rem 0 1rem 1rem;
-  margin: 0rem;
   background-color: $primary-color;
-  color: #dddddd;
+  color: $white;
 
-  li {
-    float: right;
+  .topnav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include responsive(1280) {
+      padding: 0 1rem;
+    }
+
+    @include responsive(600) {
+      padding: 0;
+    }
+
+    .topnav-left {
+      flex: 2;
+
+      @include responsive(870) {
+        flex: 1;
+      }
+
+      @include responsive(600) {
+        display: none;
+      }
+
+      ul {
+        display: flex;
+
+        li {
+          list-style-type: none;
+          color: $white;
+          padding: 0.8rem 3rem 0.8rem 0;
+
+          &:nth-child(2) {
+            @include responsive(890) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .topnav-right {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+
+      @include responsive(870) {
+        flex: 1;
+      }
+
+      @include responsive(600) {
+        justify-content: center;
+      }
+
+      ul {
+        display: flex;
+
+        li {
+          list-style-type: none;
+
+          a {
+            color: $white;
+            padding: 0.8rem 3rem;
+            display: block;
+
+            @include responsive(1200) {
+              padding: 0.8rem 2rem;
+            }
+
+            @include responsive(1010) {
+              padding: 0.8rem 1rem;
+            }
+
+            @include responsive(600) {
+              padding: 0.8rem 5rem;
+            }
+
+            @include responsive(550) {
+              padding: 0.8rem 4rem;
+            }
+          }
+        }
+      }
+
+      .topnav-login {
+        background-color: $secondary-color;
+        color: $primary-color;
+      }
+    }
+
+    i {
+      font-size: 1rem;
+      margin-right: 0.2rem;
+    }
 
     a {
-      display: block;
-      padding: 8px;
-      text-align: center;
-      text-decoration: none;
-      color: $primary-color;
-      background-color: $secondary-color;
-      margin-right: 1rem;
-      &:hover {
-        background-color: $primary-color;
-        color: $secondary-color;
-      }
+      color: $white;
     }
   }
 }
-
-// li a {
-//   display: block;
-//   padding: 8px;
-//   text-align: center;
-//   text-decoration: none;
-//   color: $primary-color;
-//   background-color: $secondary-color;
-//   margin-right: 1rem;
-//   &:hover {
-//     background-color: $primary-color;
-//     color: $secondary-color;
-//   }
-// }
-/* this is the right bag*/
-/* TOPNAV ends here */

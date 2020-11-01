@@ -9,51 +9,202 @@
     <link rel="stylesheet" href="./assets/fontawsome/css/all.min.css" />
     <!-- Style -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script></script>
   </head>
   <body>
     <!-- Header -->
     <header>
       <!-- Topnav -->
-      <ul class="topnav">
-        <li><a href="#">Mina sidor</a></li>
-        <li><a href="#">Lättläst om oss</a></li>
-        <li><a href="#">About us in english</a></li>
-      </ul>
+      <div class="topnav">
+        <div class="container">
+          <div class="topnav-main">
+            <!-- Topnav Left Side -->
+            <div class="topnav-left">
+              <ul>
+                <li>
+                  <i class="fas fa-phone-square-alt"></i> Växel
+                  <a href="tel: 0102090100">010-209 01 00</a>
+                </li>
+                <li>
+                  <i class="far fa-clock"></i> Vardagar 9.00 - 11.30, 13.00 -
+                  15.00
+                </li>
+              </ul>
+            </div>
+            <!-- Topnav Right Side -->
+            <div class="topnav-right">
+              <ul>
+                <li>
+                  <a href="#"><i class="fas fa-globe"></i> In English</a>
+                </li>
+                <li>
+                  <a href="#" class="topnav-login">
+                    <i class="fas fa-lock"></i> Mina Sidor
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Navbar-->
-      <nav class="main-nav">
-        <img class="logo" src="./assets/images/logo-myh.svg" alt="MYH.se" />
-        <ul class="menu">
-          <li class="item"><a href="index.html">Hem</a></li>
-          <li class="item"><a href="#">Organisation</a></li>
-          <li class="item"><a href="#">Student</a></li>
-          <li class="item">
-            <label for="toggle">Mer <i class="fas fa-chevron-down"></i></label
-            ><input type="checkbox" id="toggle" />
-            <ul class="sub-menu">
-              <li class="sub-item"><a href="om-oss.html">Om oss</a></li>
-              <li class="sub-item">
-                <a href="lagar-regler-tillsyn.html">Lagar, regeler, tillsyn</a>
-              </li>
-              <li class="sub-item"><a href="statistik.html">Statistik</a></li>
-              <li class="sub-item">
-                <a href="publikationer.html">Publikationer</a>
-              </li>
-              <li class="sub-item"><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-          </li>
-          <li>
-            <label for="search-bar"><i class="fas fa-search"></i> </label
-            ><input id="search-bar" type="text" />
-          </li>
-        </ul>
+      <nav id="navbar" class="main-nav">
+        <div class="nav-container container">
+          <a href="index.html"
+            ><img class="logo" src="./assets/images/logo-myh.svg" alt="MYH.se"
+          /></a>
+          <ul id="main-menu" class="menu">
+            <li class="item"><a href="index.html" class="menu-nav">Hem</a></li>
+            <li class="item"><a href="#" class="menu-nav">Organisation</a></li>
+            <li class="item"><a href="#" class="menu-nav">Student</a></li>
+            <li class="item dropdown">
+              <a href="javascript:void(0)" class="menu-nav dropbtn"
+                >Mer <i class="fas fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-content">
+                <li>
+                  <a href="verksamhetsomraden.html">Verksamhetsområden</a>
+                </li>
+                <li>
+                  <a href="lagar-regler-tillsyn.html"
+                    >Lagar, regeler, tillsyn</a
+                  >
+                </li>
+                <li><a href="statistik.html">Statistik</a></li>
+                <li><a href="publikationer.html">Publikationer</a></li>
+                <li><a href="om-oss.html">Om oss</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+              </ul>
+            </li>
+            <li class="search-container">
+              <label for="search-bar"><i class="fas fa-search"></i> </label
+              ><input id="search-bar" type="text" />
+            </li>
+          </ul>
+          <a
+            href="javascript:void(0);"
+            class="mobile-nav-btn"
+            title="Mobile Menu"
+            aria-label="Mobile Menu"
+          >
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
       </nav>
     </header>
 
     <!-- Main -->
     <main>
-      <section class="about-us">
-        <div class="container">Your content for Statistik goes here</div>
+      <!-- Page Title -->
+      <section class="page-title">
+        <h1>Statistik</h1>
+        <p class="page-title-p">
+          Här hittar du statistik om yrkeshögskoleutbildningar, konst- och kulturutbildningar och utbildningar med endast tillsyn samt tolkutbildningar inom folkbildningen.
+        </p>
+      </section>
+      <section class="statistic">
+        <div class="container">
+          <nav class="nav-side">
+            <a href="index.html">Start</a>
+            <i class="fas fa-chevron-right"></i> Statistic
+          </nav>
+          <img
+            src="./assets/images/statistic/statistik_webb.png"
+            alt="map with human"
+            class="float-img"
+          />
+          <div class="statistic-navbar">
+            <aside>
+              <nav class="side-menu">
+                <ul>
+                  <li class="title">Yrkeshögskoleutbildningar</li>
+                  <div class="description">
+                    <ul>
+                      <li>Ansökningar</li>
+                      <li>Utbildningsanordnare</li>
+                      <li>Studerande</li>
+                      <li>Examinerade och examensgrad</li>
+                    </ul>
+                  </div>
+                  <!--end section-->
+                  
+                  <li class="title">Konst- och kulturutbildningar</li>
+                  <div class="description">
+                    <ul>
+                      <li>Konst och kulturutbildningar</li>
+                      <li>Utbildningar med endast tillsyn</li>
+                    </ul>
+                    </div>
+                  <!--end section-->
+                  <li class="title">Tolkutbildningar inom folkbildningen</li>
+                  <div class="description">
+                    <ul>
+                      <li>Kontakttolkutbildning</li>
+                      <li>Skrivtolkutbildning</li>
+                      <li>Teckenspråkstolk och dövblindtolkutbildning</li>
+                    </ul>
+                  </div>
+                  <!--end section-->
+                </ol>
+              </nav>
+            </aside>
+          </div>
+          <br /><br />
+          <div class="statistic-main">
+            <br /><br />
+            <h3><u> Faktablad med statistik </u></h3>
+            <p>
+              Här kan du ladda ner faktablad med kortfattad statistik om
+              yrkeshögskole- utbildningar, konst- och kulturutbildningar samt
+              tolkutbildningar.
+            </p>
+            <br />
+            <i class="fas fa-file-pdf"></i
+            ><a
+              href="https://www.myh.se/Documents/Statitik/Yrkesh%c3%b6gskoleutbildningar/Kortfattad%20statistik/Kortfattad_statistik_yrkeshogskolan_2019.pdf"
+              >Faktablad med kortfattad statistik om yrkeshögskolan 2019</a
+            ><br />
+            <i class="fas fa-file-pdf"></i
+            ><a
+              href="https://www.myh.se/Documents/Statitik/Konst-och%20kulturutbildningar%20och%20vissa%20andra%20utbildningar/Konst-%20och%20kulturutbildningar/Kortfattad%20statistik/Kortfattad_statistik_konstkulturutbildningar_2019.pdf"
+              >Faktablad med kortfattad statistik om konst- och
+              kulturutbildningar 2019</a
+            ><br />
+            <i class="fas fa-file-pdf"></i
+            ><a
+              href="https://www.myh.se/Documents/Statitik/Tolkutbildningar%20inom%20folkbildningen/Kortfattad%20statistik/Kortfattad_statistik_tolkutbildningar_2019.pdf"
+              >Faktablad med kortfattad statistik om tolkutbildningar 2019</a
+            ><br /><br />
+            <h3><u>Statistiska årsrapporter</u></h3>
+            <p>
+              Via länkarna nedan hittar du Myndigheten för yrkeshögskolans
+              senaste årsrapporter med samlad statistik om de utbildningsformer
+              som vi ansvarar för.
+            </p>
+            <br />
+            <a
+              href="https://www.myh.se/Publikationer/2020/Statistisk-arsrapport-2020/"
+              >Statistisk årsrapport 2020</a
+            ><br />
+            <a
+              href="https://www.myh.se/Publikationer/2019/Statistisk-arsrapport-2019/"
+              >Statistisk årsrapport 2019</a
+            ><br />
+            <a
+              href="https://www.myh.se/Publikationer/2018/Statistisk-arsrapport-2018/"
+              >Statistisk årsrapport 2018</a
+            ><br />
+            <a
+              href="https://www.myh.se/Publikationer/2017/Statistisk-arsrapport-2017/"
+              >Statistisk årsrapport 2017</a
+            ><br /><br />
+            <p>
+              Har du frågor om vår statistik är du välkommen att kontakta oss på
+            </p>
+            <h4><a href="#">statistikservice@myh.se</a></h4>
+          </div>
+        </div>
       </section>
     </main>
 

@@ -82,9 +82,41 @@ function toggle() {
 }
 
 let element = document.querySelectorAll(".title");
-console.log(element);
+// console.log(element);
 
 // går igenom alla .title och sätter toggle onclick
 element.forEach((element) => {
   element.onclick = toggle;
+});
+
+/* ********************************** */
+// Sticky Main Menu
+/* ********************************** */
+const navbar = document.getElementById("navbar");
+const sticky = navbar.offsetTop;
+
+window.onscroll = function () {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+};
+
+/* ********************************** */
+// Mobile Menu
+/* ********************************** */
+const mobileBtn = document.querySelector(".mobile-nav-btn");
+const mobileMenu = document.querySelector("#main-menu");
+const mobileIcon = document.querySelector(".fa-bars");
+
+mobileBtn.addEventListener("click", function () {
+  mobileMenu.classList.toggle("mobile-menu");
+  if (mobileMenu.classList.contains("mobile-menu")) {
+    mobileIcon.classList.remove("fa-bars");
+    mobileIcon.classList.add("fa-times");
+  } else {
+    mobileIcon.classList.remove("fa-times");
+    mobileIcon.classList.add("fa-bars");
+  }
 });
