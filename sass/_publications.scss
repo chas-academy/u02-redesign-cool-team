@@ -95,23 +95,30 @@
     flex-direction: column;
     background-color: white;
     padding: 1em;
-
+    .mobile-filter-type {
+      display: none;
+    }
+    #publication-search-bar {
+      margin: 1em 0;
+      padding: 4px;
+      border: 1px solid grey;
+    }
     .main-filter {
       display: flex;
       flex-direction: column;
+      background-color: #e5e5e5;
+      padding: 1em;
       .flexbox {
         display: flex;
         // flex-direction: column;
         justify-content: space-between;
         align-items: center;
+
         i,
         .publication-search {
           flex: 1;
         }
 
-        .publication-search {
-          margin: 1em 0;
-        }
         .btn-reset {
           font-size: medium;
           font-weight: bold;
@@ -177,8 +184,51 @@
 }
 /* PUBLICATIONS ends here */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   .publications-container {
     flex-direction: column-reverse;
+
+    .main-section {
+      article {
+        .preamble {
+          font-size: 1em;
+        }
+      }
+    }
+
+    .filters-section {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1em;
+
+      .mobile-filter-heading {
+        margin: 0.5em 0 0.2em 0;
+      }
+    }
+
+    // hide filter list
+    .filter-type {
+      display: none;
+    }
+    aside {
+      .mobile-filter-type {
+        display: block;
+        padding-left: 1em;
+      }
+    }
+  }
+}
+///////////////////////////////////////////////
+@media only screen and (max-width: 630px) {
+  .filters-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .publications-container {
+    .mobile-filter-type {
+      padding-left: 0;
+    }
   }
 }
