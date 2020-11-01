@@ -138,12 +138,18 @@ $btn-primary: #174b2c;
 
 @media only screen and (max-width: 1050px) {
   .about-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     .main-section {
       article {
         p {
           margin: 1em 0 0 0;
         }
+      }
+    }
+    aside {
+      .btn-section,
+      .competitions {
+        display: none;
       }
     }
   }
