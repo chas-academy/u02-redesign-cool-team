@@ -24,7 +24,19 @@ $reset: btn-1;
 .btn-myh {
   box-sizing: border-box;
   padding: 4rem;
-  background-color: $myh;
+  // background-color: $myh;
+  // width: 100%;
+  margin: 0 auto;
+
+  .btn-container-start {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .btn-start-page {
+      margin: 1em;
+    }
+  }
 }
 
 //button

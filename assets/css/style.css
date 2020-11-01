@@ -970,7 +970,22 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 4rem;
-  background-color: #eee8e8;
+  margin: 0 auto;
+}
+
+.btn-myh .btn-container-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.btn-myh .btn-container-start .btn-start-page {
+  margin: 1em;
 }
 
 .btn-anmal,
