@@ -984,36 +984,60 @@ body {
       flex-wrap: wrap;
 }
 
+.btn-myh .btn-container-start .btn-anmal,
+.btn-myh .btn-container-start .btn-hitta,
+.btn-myh .btn-container-start .btn-ledare,
+.btn-myh .btn-container-start .btn-gd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 350px;
+  font-weight: bold;
+}
+
 .btn-myh .btn-container-start .btn-start-page {
   margin: 1em;
 }
 
-.btn-anmal,
-.btn-hitta,
-.btn-ledare,
-.btn-gd {
-  height: 5rem;
-  width: 3rem;
-  font-size: medium;
-  font-weight: bold;
-  font-size: 1em;
-  text-align: center;
-  padding: 2rem;
-  border: none;
-  border-radius: 1rem;
-  text-decoration: none;
-  display: inline-block;
-  min-width: 350px;
+.btn-myh .btn-container-start .btn-anmal {
+  color: #191e27;
 }
 
-.btn-anmal {
-  background-color: #04041f;
+.btn-myh .btn-container-start .btn-anmal:hover {
+  background-color: #ead704;
+}
+
+.btn-myh .btn-container-start .btn-hitta {
   color: #ffffff;
 }
 
-.btn-anmal:hover {
+.btn-myh .btn-container-start .btn-hitta:hover {
+  background-color: #0b2415;
+}
+
+.btn-myh .btn-container-start .btn-ledare {
+  color: #ffffff;
+}
+
+.btn-myh .btn-container-start .btn-ledare:hover {
+  background-color: #0c67d0;
+}
+
+.btn-anmal {
   background-color: #fbea26;
-  color: #191e27;
+  color: #ffffff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn-anmal:active {
@@ -1022,13 +1046,10 @@ body {
 }
 
 .btn-hitta {
-  background-color: #0b2415;
+  background-color: #174b2c;
   color: #ffffff;
-}
-
-.btn-hitta:hover {
-  background-color: #fbea26;
-  color: #191e27;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn-hitta:active {
@@ -1037,13 +1058,10 @@ body {
 }
 
 .btn-ledare {
-  background-color: #1b1d5c;
+  background-color: #1d80f2;
   color: #ffffff;
-}
-
-.btn-ledare:hover {
-  background-color: #fbea26;
-  color: #191e27;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn-ledare:active {
@@ -1052,18 +1070,36 @@ body {
 }
 
 .btn-gd {
-  background-color: #1dbef2;
+  background-color: #1d80f2;
   color: #ffffff;
-}
-
-.btn-gd:hover {
-  background-color: #fbea26;
-  color: #191e27;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn-gd:active {
   position: relative;
   top: 8px;
+}
+
+@media only screen and (max-width: 730px) {
+  .btn-myh .btn-container-start .btn-anmal,
+  .btn-myh .btn-container-start .btn-hitta,
+  .btn-myh .btn-container-start .btn-ledare,
+  .btn-myh .btn-container-start .btn-gd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
 
 footer .footer-main {
