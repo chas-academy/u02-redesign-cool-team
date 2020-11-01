@@ -105,11 +105,11 @@
     }
 
     // left = text elements in the left/first column (services)
-    #left {
+    .left {
       font-size: 20px;
     }
 
-    #left > p:hover {
+    .left > p:hover {
       cursor: pointer;
     }
 

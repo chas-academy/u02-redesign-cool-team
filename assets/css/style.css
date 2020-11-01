@@ -749,11 +749,11 @@ body {
   margin: 10px;
 }
 
-.services #services-main #left {
+.services #services-main .left {
   font-size: 20px;
 }
 
-.services #services-main #left > p:hover {
+.services #services-main .left > p:hover {
   cursor: pointer;
 }
 
