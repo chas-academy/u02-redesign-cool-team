@@ -1,19 +1,19 @@
 // color
-$anmal: rgb(4, 4, 31);
-$hitta: rgb(11, 36, 21);
-$ledare: rgb(27, 29, 92);
-$myh: rgb(238, 232, 232);
+$anmal: $secondary-color;
+$hitta: $btn-1;
+$ledare: $btn-2;
 $gd: $btn-2;
-$reset: btn-1;
+$reset: $btn-1;
 
 //mixin for button type
 @mixin btn-type($type) {
   background-color: $type;
   color: $white;
-  &:hover {
-    background-color: $secondary-color;
-    color: $primary-color;
-  }
+  transition: all 0.2s ease-in-out;
+  // &:hover {
+  //   background-color: $secondary-color;
+  //   color: $primary-color;
+  // }
   &:active {
     position: relative;
     top: 8px;
@@ -24,26 +24,50 @@ $reset: btn-1;
 .btn-myh {
   box-sizing: border-box;
   padding: 4rem;
-  background-color: $myh;
-}
+  margin: 0 auto;
 
-//button
-.btn-anmal,
-.btn-hitta,
-.btn-ledare,
-.btn-gd {
-  height: 5rem;
-  width: 3rem;
-  font-size: medium;
-  font-weight: bold;
-  font-size: 1em;
-  text-align: center;
-  padding: 2rem;
-  border: none;
-  border-radius: 1rem;
-  text-decoration: none;
-  display: inline-block;
-  min-width: 350px;
+  .btn-container-start {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    // //button
+    .btn-anmal,
+    .btn-hitta,
+    .btn-ledare,
+    .btn-gd {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      border-radius: 1rem;
+      text-transform: uppercase;
+      text-align: center;
+      width: 350px;
+      font-weight: bold;
+    }
+    .btn-start-page {
+      margin: 1em;
+    }
+    .btn-anmal {
+      color: $primary-color;
+      &:hover {
+        background-color: darken($color: $secondary-color, $amount: 10);
+      }
+    }
+    .btn-hitta {
+      color: $white;
+      &:hover {
+        background-color: darken($color: $hitta, $amount: 10);
+      }
+    }
+    .btn-ledare {
+      color: $white;
+      &:hover {
+        background-color: darken($color: $ledare, $amount: 10);
+      }
+    }
+  }
 }
 
 .btn-anmal {
@@ -59,4 +83,24 @@ $reset: btn-1;
 
 .btn-gd {
   @include btn-type($gd);
+}
+
+@media only screen and (max-width: 730px) {
+  .btn-myh {
+    .btn-container-start {
+      //button
+      .btn-anmal,
+      .btn-hitta,
+      .btn-ledare,
+      .btn-gd {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        border-radius: 1rem;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
 }

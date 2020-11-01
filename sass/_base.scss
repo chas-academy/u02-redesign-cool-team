@@ -2,9 +2,14 @@
 $primary-color: #191e27;
 $secondary-color: #fbea26;
 $white: #ffffff;
+$light-grey: #e5e5e5;
+$dark-grey: lighten(
+  $color: $primary-color,
+  $amount: 10,
+);
+$link-color: #145cad;
 $btn-1: #174b2c;
-$btn-2: #1dbef2;
-$link-color: #1dbef2;
+$btn-2: $link-color;
 $green-light: lighten(
   $color: $btn-1,
   $amount: 25,
