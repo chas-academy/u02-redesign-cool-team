@@ -1523,6 +1523,7 @@ footer .footer-bar .youtube i {
 }
 
 .about-container aside .side-menu .title {
+  font-size: 1em;
   color: white;
   font-weight: bold;
 }
@@ -1583,6 +1584,7 @@ footer .footer-bar .youtube i {
 
 .about-container aside .btn-section .gd:hover {
   background-color: #0b2415;
+  text-decoration: underline;
 }
 
 .about-container aside .btn-section .hitta {
@@ -1594,6 +1596,19 @@ footer .footer-bar .youtube i {
 
 .about-container aside .btn-section .hitta:hover {
   background-color: #d1c004;
+  text-decoration: underline;
+}
+
+.about-container aside .btn-section .anmal-btn {
+  background-color: #fbea26;
+  color: #191e27;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.about-container aside .btn-section .anmal-btn:hover {
+  background-color: #d1c004;
+  text-decoration: underline;
 }
 
 .about-container aside .competitions {
