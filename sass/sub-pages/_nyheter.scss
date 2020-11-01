@@ -1,21 +1,29 @@
 .nyheter {
     display: grid;
     height: 300vh;
-    grid-template-columns: 1fr 0.5fr;
-    grid-template-rows: 0.03fr 0.05fr 1fr;
+    grid-template-columns: 1fr 0.05fr 0.4fr;
+    grid-template-rows: 0.05fr 1fr 1fr;
     grid-template-areas:
-    "nyheter-main nyheter-main";
+    "nyheter-main . side-menu"
+    "nyheter-main . btn-section"
+    "nyheter-main . .";
 
     .nyheter-main {
         grid-area: nyheter-main;
         background-color: #f5f5f5;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: repeat(9, 1fr);
         grid-template-areas: 
+        "aktuellt-content"
+        "aktuellt-content"
+        "aktuellt-content"
+        "aktuellt-content"
+        "aktuellt-content"
+        "aktuellt-content"
+        "aktuellt-content"
+        "aktuellt-content"
         "aktuellt-content";
-        //"pressmeddelanden-content pressmeddelanden-content pressmeddelanden-content pressmeddelanden-content pressmeddelanden-content pressmeddelanden-content";
-        //"kalender-content kalender-content kalender-content kalender-content kalender-content kalender-content";
 
         .title-text {
             text-align: center;
@@ -29,19 +37,19 @@
 
         .aktuellt-content {
             grid-area: aktuellt-content;
-            grid-template-columns: 1fr 0.1fr;
+            grid-template-columns: 1fr;
             grid-template-rows: repeat(9, 1fr);
             display: grid;
             grid-template-areas:
-            "aktuellt-main-1 ."
-            "aktuellt-main-2 ."
-            "aktuellt-main-3 ."
-            "aktuellt-main-4 ."
-            "aktuellt-main-5 ."
-            "aktuellt-main-6 ."
-            "aktuellt-main-7 ."
-            "aktuellt-main-8 ."
-            "aktuellt-main-9 .";
+            "aktuellt-main-1"
+            "aktuellt-main-2"
+            "aktuellt-main-3"
+            "aktuellt-main-4"
+            "aktuellt-main-5"
+            "aktuellt-main-6"
+            "aktuellt-main-7"
+            "aktuellt-main-8"
+            "aktuellt-main-9";
 
             .aktuellt-main {
                 border-bottom: 2px solid grey;
@@ -63,6 +71,7 @@
 
             .aktuellt-main-1 {
                 grid-area: aktuellt-main-1;
+                
             }
 
             .aktuellt-main-2 {
@@ -97,190 +106,85 @@
                 grid-area: aktuellt-main-9;
             }
         }
+    }
 
-        .pressmeddelanden-content {
-            grid-area: pressmeddelanden-content;
-            grid-template-columns: 1fr 0.1fr;
-            grid-template-rows: repeat(9, 1fr) 0.2fr;
-            display: grid;
-            grid-template-areas:
-            "pressmeddelanden-main-1 ."
-            "pressmeddelanden-main-2 ."
-            "pressmeddelanden-main-3 ."
-            "pressmeddelanden-main-4 ."
-            "pressmeddelanden-main-5 ."
-            "pressmeddelanden-main-6 ."
-            "pressmeddelanden-main-7 ."
-            "pressmeddelanden-main-8 ."
-            "pressmeddelanden-main-9 ."
-            "pressmeddelanden-more .";
+    .side-menu {
+        background-color: $primary-color;
+        grid-area: side-menu;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        .title {
+            color: white;
+            font-weight: bold;
+            margin: 5px;
+        }
+        ul {
+            list-style: none;
+            padding: 1em;
+            text-decoration: none;
+            line-height: 1.5em;
 
-            display: none;
-
-            .pressmeddelanden-main {
-                border-bottom: 2px solid grey;
-                margin: 20px;
-
-                h2:hover {
-                    cursor: pointer;
-                    text-decoration: underline;
-                }
+            li:hover {
+                cursor: pointer;
+                text-decoration: underline;
             }
 
-            h2 {
-                margin-bottom: 10px;
-            }
-
-            .published-2 {
-                color: blue;
-            }
-
-            .pressmeddelanden-main-1 {
-                grid-area: pressmeddelanden-main-1;
-            }
-
-            .pressmeddelanden-main-2 {
-                grid-area: pressmeddelanden-main-2;
-            }
-
-            .pressmeddelanden-main-3 {
-                grid-area: pressmeddelanden-main-3;
-            }
-
-            .pressmeddelanden-main-4 {
-                grid-area: pressmeddelanden-main-4;
-            }
-
-            .pressmeddelanden-main-5 {
-                grid-area: pressmeddelanden-main-5;
-            }
-
-            .pressmeddelanden-main-6 {
-                grid-area: pressmeddelanden-main-6;
-            }
-
-            .pressmeddelanden-main-7 {
-                grid-area: pressmeddelanden-main-7;
-            }
-
-            .pressmeddelanden-main-8 {
-                grid-area: pressmeddelanden-main-8;
-            }
-
-            .pressmeddelanden-main-9 {
-                grid-area: pressmeddelanden-main-9;
-            }
-
-            .pressmeddelanden-more {
-                grid-area: pressmeddelanden-more;
-                
-                h5 {
-                    float: right;
-                }
-
-                h5:hover {
-                    cursor: pointer;
-                }
+            a {
+            color: white;
             }
         }
+    }
 
-        .kalender-content {
-            grid-area: kalender-content;
-            grid-template-columns: 0.3fr 1fr;
-            grid-template-rows: 0.04fr repeat(4, 0.15fr);
-            display: grid;
-            grid-template-areas:
-            "month-1 month-1"
-            "date-1 text-1"
-            "date-2 text-2"
-            "date-3 text-3"
-            "date-4 text-4";
+    .btn-section {
+        margin: 1em 0 0 0;
+        grid-area: btn-section;
 
-            display: none;
+      .btn {
+        height: 5rem;
+        width: 100%;
+        font-size: medium;
+        font-weight: bold;
+        font-size: 1em;
+        text-align: center;
+        padding: 2rem;
+        border: none;
+        border-radius: 10px;
+        text-decoration: none;
+        display: inline-block;
+        min-width: 350px;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+    }
 
-            .month {
-                background-color: $secondary-color;
-
-                h2 {
-                    padding: 25px 0;
-                    margin-left: 20px;
-                }
-            }
-
-            .date {
-                font-size: 50px;
-                margin-left: 2rem;
-                padding: 5px;
-                background-color: lightgrey;
-            }
-
-            .text {
-                margin: 20px;
-            }
-
-            .date-main, .kalender-group {
-                border-bottom: 2px solid grey;
-                display: flex;
-                align-items: center;
-            }
-
-            .date-main {
-                margin-left: 20px;
-                justify-content: center;
-            }
-
-            .kalender-group {
-                margin-right: 20px;
-            }
-
-            // Calender Grid Elements
-            .month-1 {
-                grid-area: month-1;
-            }
-
-            .month-2 {
-                grid-area: month-2;
-            }
-
-            .date-1 {
-                grid-area: date-1;
-            }
-            
-            .date-2 {
-                grid-area: date-2;
-            }
-
-            .date-3 {
-                grid-area: date-3;
-            }
-            
-            .date-4 {
-                grid-area: date-4;
-            }
-
-            .date-5 {
-                grid-area: date-5;
-            }
-
-            .text-1 {
-                grid-area: text-1;
-            }
-
-            .text-2 {
-                grid-area: text-2;
-            }
-
-            .text-3 {
-                grid-area: text-3;
-            }
-
-            .text-4 {
-                grid-area: text-4;
-            }
-
-            .text-5 {
-                grid-area: text-5;
-            }
+    .gd {
+        background-color: $secondary-color;
+        color: $primary-color;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background-color: darken($color: $secondary-color, $amount: 10);
         }
+    }
+
+    .hitta {
+        background-color: darkslategrey;
+        color: white;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background-color: darken($color: darkslategrey, $amount: 15);
+        }
+    }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nyheter {
+        display: grid;
+        height: 390vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.05fr 1fr 1fr;
+        grid-template-areas:
+        "side-menu"
+        "nyheter-main"
+        "btn-section";
     }
 }

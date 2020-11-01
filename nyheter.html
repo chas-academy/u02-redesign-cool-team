@@ -22,10 +22,11 @@
               <ul>
                 <li>
                   <i class="fas fa-phone-square-alt"></i> Växel
-                  <a href="tel: 0102090100">010-209 01 00</a>
+                  <a href="tel: 0102090100" tabindex="1">010-209 01 00</a>
                 </li>
                 <li>
-                  <i class="far fa-clock"></i> Vardagar 9.00 - 11.30, 13.00 -
+                  <i class="far fa-clock" tabindex="2" aria-label="Vardagar 9.00 - 11.30, 13.00 -
+                  15.00"></i> Vardagar 9.00 - 11.30, 13.00 -
                   15.00
                 </li>
               </ul>
@@ -34,11 +35,11 @@
             <div class="topnav-right">
               <ul>
                 <li>
-                  <a href="#"><i class="fas fa-globe"></i> In English</a>
+                  <a href="#" tabindex="3" aria-label="In English"><i class="fas fa-globe"></i> In English</a>
                 </li>
                 <li>
-                  <a href="#" class="topnav-login">
-                    <i class="fas fa-lock"></i> Mina Sidor
+                  <a href="#" class="topnav-login" tabindex="4">
+                    <i class="fas fa-lock" aria-label="Mina Sidor"></i> Mina Sidor
                   </a>
                 </li>
               </ul>
@@ -54,31 +55,31 @@
             ><img class="logo" src="./assets/images/logo-myh.svg" alt="MYH.se"
           /></a>
           <ul id="main-menu" class="menu">
-            <li class="item"><a href="index.html" class="menu-nav">Hem</a></li>
-            <li class="item"><a href="#" class="menu-nav">Organisation</a></li>
-            <li class="item"><a href="#" class="menu-nav">Student</a></li>
+            <li class="item"><a href="index.html" class="menu-nav" tabindex="5">Hem</a></li>
+            <li class="item"><a href="#" class="menu-nav" tabindex="6">Organisation</a></li>
+            <li class="item"><a href="#" class="menu-nav" tabindex="7">Student</a></li>
             <li class="item dropdown">
-              <a href="javascript:void(0)" class="menu-nav dropbtn"
+              <a href="javascript:void(0)" class="menu-nav dropbtn" tabindex="8"
                 >Mer <i class="fas fa-chevron-down"></i>
               </a>
               <ul class="dropdown-content">
                 <li>
-                  <a href="verksamhetsomraden.html">Verksamhetsområden</a>
+                  <a href="verksamhetsomraden.html" tabindex="9">Verksamhetsområden</a>
                 </li>
                 <li>
-                  <a href="lagar-regler-tillsyn.html"
+                  <a href="lagar-regler-tillsyn.html" tabindex="10"
                     >Lagar, regeler, tillsyn</a
                   >
                 </li>
-                <li><a href="statistik.html">Statistik</a></li>
-                <li><a href="publikationer.html">Publikationer</a></li>
-                <li><a href="om-oss.html">Om oss</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="statistik.html" tabindex="11">Statistik</a></li>
+                <li><a href="publikationer.html" tabindex="12">Publikationer</a></li>
+                <li><a href="om-oss.html" tabindex="13">Om oss</a></li>
+                <li><a href="kontakt.html" tabindex="14">Kontakt</a></li>
               </ul>
             </li>
             <li class="search-container">
               <label for="search-bar"><i class="fas fa-search"></i> </label
-              ><input id="search-bar" type="text" />
+              tabindex="15"><input id="search-bar" type="text" />
             </li>
           </ul>
           <a
@@ -96,209 +97,91 @@
     <!-- Main -->
     <main>
       <div class="page-title">
-        <h1>Nyheter</h1>
-        <p>Välkommen till vår Nyhets sektion. Här hittar du nyheter och pressmeddelanden, bilder, filmer, kalendarium och
+        <h1 tabindex="16">Nyheter</h1>
+        <p tabindex="17">Välkommen till vår Nyhets sektion. Här hittar du nyheter och pressmeddelanden, bilder, filmer, kalendarium och
           annan aktuell information.</p>
       </div>
       <nav class="breadcrumbs container">
         <a href="index.html">Start</a>
-        <i class="fas fa-chevron-right"></i> Verksamhetsområden
+        <i class="fas fa-chevron-right"></i> Nyheter
       </nav>
       <section class="nyheter container">
           <div class="nyheter-main">
             <div class="aktuellt-content">
               <div class="aktuellt-main aktuellt-main-1">
-                <h2>Extra webbinarium 5/11: Samtal om oro inför omställning av utbildningar</h2>
-                <p class="published">29 oktober 2020</p>
-                <p>Just nu ser vi allt fler tecken på att smittspridningen av covid-19 ökar i samhället, framför allt på regional
-                  nivå.
-                  Kommer vi behöva ställa om våra utbildningar igen, och vilka lösningar är möjliga? Projektet Distansstöd har
-                  satt in ett
-                  extra webbinarium den 5 november för samtal med myndigheten om den oro som många anordnare känner inför att
-                  ställa om
-                  sin undervisning.</p>
+                <h2 tabindex="24">Extra webbinarium 5/11: Samtal om oro inför omställning av utbildningar</h2>
+                <p class="published published-margin" tabindex="25">29 oktober 2020</p>
+                <p tabindex="26">Just nu ser vi allt fler tecken på att smittspridningen av covid-19 ökar i samhället, framför allt på regional
+                  nivå. Kommer vi behöva ställa om våra utbildningar igen, och vilka lösningar är möjliga? Projektet Distansstöd har
+                  satt in ett extra webbinarium den 5 november för samtal med myndigheten om den oro som många anordnare känner inför att
+                  ställa om sin undervisning.</p>
               </div>
               <div class="aktuellt-main aktuellt-main-2">
-                <h2>GD har ordet - Många frågor blir det… Tack för input!</h2>
-                <p class="published">26 oktober 2020</p>
-                <p>I min förra text efterlyste jag er input om ansökningarna, tack för att ni har hört av er. Denna gång
-                  kommenterar jag
-                  även det jag skrev om förändringar inför nästa års ansökan.</p>
+                <h2 tabindex="27">GD har ordet - Många frågor blir det… Tack för input!</h2>
+                <p class="published" tabindex="28">26 oktober 2020</p>
+                <p tabindex="29">I min förra text efterlyste jag er input om ansökningarna, tack för att ni har hört av er. Denna gång
+                  kommenterar jag även det jag skrev om förändringar inför nästa års ansökan.</p>
               </div>
               <div class="aktuellt-main aktuellt-main-3">
-                <h2>Resultatet av ansökningsomgången för kurser i kontakttolkning</h2>
-                <p class="published">Resultatet av ansökningsomgången för kurser i kontakttolkning</p>
-                <p>Varje år ansöker folkhögskolor och studieförbund om medel från Myndigheten för yrkeshögskolan för att starta
-                  kurser för
-                  kontakttolkar. I årets ansökningsomgång har 89 kurser beviljats statsbidrag för start under 2021.</p>
+                <h2 tabindex="30">Resultatet av ansökningsomgången för kurser i kontakttolkning</h2>
+                <p class="published" tabindex="31">23 oktober 2020</p>
+                <p tabindex="32">Varje år ansöker folkhögskolor och studieförbund om medel från Myndigheten för yrkeshögskolan för att starta
+                  kurser för kontakttolkar. I årets ansökningsomgång har 89 kurser beviljats statsbidrag för start under 2021.</p>
               </div>
               <div class="aktuellt-main aktuellt-main-4">
-                <h2>Deltidsutvärdering av projektet Distansstöd</h2>
-                <p class="published">23 oktober 2020</p>
-                <p>Under hösten genomförs flera aktiviteter inom ramen för projektet ”Distansstöd". Den här enkäten vill utvärdera
-                  om ni
-                  som utbildningsanordnare upplever att projektet ger er stöd i frågor som rör distansundervisning. Svaren kommer
-                  även att
-                  användas för fortsatta aktiviteter inom projektet under 2020.</p>
+                <h2 tabindex="33">Deltidsutvärdering av projektet Distansstöd</h2>
+                <p class="published" tabindex="34">23 oktober 2020</p>
+                <p tabindex="35">Under hösten genomförs flera aktiviteter inom ramen för projektet ”Distansstöd". Den här enkäten vill utvärdera
+                  om ni som utbildningsanordnare upplever att projektet ger er stöd i frågor som rör distansundervisning. Svaren kommer
+                  även att användas för fortsatta aktiviteter inom projektet under 2020.</p>
               </div>
               <div class="aktuellt-main aktuellt-main-5">
-                <h2>Tre nya utbildningar till kontakttolk inom yrkeshögskolan</h2>
-                <p class="published">22 oktober 2020</p>
-                <p>I början av nästa år startar tre nya utbildningar till kontakttolk inom yrkeshögskolan. Därmed fortsätter den
+                <h2 tabindex="36">Tre nya utbildningar till kontakttolk inom yrkeshögskolan</h2>
+                <p class="published" tabindex="37">22 oktober 2020</p>
+                <p tabindex="38">I början av nästa år startar tre nya utbildningar till kontakttolk inom yrkeshögskolan. Därmed fortsätter den
                   försöksverksamhet med kontakttolkutbildningar som startade 2019 och som ska redovisas till regeringen 2024.</p>
               </div>
               <div class="aktuellt-main aktuellt-main-6">
-                <h2>Nu kan du administrera korta yrkeshögskoleutbildningar i Mina sidor</h2>
-                <p class="published">16 oktober 2020</p>
-                <p>Från och med den 16 oktober är det möjligt att sköta större delen av administrationen av utbildningen och de
-                  studerande
-                  i Mina sidor.</p>
+                <h2 tabindex="39">Nu kan du administrera korta yrkeshögskoleutbildningar i Mina sidor</h2>
+                <p class="published" tabindex="40">16 oktober 2020</p>
+                <p tabindex="41">Från och med den 16 oktober är det möjligt att sköta större delen av administrationen av utbildningen och de
+                  studerande i Mina sidor.</p>
               </div>
               <div class="aktuellt-main aktuellt-main-7">
-                <h2>Yrkeshögskola – det populäraste alternativet för tjänstemän vid omställning</h2>
-                <p class="published">16 oktober 2020</p>
-                <p>När förutsättningarna på arbetsmarknaden förändras i pandemins spår blir omställning allt viktigare.
-                  Omställningsaktören
-                  TRR är en av de aktörer som stöttar tjänstemän i privat sektor när de förlorat jobbet. I förra veckan släppte de
-                  nya
-                  siffror som visar att yrkeshögskolan är den populäraste utbildningsformen för tjänstemän som ska ställa om.</p>
+                <h2 tabindex="42">Yrkeshögskola – det populäraste alternativet för tjänstemän vid omställning</h2>
+                <p class="published" tabindex="43">16 oktober 2020</p>
+                <p tabindex="44">När förutsättningarna på arbetsmarknaden förändras i pandemins spår blir omställning allt viktigare.
+                  Omställningsaktören TRR är en av de aktörer som stöttar tjänstemän i privat sektor när de förlorat jobbet. I förra veckan släppte de
+                  nya siffror som visar att yrkeshögskolan är den populäraste utbildningsformen för tjänstemän som ska ställa om.</p>
               </div>
               <div class="aktuellt-main aktuellt-main-8">
-                <h2>Ansök om statsbidrag för utbildning till teckenspråks- och dövblindtolk samt skrivtolk</h2>
-                <p class="published">15 oktober 2020</p>
-                <p>Nu kan folkhögskolor ansöka om statsbidrag för teckenspråks- och dövblindtolkutbildningen samt
-                  skrivtolkutbildningen.
-                  Ansökan är öppen till och med den 19 november 2020.</p>
+                <h2 tabindex="45">Ansök om statsbidrag för utbildning till teckenspråks- och dövblindtolk samt skrivtolk</h2>
+                <p class="published" tabindex="46">15 oktober 2020</p>
+                <p tabindex="47">Nu kan folkhögskolor ansöka om statsbidrag för teckenspråks- och dövblindtolkutbildningen samt
+                  skrivtolkutbildningen. Ansökan är öppen till och med den 19 november 2020.</p>
               </div>
               <div class="aktuellt-main aktuellt-main-9">
-                <h2>Ny rapport synliggör social snedrekrytering</h2>
-                <p class="published">14 oktober 2020</p>
-                <p>Andelen antagna med högutbildade föräldrar på konst- och kulturutbildningar är högre än hos befolkningen som
-                  helhet
-                  vilket tyder på snedrekrytering.</p>
-              </div>
-            </div>
-            <div class="pressmeddelanden-content">
-              <div class="pressmeddelanden-main pressmeddelanden-main-1">
-                <h4>Storsatsning på data/IT när yrkeshögskolan växer</h4>
-                <p class="published-2">29 januari 2019</p>
-                <p>Idag presenterar Myndigheten för yrkeshögskolan de nya utbildningar som beviljats att starta från och med
-                  hösten 2019.
-                  Av de närmare 500 nya YH-utbildningarna som beviljats är var femte inom data/IT.</p>
-              </div>
-              <div class="pressmeddelanden-main pressmeddelanden-main-2">
-                <h4>Lokförare – populäraste YH-utbildningen</h4>
-                <p class="published-2">20 augusti 2018</p>
-                <p>Söktrycket till yrkeshögskolan (YH) har de senaste åren ökat stadigt. Utbildningen med allra flest antal
-                  behöriga
-                  sökande per plats är lokförarutbildningen.</p>
-              </div>
-              <div class="pressmeddelanden-main pressmeddelanden-main-3">
-                <h4>Platser kvar på många YH-utbildningar</h4>
-                <p class="published-2">15 augusti 2018</p>
-                <p>I höst startar historiskt många yrkeshögskoleutbildningar. Antagningen till de flesta har redan stängt, men på
-                  vissa
-                  utbildningar finns det fortfarande platser kvar. Soleltekniker, redovisningskonsult och stödpedagog är några av
-                  de
-                  utbildningar som fortfarande tar emot ansökningar.</p>
-              </div>
-              <div class="pressmeddelanden-main pressmeddelanden-main-4">
-                <h4>Nu ska även yrkeshögskolan utbilda tolkar</h4>
-                <p class="published-2">20 juni 2018</p>
-                <p>Arabiska, dari, tigrinja och somaliska. Den som behärskar både svenska och någon av de språken kommer till
-                  hösten att
-                  kunna söka någon av de allra första YH-utbildningarna till kontakttolk som startar i januari 2019.</p>
-              </div>
-              <div class="pressmeddelanden-main pressmeddelanden-main-5">
-                <h4>Söktrycket till yrkeshögskolan ökar</h4>
-                <p class="published-2">11 juni 2018</p>
-                <p>Under 2017 var det 3% fler som sökte till yrkeshögskolan än föregående år. Mer än var femte person som sökte
-                  valde en
-                  utbildning inom hälso- och sjukvård.</p>
-              </div>
-              <div class="pressmeddelanden-main pressmeddelanden-main-6">
-                <h4>Tre utbildningsmyndigheter på Järvaveckan: Vi måste bredda rekryteringen till högskolan</h4>
-                <p class="published-2">5 juni 2018</p>
-                <p>Att utbilda sig öppnar dörrar till arbetsmarknaden, ger individer större möjligheter att forma sina liv
-                  samtidigt som
-                  Sverige ropar efter arbetskraft inom många områden. Det finns en dold kompetensresurs som inte tas tillvara om
-                  vi inte
-                  lyckas bredda rekryteringen till högre utbildning.</p>
-              </div>
-              <div class="pressmeddelanden-main pressmeddelanden-main-7">
-                <h4>Platser kvar på höstens YH-utbildningar</h4>
-                <p class="published-2">4 juni 2018</p>
-                <p>Efter sommaren startar historiskt många yrkeshögskoleutbildningar. Antagningen till de flesta har redan stängt,
-                  men till
-                  en del utbildningar finns det fortfarande platser kvar. Elkraftsingenjör, redovisningsekonom, CNC-tekniker och
-                  trädgårdsmästare är några av de utbildningar som fortfarande tar emot ansökningar.</p>
-              </div>
-              <div class="pressmeddelanden-main pressmeddelanden-main-8">
-                <h4>Allt högre utbildningsnivå bland YH-studerande</h4>
-                <p class="published-2">28 maj 2018</p>
-                <p>Utbildningsnivån bland de som påbörjar yrkeshögskolestudier har höjts enligt ny statistik från Myndigheten för
-                  yrkeshögskolan. Var tredje studerande som påbörjar en YH-utbildning har tidigare erfarenheter av eftergymnasiala
-                  studier. När det kommer till utrikes födda är utbildningsnivån ännu högre.</p>
-              </div>
-              <div class="pressmeddelanden-main pressmeddelanden-main-9">
-                <h4>Sju YH-utbildningar för dig som vill jobba med flyg</h4>
-                <p class="published-2">23 maj 2018</p>
-                <p>Yrkeshögskolans (YH) pilotutbildningar är några av de populäraste med många sökanden per plats, men det finns
-                  även andra
-                  YH-utbildningar för dig som jobba med flyg.</p>
-              </div>
-              <div class="pressmeddelanden-more">
-                <h5>Alla Pressmeddelanden</h5>
-              </div>
-            </div>
-            <div class="kalender-content">
-              <div class="month month-1">
-                <h2>November</h2>
-              </div>
-              <div class="date-main">
-                <h3 class="date date-1">03 & 05</h3>
-              </div>
-              <div class="kalender-group kalender-group-1">
-                <h4 class="text text-1">Distansstöds webbcafé</h4>
-                <p class="text-1 text-small">En möjlighet för dig som anordnare att möta andra anordnare vid särskilda webbcaféer
-                  för frågor och samtal kring hur man
-                  kan lösa de utmaningar och dra nytta av de möjligheter som undervisning på distans innebär.</p>
-              </div>
-              <div class="date-main">
-                <h3 class="date date-2">05</h3>
-              </div>
-              <div class="kalender-group kalender-group-2">
-                <h4 class="text text-2">Extra webbinarium: Samtal om oro inför omställning av utbildningar.</h4>
-                <p class="text-2 text-small">Just nu ser vi allt fler tecken på att smittspridningen av covid-19 ökar i samhället,
-                  framför allt på regional nivå.
-                  Kommer vi behöva ställa om våra utbildningar igen, och vilka lösningar är möjliga? Projektet Distansstöd har
-                  satt in ett
-                  extra webbinarium den 5 november för samtal med myndigheten om den oro som många anordnare känner inför att
-                  ställa om
-                  sin undervisning.</p>
-              </div>
-              <div class="date-main">
-                <h3 class="date date-3">18-19</h3>
-              </div>
-              <div class="kalender-group kalender-group-3">
-                <h4 class="text text-3">Kunskap & Framtid - digital mässa</h4>
-                <p class="text-3 text-small">Myndigheten deltar på årets digitala studentmässa med monter och föreläsning. Under
-                  mässan finns det även möjlighet att
-                  kontakta oss med frågor om utbildningsformerna yrkeshögskolan, konst- och kulturutbildningar och tolk inom
-                  folkbildningen.</p>
-              </div>
-              <div class="date-main">
-                <h3 class="date date-4">24-27</h3>
-              </div>
-              <div class="kalender-group kalender-group-4">
-                <h4 class="text text-4">Saco studentmässa</h4>
-                <p class="text-4 text-small">Myndigheten deltar på årets digitala studentmässa med monter och föreläsning. Under
-                  mässan finns det även möjlighet att
-                  chatta med oss om utbildningsformerna yrkeshögskolan, konst- och kulturutbildningar och tolk inom
-                  folkbildningen.</p>
+                <h2 tabindex="48">Ny rapport synliggör social snedrekrytering</h2>
+                <p class="published" tabindex="49">14 oktober 2020</p>
+                <p tabindex="50">Andelen antagna med högutbildade föräldrar på konst- och kulturutbildningar är högre än hos befolkningen som
+                  helhet vilket tyder på snedrekrytering.</p>
               </div>
             </div>
           </div>
+          <nav class="side-menu">
+            <ul>
+              <li class="title" id="side-menu-heading1" tabindex="18">Nyheter</li>
+              <li class="title" id="side-menu-heading2" tabindex="19">Pressmeddelanden</li>
+              <li class="title" id="side-menu-heading3" tabindex="20">Kalender</li>
+              <li class="title" id="side-menu-heading4" tabindex="21">Filmer</li>
+              <li class="title" id="side-menu-heading5" tabindex="22">Pressbilder</li>
+              <li class="title" id="side-menu-heading6" tabindex="23">Nyhetsbrev</li>
+            </ul>
+          </nav>
+          <section class="btn-section">
+            <a href="#" class="btn gd" tabindex="51">GD har ordet</a>
+            <a href="#" class="btn hitta" tabindex="52">Hitta utbildningar</a>
+          </section>
       </section>
     </main>
 
