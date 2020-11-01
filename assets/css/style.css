@@ -1416,6 +1416,7 @@ footer .footer-bar .youtube i {
   padding: 1em;
   text-decoration: none;
   line-height: 1.5em;
+  cursor: pointer;
 }
 
 .about-container aside .side-menu ul a {
@@ -1884,15 +1885,12 @@ footer .footer-bar .youtube i {
 .statistic {
   background-color: #fffefe;
   margin: 1rem;
-  border: black solid;
 }
 
 .statistic .statistic-navbar {
   text-align: left;
   background-color: #191e27;
-  padding: 2rem;
-  width: 20rem;
-  height: 20.5rem;
+  width: 22rem;
   margin-left: 10rem;
 }
 
@@ -1928,7 +1926,8 @@ footer .footer-bar .youtube i {
   list-style: none;
   padding: 1em;
   text-decoration: none;
-  line-height: 1.5em;
+  line-height: 2em;
+  cursor: pointer;
 }
 
 .statistic .statistic-navbar aside .side-menu ul a {
@@ -1955,7 +1954,8 @@ footer .footer-bar .youtube i {
 }
 
 @media all and (max-width: 420px) {
-  .statistic .float-img, .statistic .statistic-navbar {
+  .statistic .float-img,
+  .statistic .statistic-navbar {
     width: 100%;
     margin: auto;
     float: none;
