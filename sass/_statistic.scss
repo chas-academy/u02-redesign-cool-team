@@ -4,20 +4,19 @@
 .statistic {
   background-color: rgb(255, 254, 254);
   margin: 1rem;
-  border: black solid;
+  // border: black solid;
 
   .statistic-navbar {
     text-align: left;
     background-color: $primary-color;
-    padding: 2rem;
-    width: 20rem;
-    height: 20.5rem;
+    width: 22rem;
     margin-left: 10rem;
 
     aside {
       padding: 1rem;
       .side-menu {
         background-color: $primary-color;
+
         .title {
           color: $white;
           font-weight: bold;
@@ -37,7 +36,8 @@
           list-style: none;
           padding: 1em;
           text-decoration: none;
-          line-height: 1.5em;
+          line-height: 2em;
+          cursor: pointer;
           a {
             color: white;
           }
@@ -63,7 +63,8 @@
   }
 
   @media all and (max-width: 420px) {
-    .float-img, .statistic-navbar {
+    .float-img,
+    .statistic-navbar {
       width: 100%;
       margin: auto;
       float: none;
