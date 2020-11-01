@@ -651,7 +651,8 @@ body {
   .services {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "services-main" "calender-main";
+        grid-template-areas: "services-main"
+ "calender-main";
   }
 }
 
@@ -663,7 +664,15 @@ body {
       grid-template-rows: repeat(8, 1fr);
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "item-1 item-8" "item-2 item-8" "item-3 item-8" "item-4 item-8" "item-5 item-8" "item-6 item-8" "item-7 item-8" "service-btn item-8";
+  grid-template-areas: 
+ "item-1 item-8"
+ "item-2 item-8"
+ "item-3 item-8"
+ "item-4 item-8"
+ "item-5 item-8"
+ "item-6 item-8"
+ "item-7 item-8"
+ "service-btn item-8";
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: services-main;
@@ -674,7 +683,14 @@ body {
   .services #services-main {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "item-1" "item-2" "item-3" "item-4" "item-5" "item-6" "item-7" "service-btn";
+        grid-template-areas: "item-1"
+ "item-2"
+ "item-3"
+ "item-4"
+ "item-5"
+ "item-6"
+ "item-7"
+ "service-btn";
   }
 }
 
@@ -835,7 +851,7 @@ body {
       grid-template-rows: 1fr 0.7fr repeat(3, 1fr) 0.5fr;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "list-1 list-1" "list-2 list-2" "list-3 list-4" "list-5 list-6" "list-7 list-8" "list-9 list-9";
+      grid-template-areas: "list-1 list-1" "list-2 list-2" "list-3 list-4" "list-5 list-6" "list-7 list-8" "list-9 list-9";
   position: relative;
   border: solid 2.5px;
   -ms-grid-row: 1;
@@ -2150,7 +2166,7 @@ footer .footer-bar .youtube i {
       grid-template-columns: 1fr 0.05fr 0.4fr;
   -ms-grid-rows: 0.05fr 1fr 1fr;
       grid-template-rows: 0.05fr 1fr 1fr;
-      grid-template-areas: "nyheter-main . side-menu" "nyheter-main . btn-section" "nyheter-main . .";
+      grid-template-areas: "nyheter-main . side-menu" "nyheter-main . btn-section" "nyheter-main . .";
 }
 
 .nyheter .nyheter-main {
@@ -2165,7 +2181,7 @@ footer .footer-bar .youtube i {
       grid-template-columns: 1fr;
   -ms-grid-rows: (1fr)[9];
       grid-template-rows: repeat(9, 1fr);
-      grid-template-areas: "aktuellt-content" "aktuellt-content" "aktuellt-content" "aktuellt-content" "aktuellt-content" "aktuellt-content" "aktuellt-content" "aktuellt-content" "aktuellt-content";
+      grid-template-areas: "aktuellt-content" "aktuellt-content" "aktuellt-content" "aktuellt-content" "aktuellt-content" "aktuellt-content" "aktuellt-content" "aktuellt-content" "aktuellt-content";
 }
 
 .nyheter .nyheter-main .title-text {
@@ -2189,7 +2205,7 @@ footer .footer-bar .youtube i {
       grid-template-rows: repeat(9, 1fr);
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "aktuellt-main-1" "aktuellt-main-2" "aktuellt-main-3" "aktuellt-main-4" "aktuellt-main-5" "aktuellt-main-6" "aktuellt-main-7" "aktuellt-main-8" "aktuellt-main-9";
+      grid-template-areas: "aktuellt-main-1" "aktuellt-main-2" "aktuellt-main-3" "aktuellt-main-4" "aktuellt-main-5" "aktuellt-main-6" "aktuellt-main-7" "aktuellt-main-8" "aktuellt-main-9";
 }
 
 .nyheter .nyheter-main .aktuellt-content .aktuellt-main {
@@ -2350,7 +2366,7 @@ footer .footer-bar .youtube i {
         grid-template-columns: 1fr;
     -ms-grid-rows: 0.05fr 1fr 1fr;
         grid-template-rows: 0.05fr 1fr 1fr;
-        grid-template-areas: "side-menu" "nyheter-main" "btn-section";
+        grid-template-areas: "side-menu" "nyheter-main" "btn-section";
   }
 }
 
