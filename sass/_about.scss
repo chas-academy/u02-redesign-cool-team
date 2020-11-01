@@ -1,6 +1,3 @@
-// $btn-primary: #0b2415;
-$btn-primary: #174b2c;
-
 .breadcrumbs {
   padding: 1em;
 }
@@ -101,11 +98,11 @@ $btn-primary: #174b2c;
       }
 
       .gd {
-        background-color: $btn-primary;
+        background-color: $btn-1;
         color: white;
         transition: all 0.2s ease-in-out;
         &:hover {
-          background-color: darken($color: $btn-primary, $amount: 10);
+          background-color: darken($color: $btn-1, $amount: 10);
         }
       }
       .hitta {
