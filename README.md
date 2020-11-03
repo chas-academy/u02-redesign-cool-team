@@ -6,6 +6,10 @@ https://docs.google.com/document/d/1I1TW_L17G_Y2DLta_CGHMu09VWdVtpZSSfHJNw4v-cY/
 # Our design
 https://www.figma.com/file/DkGcQFgOjt2tFF8GaQ6nkY/MUH
 
+#Project Links
+Live site: https://moh3ni.github.io/
+Repo: https://github.com/chas-academy/u02-redesign-cool-team
+
 # Meeting room
 https://meet.google.com/cop-rxma-zub
 
